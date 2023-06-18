@@ -15,7 +15,7 @@ object Form10: TForm10
   TextHeight = 13
   object pnl1: TPanel
     Left = 0
-    Top = 8
+    Top = 0
     Width = 1305
     Height = 673
     Color = clWhite
@@ -216,29 +216,29 @@ object Form10: TForm10
       Caption = 'Tambah Poin Pelanggaran'
       TabOrder = 3
     end
-  end
-  object DBGrid1: TDBGrid
-    Left = 280
-    Top = 224
-    Width = 433
-    Height = 377
-    TabOrder = 1
-    TitleFont.Charset = DEFAULT_CHARSET
-    TitleFont.Color = clWindowText
-    TitleFont.Height = -11
-    TitleFont.Name = 'Tahoma'
-    TitleFont.Style = []
-  end
-  object DBGrid2: TDBGrid
-    Left = 744
-    Top = 224
-    Width = 433
-    Height = 369
-    TabOrder = 2
-    TitleFont.Charset = DEFAULT_CHARSET
-    TitleFont.Color = clWindowText
-    TitleFont.Height = -11
-    TitleFont.Name = 'Tahoma'
-    TitleFont.Style = []
+    object DBGrid1: TDBGrid
+      Left = 280
+      Top = 216
+      Width = 417
+      Height = 377
+      TabOrder = 4
+      TitleFont.Charset = DEFAULT_CHARSET
+      TitleFont.Color = clWindowText
+      TitleFont.Height = -11
+      TitleFont.Name = 'Tahoma'
+      TitleFont.Style = []
+    end
+    object DBGrid2: TDBGrid
+      Left = 744
+      Top = 216
+      Width = 425
+      Height = 377
+      TabOrder = 5
+      TitleFont.Charset = DEFAULT_CHARSET
+      TitleFont.Color = clWindowText
+      TitleFont.Height = -11
+      TitleFont.Name = 'Tahoma'
+      TitleFont.Style = []
+    end
   end
 end

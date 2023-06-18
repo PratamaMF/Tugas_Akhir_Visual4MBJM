@@ -20,13 +20,13 @@ type
     btn4: TButton;
     btn5: TButton;
     l_4: TLabel;
-    DBGrid1: TDBGrid;
-    DBGrid2: TDBGrid;
     l_2: TLabel;
     l_5: TLabel;
     btn6: TButton;
     btn7: TButton;
     btn8: TButton;
+    DBGrid1: TDBGrid;
+    DBGrid2: TDBGrid;
   private
     { Private declarations }
   public
