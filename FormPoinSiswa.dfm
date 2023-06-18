@@ -1,9 +1,9 @@
 object Form14: TForm14
-  Left = 176
-  Top = 135
+  Left = 79
+  Top = 190
   Width = 1353
   Height = 685
-  Caption = 'Data Riwayat Poin Siswa'
+  Caption = 'Data Poin Siswa'
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
@@ -23,9 +23,9 @@ object Form14: TForm14
     object l_4: TLabel
       Left = 280
       Top = 88
-      Width = 183
+      Width = 188
       Height = 27
-      Caption = 'DATA POIN SISWA'
+      Caption = 'DATA POIN  SISWA'
       Font.Charset = ANSI_CHARSET
       Font.Color = clWindowText
       Font.Height = -21
@@ -174,19 +174,45 @@ object Form14: TForm14
         TabOrder = 6
       end
     end
+    object DBGrid1: TDBGrid
+      Left = 280
+      Top = 200
+      Width = 801
+      Height = 337
+      TabOrder = 2
+      TitleFont.Charset = DEFAULT_CHARSET
+      TitleFont.Color = clWindowText
+      TitleFont.Height = -11
+      TitleFont.Name = 'Tahoma'
+      TitleFont.Style = []
+    end
     object btn6: TButton
       Left = 280
-      Top = 136
-      Width = 129
+      Top = 152
+      Width = 185
       Height = 33
-      Caption = 'Tambah Peraturan'
+      Caption = 'Tambah Poin Prestasi Siswa'
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clWindowText
       Font.Height = -13
       Font.Name = 'Tahoma'
       Font.Style = []
       ParentFont = False
-      TabOrder = 2
+      TabOrder = 3
+    end
+    object btn8: TButton
+      Left = 472
+      Top = 152
+      Width = 201
+      Height = 33
+      Caption = 'Tambah Poin Pelanggaran Siswa'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -13
+      Font.Name = 'Tahoma'
+      Font.Style = []
+      ParentFont = False
+      TabOrder = 4
     end
   end
   object ZConnection1: TZConnection

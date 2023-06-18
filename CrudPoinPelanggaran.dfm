@@ -36,9 +36,9 @@ object Form12: TForm12
     object l_2: TLabel
       Left = 280
       Top = 160
-      Width = 123
+      Width = 163
       Height = 19
-      Caption = 'NAMA PRESTASI'
+      Caption = 'NAMA PELANGGARAN'
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clWindowText
       Font.Height = -16
@@ -244,7 +244,7 @@ object Form12: TForm12
       TitleFont.Name = 'Tahoma'
       TitleFont.Style = []
     end
-    object EdtNama_prestasi: TEdit
+    object EdtNama_pelanggaran: TEdit
       Left = 456
       Top = 160
       Width = 337

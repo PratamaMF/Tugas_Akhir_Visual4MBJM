@@ -32,7 +32,7 @@ type
     btn7: TButton;
     l_2: TLabel;
     l_6: TLabel;
-    EdtNama_prestasi: TEdit;
+    EdtNama_pelanggaran: TEdit;
     EdtBobot: TEdit;
   private
     { Private declarations }
