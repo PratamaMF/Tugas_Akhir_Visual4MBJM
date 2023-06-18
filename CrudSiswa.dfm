@@ -300,20 +300,6 @@ object Form3: TForm3
         ParentFont = False
         TabOrder = 2
       end
-      object btn7: TButton
-        Left = 24
-        Top = 392
-        Width = 209
-        Height = 49
-        Caption = 'DATA PERATURAN'
-        Font.Charset = ANSI_CHARSET
-        Font.Color = clWindowText
-        Font.Height = -16
-        Font.Name = 'Vastago Grotesk Medium'
-        Font.Style = [fsBold]
-        ParentFont = False
-        TabOrder = 3
-      end
     end
     object btnSimpan: TButton
       Left = 832
@@ -608,6 +594,20 @@ object Form3: TForm3
     Font.Style = [fsBold]
     ParentFont = False
     TabOrder = 3
+  end
+  object btn7: TButton
+    Left = 8
+    Top = 384
+    Width = 209
+    Height = 49
+    Caption = 'DATA POIN SISWA'
+    Font.Charset = ANSI_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -16
+    Font.Name = 'Vastago Grotesk Medium'
+    Font.Style = [fsBold]
+    ParentFont = False
+    TabOrder = 4
   end
   object ZConnection1: TZConnection
     ControlsCodePage = cGET_ACP

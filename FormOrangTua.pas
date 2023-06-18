@@ -23,7 +23,7 @@ type
     btn1: TButton;
     btn4: TButton;
     btn5: TButton;
-    btn6: TButton;
+    btn7: TButton;
     procedure btnData_orangtuaClick(Sender: TObject);
     procedure btnTambahClick(Sender: TObject);
   private

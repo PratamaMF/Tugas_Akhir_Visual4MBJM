@@ -14,7 +14,8 @@ uses
   FormPoin in 'FormPoin.pas' {Form10},
   CrudPoinPrestasi in 'CrudPoinPrestasi.pas' {Form11},
   CrudPoinPelanggaran in 'CrudPoinPelanggaran.pas' {Form12},
-  FormLaporan in 'FormLaporan.pas' {Form13};
+  FormLaporan in 'FormLaporan.pas' {Form13},
+  FormPoinSiswa in 'FormPoinSiswa.pas' {Form14};
 
 {$R *.res}
 
@@ -33,5 +34,6 @@ begin
   Application.CreateForm(TForm11, Form11);
   Application.CreateForm(TForm12, Form12);
   Application.CreateForm(TForm13, Form13);
+  Application.CreateForm(TForm14, Form14);
   Application.Run;
 end.

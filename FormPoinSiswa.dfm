@@ -1,9 +1,9 @@
-object Form10: TForm10
-  Left = 151
-  Top = 123
-  Width = 1355
-  Height = 713
-  Caption = 'Data Poin'
+object Form14: TForm14
+  Left = 176
+  Top = 135
+  Width = 1353
+  Height = 685
+  Caption = 'Data Riwayat Poin Siswa'
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
@@ -15,7 +15,7 @@ object Form10: TForm10
   TextHeight = 13
   object pnl1: TPanel
     Left = 0
-    Top = 8
+    Top = -3
     Width = 1305
     Height = 673
     Color = clWhite
@@ -23,40 +23,14 @@ object Form10: TForm10
     object l_4: TLabel
       Left = 280
       Top = 88
-      Width = 110
+      Width = 183
       Height = 27
-      Caption = 'DATA POIN'
+      Caption = 'DATA POIN SISWA'
       Font.Charset = ANSI_CHARSET
       Font.Color = clWindowText
       Font.Height = -21
       Font.Name = 'Vastago Grotesk SemiBold'
       Font.Style = [fsBold]
-      ParentFont = False
-    end
-    object l_2: TLabel
-      Left = 280
-      Top = 184
-      Width = 116
-      Height = 18
-      Caption = 'POIN PRESTASI :'
-      Font.Charset = DEFAULT_CHARSET
-      Font.Color = clWindowText
-      Font.Height = -15
-      Font.Name = 'Tahoma'
-      Font.Style = []
-      ParentFont = False
-    end
-    object l_5: TLabel
-      Left = 744
-      Top = 184
-      Width = 149
-      Height = 18
-      Caption = 'POIN PELANGGARAN :'
-      Font.Charset = DEFAULT_CHARSET
-      Font.Color = clWindowText
-      Font.Height = -15
-      Font.Name = 'Tahoma'
-      Font.Style = []
       ParentFont = False
     end
     object pnl2: TPanel
@@ -82,7 +56,7 @@ object Form10: TForm10
     end
     object grp1: TGroupBox
       Left = -8
-      Top = 0
+      Top = -8
       Width = 257
       Height = 665
       Color = clActiveBorder
@@ -185,7 +159,7 @@ object Form10: TForm10
         ParentFont = False
         TabOrder = 5
       end
-      object btn8: TButton
+      object btn7: TButton
         Left = 24
         Top = 384
         Width = 209
@@ -202,43 +176,34 @@ object Form10: TForm10
     end
     object btn6: TButton
       Left = 280
-      Top = 128
-      Width = 161
+      Top = 136
+      Width = 129
       Height = 33
-      Caption = 'Tambah Poin Prestasi'
+      Caption = 'Tambah Peraturan'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -13
+      Font.Name = 'Tahoma'
+      Font.Style = []
+      ParentFont = False
       TabOrder = 2
     end
-    object btn7: TButton
-      Left = 456
-      Top = 128
-      Width = 169
-      Height = 33
-      Caption = 'Tambah Poin Pelanggaran'
-      TabOrder = 3
-    end
   end
-  object DBGrid1: TDBGrid
-    Left = 280
-    Top = 224
-    Width = 433
-    Height = 377
-    TabOrder = 1
-    TitleFont.Charset = DEFAULT_CHARSET
-    TitleFont.Color = clWindowText
-    TitleFont.Height = -11
-    TitleFont.Name = 'Tahoma'
-    TitleFont.Style = []
+  object ZConnection1: TZConnection
+    ControlsCodePage = cGET_ACP
+    UTF8StringsAsWideField = False
+    AutoEncodeStrings = False
+    Port = 0
+    Left = 1216
+    Top = 61
   end
-  object DBGrid2: TDBGrid
-    Left = 744
-    Top = 224
-    Width = 433
-    Height = 369
-    TabOrder = 2
-    TitleFont.Charset = DEFAULT_CHARSET
-    TitleFont.Color = clWindowText
-    TitleFont.Height = -11
-    TitleFont.Name = 'Tahoma'
-    TitleFont.Style = []
+  object ZQuery1: TZQuery
+    Params = <>
+    Left = 1200
+    Top = 117
+  end
+  object ds1: TDataSource
+    Left = 1256
+    Top = 117
   end
 end

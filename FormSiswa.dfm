@@ -160,12 +160,12 @@ object Form2: TForm2
         ParentFont = False
         TabOrder = 5
       end
-      object btn6: TButton
+      object btn7: TButton
         Left = 24
         Top = 384
         Width = 209
         Height = 49
-        Caption = 'DATA PERATURAN'
+        Caption = 'DATA POIN SISWA'
         Font.Charset = ANSI_CHARSET
         Font.Color = clWindowText
         Font.Height = -16
