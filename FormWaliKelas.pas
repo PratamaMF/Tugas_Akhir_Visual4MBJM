@@ -23,6 +23,7 @@ type
     btnTambah: TButton;
     btnCetak: TButton;
     DBGrid1: TDBGrid;
+    btn6: TButton;
   private
     { Private declarations }
   public

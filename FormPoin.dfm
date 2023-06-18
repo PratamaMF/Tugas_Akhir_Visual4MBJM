@@ -159,6 +159,20 @@ object Form10: TForm10
         ParentFont = False
         TabOrder = 5
       end
+      object btn8: TButton
+        Left = 24
+        Top = 384
+        Width = 209
+        Height = 49
+        Caption = 'DATA PERATURAN'
+        Font.Charset = ANSI_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -16
+        Font.Name = 'Vastago Grotesk Medium'
+        Font.Style = [fsBold]
+        ParentFont = False
+        TabOrder = 6
+      end
     end
     object btn6: TButton
       Left = 280

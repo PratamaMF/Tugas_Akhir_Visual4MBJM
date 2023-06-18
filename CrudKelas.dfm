@@ -156,6 +156,20 @@ object Form7: TForm7
         ParentFont = False
         TabOrder = 2
       end
+      object btn7: TButton
+        Left = 24
+        Top = 400
+        Width = 209
+        Height = 49
+        Caption = 'DATA PERATURAN'
+        Font.Charset = ANSI_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -16
+        Font.Name = 'Vastago Grotesk Medium'
+        Font.Style = [fsBold]
+        ParentFont = False
+        TabOrder = 3
+      end
     end
     object btnSimpan: TButton
       Left = 832
@@ -258,7 +272,7 @@ object Form7: TForm7
     end
   end
   object btn6: TButton
-    Left = 24
+    Left = 16
     Top = 216
     Width = 209
     Height = 49
@@ -272,7 +286,7 @@ object Form7: TForm7
     TabOrder = 1
   end
   object btn4: TButton
-    Left = 24
+    Left = 16
     Top = 272
     Width = 209
     Height = 49
@@ -286,7 +300,7 @@ object Form7: TForm7
     TabOrder = 2
   end
   object btn5: TButton
-    Left = 24
+    Left = 16
     Top = 328
     Width = 209
     Height = 49

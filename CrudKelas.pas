@@ -35,6 +35,7 @@ type
     btn4: TButton;
     btn5: TButton;
     DBGrid1: TDBGrid;
+    btn7: TButton;
   private
     { Private declarations }
   public

@@ -19,6 +19,7 @@ type
     btn1: TButton;
     btn4: TButton;
     btn5: TButton;
+    btn6: TButton;
     procedure btnDatasiswaClick(Sender: TObject);
     procedure btn2Click(Sender: TObject);
   private

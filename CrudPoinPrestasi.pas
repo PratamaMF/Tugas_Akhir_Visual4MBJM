@@ -53,6 +53,7 @@ type
     ds1: TDataSource;
     ds2: TDataSource;
     ds3: TDataSource;
+    btn7: TButton;
   private
     { Private declarations }
   public

@@ -58,6 +58,7 @@ type
     btn6: TButton;
     btn4: TButton;
     btn5: TButton;
+    btn7: TButton;
     procedure btn1Click(Sender: TObject);
     procedure btnSimpanClick(Sender: TObject);
     procedure btnEditClick(Sender: TObject);

@@ -45,6 +45,7 @@ type
     btn6: TButton;
     btn4: TButton;
     btn5: TButton;
+    btn7: TButton;
   private
     { Private declarations }
   public

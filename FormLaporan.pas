@@ -25,6 +25,7 @@ type
     btn7: TButton;
     btn8: TButton;
     DBGrid1: TDBGrid;
+    btn9: TButton;
   private
     { Private declarations }
   public
