@@ -127,6 +127,7 @@ object Form7: TForm7
         Font.Style = [fsBold]
         ParentFont = False
         TabOrder = 0
+        OnClick = btnDatasiswaClick
       end
       object btn2: TButton
         Left = 24
@@ -141,6 +142,7 @@ object Form7: TForm7
         Font.Style = [fsBold]
         ParentFont = False
         TabOrder = 1
+        OnClick = btn2Click
       end
       object btn3: TButton
         Left = 24
@@ -155,6 +157,7 @@ object Form7: TForm7
         Font.Style = [fsBold]
         ParentFont = False
         TabOrder = 2
+        OnClick = btn3Click
       end
     end
     object btnSimpan: TButton
@@ -270,6 +273,7 @@ object Form7: TForm7
     Font.Style = [fsBold]
     ParentFont = False
     TabOrder = 1
+    OnClick = btn6Click
   end
   object btn4: TButton
     Left = 16
@@ -284,6 +288,7 @@ object Form7: TForm7
     Font.Style = [fsBold]
     ParentFont = False
     TabOrder = 2
+    OnClick = btn4Click
   end
   object btn5: TButton
     Left = 16
@@ -298,6 +303,7 @@ object Form7: TForm7
     Font.Style = [fsBold]
     ParentFont = False
     TabOrder = 3
+    OnClick = btn5Click
   end
   object btn7: TButton
     Left = 16
@@ -312,6 +318,7 @@ object Form7: TForm7
     Font.Style = [fsBold]
     ParentFont = False
     TabOrder = 4
+    OnClick = btn7Click
   end
   object ZConnection1: TZConnection
     ControlsCodePage = cGET_ACP

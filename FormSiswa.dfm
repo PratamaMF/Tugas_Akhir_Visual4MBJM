@@ -75,7 +75,7 @@ object Form2: TForm2
         Font.Style = [fsBold]
         ParentFont = False
       end
-      object btnData_siswa: TButton
+      object btnDatasiswa: TButton
         Left = 24
         Top = 104
         Width = 209
@@ -88,8 +88,9 @@ object Form2: TForm2
         Font.Style = [fsBold]
         ParentFont = False
         TabOrder = 0
+        OnClick = btnDatasiswaClick
       end
-      object btnData_orangtua: TButton
+      object btn2: TButton
         Left = 24
         Top = 160
         Width = 209
@@ -102,7 +103,7 @@ object Form2: TForm2
         Font.Style = [fsBold]
         ParentFont = False
         TabOrder = 1
-        OnClick = btnData_orangtuaClick
+        OnClick = btn2Click
       end
       object btn3: TButton
         Left = 24
@@ -117,6 +118,7 @@ object Form2: TForm2
         Font.Style = [fsBold]
         ParentFont = False
         TabOrder = 2
+        OnClick = btn3Click
       end
       object btn1: TButton
         Left = 24
@@ -131,6 +133,7 @@ object Form2: TForm2
         Font.Style = [fsBold]
         ParentFont = False
         TabOrder = 3
+        OnClick = btn1Click
       end
       object btn4: TButton
         Left = 24
@@ -145,6 +148,7 @@ object Form2: TForm2
         Font.Style = [fsBold]
         ParentFont = False
         TabOrder = 4
+        OnClick = btn4Click
       end
       object btn5: TButton
         Left = 24
@@ -159,6 +163,7 @@ object Form2: TForm2
         Font.Style = [fsBold]
         ParentFont = False
         TabOrder = 5
+        OnClick = btn5Click
       end
       object btn7: TButton
         Left = 24
@@ -173,6 +178,7 @@ object Form2: TForm2
         Font.Style = [fsBold]
         ParentFont = False
         TabOrder = 6
+        OnClick = btn7Click
       end
     end
     object btnTambah: TButton
@@ -184,21 +190,13 @@ object Form2: TForm2
       TabOrder = 2
       OnClick = btnTambahClick
     end
-    object btnCetak: TButton
-      Left = 400
-      Top = 128
-      Width = 113
-      Height = 33
-      Caption = 'CETAK'
-      TabOrder = 3
-    end
     object DBGrid1: TDBGrid
       Left = 280
       Top = 176
       Width = 1017
       Height = 361
       DataSource = Form3.ds1
-      TabOrder = 4
+      TabOrder = 3
       TitleFont.Charset = DEFAULT_CHARSET
       TitleFont.Color = clWindowText
       TitleFont.Height = -11

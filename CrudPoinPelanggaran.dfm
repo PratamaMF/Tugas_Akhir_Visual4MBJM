@@ -2,7 +2,7 @@ object Form12: TForm12
   Left = 125
   Top = 135
   Width = 1356
-  Height = 686
+  Height = 699
   Caption = 'Input Data Poin Pelanggaran'
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
@@ -114,6 +114,7 @@ object Form12: TForm12
         Font.Style = [fsBold]
         ParentFont = False
         TabOrder = 0
+        OnClick = btnDatasiswaClick
       end
       object btn2: TButton
         Left = 24
@@ -128,6 +129,7 @@ object Form12: TForm12
         Font.Style = [fsBold]
         ParentFont = False
         TabOrder = 1
+        OnClick = btn2Click
       end
       object btn3: TButton
         Left = 24
@@ -142,6 +144,7 @@ object Form12: TForm12
         Font.Style = [fsBold]
         ParentFont = False
         TabOrder = 2
+        OnClick = btn3Click
       end
       object btn1: TButton
         Left = 24
@@ -156,6 +159,7 @@ object Form12: TForm12
         Font.Style = [fsBold]
         ParentFont = False
         TabOrder = 3
+        OnClick = btn1Click
       end
       object btn4: TButton
         Left = 24
@@ -170,6 +174,7 @@ object Form12: TForm12
         Font.Style = [fsBold]
         ParentFont = False
         TabOrder = 4
+        OnClick = btn4Click
       end
       object btn5: TButton
         Left = 24
@@ -184,6 +189,7 @@ object Form12: TForm12
         Font.Style = [fsBold]
         ParentFont = False
         TabOrder = 5
+        OnClick = btn5Click
       end
       object btn7: TButton
         Left = 24
@@ -198,6 +204,7 @@ object Form12: TForm12
         Font.Style = [fsBold]
         ParentFont = False
         TabOrder = 6
+        OnClick = btn7Click
       end
     end
     object btnSimpan: TButton

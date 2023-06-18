@@ -18,7 +18,6 @@ type
     btnData_orangtua: TButton;
     btn3: TButton;
     btnTambah: TButton;
-    btnCetak: TButton;
     DBGrid1: TDBGrid;
     btn1: TButton;
     btn4: TButton;
@@ -26,6 +25,12 @@ type
     btn7: TButton;
     procedure btnData_orangtuaClick(Sender: TObject);
     procedure btnTambahClick(Sender: TObject);
+    procedure btn7Click(Sender: TObject);
+    procedure btnData_siswaClick(Sender: TObject);
+    procedure btn1Click(Sender: TObject);
+    procedure btn4Click(Sender: TObject);
+    procedure btn5Click(Sender: TObject);
+    procedure btn3Click(Sender: TObject);
   private
     { Private declarations }
   public
@@ -37,7 +42,8 @@ var
 
 implementation
 
-uses CrudOrangTua;
+uses CrudOrangTua, FormPoinSiswa, FormSiswa, FormKelas, FormWaliKelas,
+  FormPoin, FormLaporan;
 
 {$R *.dfm}
 
@@ -49,6 +55,36 @@ end;
 procedure TForm4.btnTambahClick(Sender: TObject);
 begin
 Form5.showmodal;
+end;
+
+procedure TForm4.btn7Click(Sender: TObject);
+begin
+Form14.showmodal;
+end;
+
+procedure TForm4.btnData_siswaClick(Sender: TObject);
+begin
+Form2.showmodal;
+end;
+
+procedure TForm4.btn1Click(Sender: TObject);
+begin
+Form6.showmodal;
+end;
+
+procedure TForm4.btn4Click(Sender: TObject);
+begin
+Form8.showmodal;
+end;
+
+procedure TForm4.btn5Click(Sender: TObject);
+begin
+Form10.showmodal;
+end;
+
+procedure TForm4.btn3Click(Sender: TObject);
+begin
+Form13.showmodal;
 end;
 
 end.

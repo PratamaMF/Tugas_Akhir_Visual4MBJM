@@ -1,8 +1,8 @@
 object Form14: TForm14
-  Left = 79
-  Top = 190
+  Left = 130
+  Top = 124
   Width = 1353
-  Height = 685
+  Height = 694
   Caption = 'Data Poin Siswa'
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
@@ -88,6 +88,7 @@ object Form14: TForm14
         Font.Style = [fsBold]
         ParentFont = False
         TabOrder = 0
+        OnClick = btnDatasiswaClick
       end
       object btn2: TButton
         Left = 24
@@ -102,6 +103,7 @@ object Form14: TForm14
         Font.Style = [fsBold]
         ParentFont = False
         TabOrder = 1
+        OnClick = btn2Click
       end
       object btn3: TButton
         Left = 24
@@ -116,6 +118,7 @@ object Form14: TForm14
         Font.Style = [fsBold]
         ParentFont = False
         TabOrder = 2
+        OnClick = btn3Click
       end
       object btn1: TButton
         Left = 24
@@ -130,6 +133,7 @@ object Form14: TForm14
         Font.Style = [fsBold]
         ParentFont = False
         TabOrder = 3
+        OnClick = btn1Click
       end
       object btn4: TButton
         Left = 24
@@ -144,6 +148,7 @@ object Form14: TForm14
         Font.Style = [fsBold]
         ParentFont = False
         TabOrder = 4
+        OnClick = btn4Click
       end
       object btn5: TButton
         Left = 24
@@ -158,6 +163,7 @@ object Form14: TForm14
         Font.Style = [fsBold]
         ParentFont = False
         TabOrder = 5
+        OnClick = btn5Click
       end
       object btn7: TButton
         Left = 24
@@ -172,6 +178,7 @@ object Form14: TForm14
         Font.Style = [fsBold]
         ParentFont = False
         TabOrder = 6
+        OnClick = btn7Click
       end
     end
     object DBGrid1: TDBGrid

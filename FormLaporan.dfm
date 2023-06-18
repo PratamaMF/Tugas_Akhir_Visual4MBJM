@@ -88,6 +88,7 @@ object Form13: TForm13
         Font.Style = [fsBold]
         ParentFont = False
         TabOrder = 0
+        OnClick = btnData_siswaClick
       end
       object btnData_orangtua: TButton
         Left = 24
@@ -102,6 +103,7 @@ object Form13: TForm13
         Font.Style = [fsBold]
         ParentFont = False
         TabOrder = 1
+        OnClick = btnData_orangtuaClick
       end
       object btn3: TButton
         Left = 24
@@ -116,6 +118,7 @@ object Form13: TForm13
         Font.Style = [fsBold]
         ParentFont = False
         TabOrder = 2
+        OnClick = btn3Click
       end
       object btn1: TButton
         Left = 24
@@ -130,6 +133,7 @@ object Form13: TForm13
         Font.Style = [fsBold]
         ParentFont = False
         TabOrder = 3
+        OnClick = btn1Click
       end
       object btn4: TButton
         Left = 24
@@ -144,6 +148,7 @@ object Form13: TForm13
         Font.Style = [fsBold]
         ParentFont = False
         TabOrder = 4
+        OnClick = btn4Click
       end
       object btn5: TButton
         Left = 24
@@ -158,6 +163,7 @@ object Form13: TForm13
         Font.Style = [fsBold]
         ParentFont = False
         TabOrder = 5
+        OnClick = btn5Click
       end
       object btn9: TButton
         Left = 24
@@ -172,6 +178,7 @@ object Form13: TForm13
         Font.Style = [fsBold]
         ParentFont = False
         TabOrder = 6
+        OnClick = btn9Click
       end
     end
     object btn2: TButton

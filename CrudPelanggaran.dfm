@@ -1,8 +1,8 @@
 object Form16: TForm16
-  Left = 161
-  Top = 136
+  Left = 158
+  Top = 103
   Width = 1350
-  Height = 684
+  Height = 700
   Caption = 'Input Pelanggaran'
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
@@ -295,6 +295,7 @@ object Form16: TForm16
         Font.Style = [fsBold]
         ParentFont = False
         TabOrder = 0
+        OnClick = btnDatasiswaClick
       end
       object btn2: TButton
         Left = 24
@@ -309,6 +310,7 @@ object Form16: TForm16
         Font.Style = [fsBold]
         ParentFont = False
         TabOrder = 1
+        OnClick = btn2Click
       end
       object btn3: TButton
         Left = 24
@@ -323,6 +325,7 @@ object Form16: TForm16
         Font.Style = [fsBold]
         ParentFont = False
         TabOrder = 2
+        OnClick = btn3Click
       end
     end
     object btnSimpan: TButton
@@ -582,6 +585,7 @@ object Form16: TForm16
     Font.Style = [fsBold]
     ParentFont = False
     TabOrder = 1
+    OnClick = btn6Click
   end
   object btn4: TButton
     Left = 8
@@ -596,6 +600,7 @@ object Form16: TForm16
     Font.Style = [fsBold]
     ParentFont = False
     TabOrder = 2
+    OnClick = btn4Click
   end
   object btn5: TButton
     Left = 8
@@ -610,6 +615,7 @@ object Form16: TForm16
     Font.Style = [fsBold]
     ParentFont = False
     TabOrder = 3
+    OnClick = btn5Click
   end
   object btn7: TButton
     Left = 8
@@ -624,6 +630,7 @@ object Form16: TForm16
     Font.Style = [fsBold]
     ParentFont = False
     TabOrder = 4
+    OnClick = btn7Click
   end
   object ZConnection1: TZConnection
     ControlsCodePage = cGET_ACP
