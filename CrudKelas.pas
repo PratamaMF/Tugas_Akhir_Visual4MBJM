@@ -10,17 +10,9 @@ uses
 type
   TForm7 = class(TForm)
     pnl1: TPanel;
-    l_4: TLabel;
     l_7: TLabel;
     l_12: TLabel;
     l_17: TLabel;
-    pnl2: TPanel;
-    l_3: TLabel;
-    grp1: TGroupBox;
-    l_1: TLabel;
-    btnDatasiswa: TButton;
-    btn2: TButton;
-    btn3: TButton;
     btnSimpan: TButton;
     btnEdit: TButton;
     btnHapus: TButton;
@@ -31,11 +23,11 @@ type
     ZConnection1: TZConnection;
     ZQuery1: TZQuery;
     ds1: TDataSource;
-    btn6: TButton;
-    btn4: TButton;
-    btn5: TButton;
     DBGrid1: TDBGrid;
-    btn7: TButton;
+    pnl2: TPanel;
+    l_3: TLabel;
+    l_1: TLabel;
+    l_2: TLabel;
     procedure btnDatasiswaClick(Sender: TObject);
     procedure btn2Click(Sender: TObject);
     procedure btn6Click(Sender: TObject);
