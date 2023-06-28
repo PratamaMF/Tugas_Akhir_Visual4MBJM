@@ -9,25 +9,6 @@ uses
 
 type
   TForm14 = class(TForm)
-    pnl1: TPanel;
-    l_4: TLabel;
-    pnl2: TPanel;
-    l_3: TLabel;
-    grp1: TGroupBox;
-    l_1: TLabel;
-    btnDatasiswa: TButton;
-    btn2: TButton;
-    btn3: TButton;
-    btn1: TButton;
-    btn4: TButton;
-    btn5: TButton;
-    btn7: TButton;
-    ZConnection1: TZConnection;
-    ZQuery1: TZQuery;
-    ds1: TDataSource;
-    DBGrid1: TDBGrid;
-    btn6: TButton;
-    btn8: TButton;
     procedure btnDatasiswaClick(Sender: TObject);
     procedure btn2Click(Sender: TObject);
     procedure btn1Click(Sender: TObject);

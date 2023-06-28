@@ -10,19 +10,8 @@ type
   TForm2 = class(TForm)
     pnl1: TPanel;
     pnl2: TPanel;
-    grp1: TGroupBox;
-    l_1: TLabel;
     l_3: TLabel;
-    l_4: TLabel;
-    btnTambah: TButton;
-    DBGrid1: TDBGrid;
-    btnDatasiswa: TButton;
-    btn2: TButton;
-    btn3: TButton;
-    btn1: TButton;
-    btn4: TButton;
-    btn5: TButton;
-    btn7: TButton;
+    l_1: TLabel;
     procedure btnTambahClick(Sender: TObject);
     procedure btnData_orangtuaClick(Sender: TObject);
     procedure btnDatasiswaClick(Sender: TObject);
@@ -45,7 +34,7 @@ var
 implementation
 
 uses CrudSiswa, FormOrangTua, FormKelas, FormWaliKelas, FormPoin,
-  FormPoinSiswa, FormLaporan;
+  FormPoinSiswa, FormLaporan, FormUtama;
 
 {$R *.dfm}
 
