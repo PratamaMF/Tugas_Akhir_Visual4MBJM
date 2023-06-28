@@ -11,7 +11,6 @@ uses
 type
   TForm16 = class(TForm)
     pnl1: TPanel;
-    l_4: TLabel;
     l_2: TLabel;
     l_5: TLabel;
     l_6: TLabel;
@@ -28,13 +27,6 @@ type
     l_15: TLabel;
     l_18: TLabel;
     l_19: TLabel;
-    pnl2: TPanel;
-    l_3: TLabel;
-    grp1: TGroupBox;
-    l_1: TLabel;
-    btnDatasiswa: TButton;
-    btn2: TButton;
-    btn3: TButton;
     btnSimpan: TButton;
     btnEdit: TButton;
     btnHapus: TButton;
@@ -54,15 +46,13 @@ type
     DBGrid2: TDBGrid;
     DBGrid3: TDBGrid;
     EdtPrestasi: TEdit;
-    btn6: TButton;
-    btn4: TButton;
-    btn5: TButton;
-    ZConnection1: TZConnection;
     ZQuery1: TZQuery;
     ds1: TDataSource;
-    btn7: TButton;
     ZQuery2: TZQuery;
     ZQuery3: TZQuery;
+    pnl2: TPanel;
+    l_3: TLabel;
+    l_1: TLabel;
     ds2: TDataSource;
     ds3: TDataSource;
     procedure btnDatasiswaClick(Sender: TObject);

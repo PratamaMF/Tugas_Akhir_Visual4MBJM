@@ -1,6 +1,6 @@
 object Form10: TForm10
-  Left = 151
-  Top = 123
+  Left = 113
+  Top = 156
   Width = 1355
   Height = 713
   Caption = 'Data Poin'

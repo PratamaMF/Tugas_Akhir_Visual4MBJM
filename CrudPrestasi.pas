@@ -10,7 +10,6 @@ uses
 type
   TForm15 = class(TForm)
     pnl1: TPanel;
-    l_4: TLabel;
     l_2: TLabel;
     l_5: TLabel;
     l_6: TLabel;
@@ -21,13 +20,6 @@ type
     l_14: TLabel;
     l_16: TLabel;
     l_17: TLabel;
-    pnl2: TPanel;
-    l_3: TLabel;
-    grp1: TGroupBox;
-    l_1: TLabel;
-    btnDatasiswa: TButton;
-    btn2: TButton;
-    btn3: TButton;
     btnSimpan: TButton;
     btnEdit: TButton;
     btnHapus: TButton;
@@ -42,13 +34,8 @@ type
     EdtNohp_ortu: TEdit;
     CbbStatus: TComboBox;
     btn1: TButton;
-    btn6: TButton;
-    btn4: TButton;
-    btn5: TButton;
-    ZConnection1: TZConnection;
     ZQuery1: TZQuery;
     ds1: TDataSource;
-    btn7: TButton;
     l_9: TLabel;
     dtpTanggal: TDateTimePicker;
     l_7: TLabel;
@@ -64,6 +51,9 @@ type
     ZQuery3: TZQuery;
     ds2: TDataSource;
     ds3: TDataSource;
+    pnl2: TPanel;
+    l_3: TLabel;
+    l_1: TLabel;
     procedure btnDatasiswaClick(Sender: TObject);
     procedure btn2Click(Sender: TObject);
     procedure btn6Click(Sender: TObject);

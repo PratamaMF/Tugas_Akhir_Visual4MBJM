@@ -1,6 +1,6 @@
 object Form16: TForm16
-  Left = 158
-  Top = 103
+  Left = 178
+  Top = 163
   Width = 1350
   Height = 700
   Caption = 'Input Pelanggaran'
@@ -20,22 +20,9 @@ object Form16: TForm16
     Height = 673
     Color = clWhite
     TabOrder = 0
-    object l_4: TLabel
-      Left = 280
-      Top = 88
-      Width = 299
-      Height = 27
-      Caption = 'INPUT PELANGGARAN SISWA'
-      Font.Charset = ANSI_CHARSET
-      Font.Color = clWindowText
-      Font.Height = -21
-      Font.Name = 'Vastago Grotesk SemiBold'
-      Font.Style = [fsBold]
-      ParentFont = False
-    end
     object l_2: TLabel
-      Left = 280
-      Top = 160
+      Left = 48
+      Top = 104
       Width = 26
       Height = 19
       Caption = 'NIS'
@@ -47,8 +34,8 @@ object Form16: TForm16
       ParentFont = False
     end
     object l_5: TLabel
-      Left = 280
-      Top = 192
+      Left = 48
+      Top = 136
       Width = 37
       Height = 19
       Caption = 'NISN'
@@ -60,8 +47,8 @@ object Form16: TForm16
       ParentFont = False
     end
     object l_6: TLabel
-      Left = 280
-      Top = 224
+      Left = 48
+      Top = 168
       Width = 99
       Height = 19
       Caption = 'NAMA SISWA'
@@ -73,8 +60,8 @@ object Form16: TForm16
       ParentFont = False
     end
     object l_10: TLabel
-      Left = 280
-      Top = 320
+      Left = 48
+      Top = 264
       Width = 113
       Height = 19
       Caption = 'JENIS KELAMIN'
@@ -86,8 +73,8 @@ object Form16: TForm16
       ParentFont = False
     end
     object l_11: TLabel
-      Left = 280
-      Top = 256
+      Left = 48
+      Top = 200
       Width = 119
       Height = 19
       Caption = 'TINGKAT KELAS'
@@ -99,8 +86,8 @@ object Form16: TForm16
       ParentFont = False
     end
     object l_12: TLabel
-      Left = 280
-      Top = 288
+      Left = 48
+      Top = 232
       Width = 70
       Height = 38
       Caption = 'JURUSAN'#13#10
@@ -112,8 +99,8 @@ object Form16: TForm16
       ParentFont = False
     end
     object l_13: TLabel
-      Left = 280
-      Top = 384
+      Left = 48
+      Top = 328
       Width = 140
       Height = 19
       Caption = 'NAMA WALI KELAS'
@@ -125,8 +112,8 @@ object Form16: TForm16
       ParentFont = False
     end
     object l_14: TLabel
-      Left = 280
-      Top = 544
+      Left = 48
+      Top = 488
       Width = 5
       Height = 19
       Font.Charset = DEFAULT_CHARSET
@@ -137,8 +124,8 @@ object Form16: TForm16
       ParentFont = False
     end
     object l_16: TLabel
-      Left = 280
-      Top = 448
+      Left = 48
+      Top = 392
       Width = 150
       Height = 19
       Caption = 'NO HP ORANG  TUA'
@@ -150,8 +137,8 @@ object Form16: TForm16
       ParentFont = False
     end
     object l_17: TLabel
-      Left = 280
-      Top = 512
+      Left = 48
+      Top = 456
       Width = 60
       Height = 19
       Caption = 'STATUS'
@@ -163,8 +150,8 @@ object Form16: TForm16
       ParentFont = False
     end
     object l_9: TLabel
-      Left = 280
-      Top = 352
+      Left = 48
+      Top = 296
       Width = 125
       Height = 19
       Caption = 'TANGGAL INPUT'
@@ -176,8 +163,8 @@ object Form16: TForm16
       ParentFont = False
     end
     object l_7: TLabel
-      Left = 280
-      Top = 416
+      Left = 48
+      Top = 360
       Width = 142
       Height = 19
       Caption = 'NAMA ORANG TUA'
@@ -189,8 +176,8 @@ object Form16: TForm16
       ParentFont = False
     end
     object l_8: TLabel
-      Left = 280
-      Top = 480
+      Left = 48
+      Top = 424
       Width = 113
       Height = 19
       Caption = 'PELANGGARAN'
@@ -202,8 +189,8 @@ object Form16: TForm16
       ParentFont = False
     end
     object l_15: TLabel
-      Left = 856
-      Top = 176
+      Left = 632
+      Top = 160
       Width = 141
       Height = 18
       Caption = 'Pilih Pelanggaran :'
@@ -215,8 +202,8 @@ object Form16: TForm16
       ParentFont = False
     end
     object l_18: TLabel
-      Left = 856
-      Top = 464
+      Left = 632
+      Top = 448
       Width = 92
       Height = 18
       Caption = 'Pilih Siswa :'
@@ -228,8 +215,8 @@ object Form16: TForm16
       ParentFont = False
     end
     object l_19: TLabel
-      Left = 1072
-      Top = 464
+      Left = 960
+      Top = 448
       Width = 120
       Height = 18
       Caption = 'Pilih Data Ortu :'
@@ -240,122 +227,60 @@ object Form16: TForm16
       Font.Style = [fsBold]
       ParentFont = False
     end
-    object pnl2: TPanel
-      Left = 232
-      Top = -56
-      Width = 1057
-      Height = 121
-      Color = clActiveBorder
-      TabOrder = 1
-      object l_3: TLabel
-        Left = 752
-        Top = 80
-        Width = 264
-        Height = 27
-        Caption = 'PEMROGRAMAN VISUAL 2'
-        Font.Charset = ANSI_CHARSET
-        Font.Color = clWindowText
-        Font.Height = -21
-        Font.Name = 'Vastago Grotesk SemiBold'
-        Font.Style = [fsBold]
-        ParentFont = False
-      end
-    end
-    object grp1: TGroupBox
-      Left = -8
-      Top = 0
-      Width = 257
-      Height = 665
-      Color = clActiveBorder
-      ParentColor = False
-      TabOrder = 0
-      object l_1: TLabel
-        Left = 40
-        Top = 24
-        Width = 172
-        Height = 27
-        Caption = 'LAPORAN SISWA'
-        Font.Charset = ANSI_CHARSET
-        Font.Color = clWindowText
-        Font.Height = -21
-        Font.Name = 'Vastago Grotesk SemiBold'
-        Font.Style = [fsBold]
-        ParentFont = False
-      end
-      object btnDatasiswa: TButton
-        Left = 24
-        Top = 104
-        Width = 209
-        Height = 49
-        Caption = 'DATA SISWA'
-        Font.Charset = ANSI_CHARSET
-        Font.Color = clWindowText
-        Font.Height = -16
-        Font.Name = 'Vastago Grotesk Medium'
-        Font.Style = [fsBold]
-        ParentFont = False
-        TabOrder = 0
-        OnClick = btnDatasiswaClick
-      end
-      object btn2: TButton
-        Left = 24
-        Top = 160
-        Width = 209
-        Height = 49
-        Caption = 'DATA ORANG TUA'
-        Font.Charset = ANSI_CHARSET
-        Font.Color = clWindowText
-        Font.Height = -16
-        Font.Name = 'Vastago Grotesk Medium'
-        Font.Style = [fsBold]
-        ParentFont = False
-        TabOrder = 1
-        OnClick = btn2Click
-      end
-      object btn3: TButton
-        Left = 24
-        Top = 600
-        Width = 209
-        Height = 49
-        Caption = 'LAPORAN'
-        Font.Charset = DEFAULT_CHARSET
-        Font.Color = clWindowText
-        Font.Height = -16
-        Font.Name = 'Tahoma'
-        Font.Style = [fsBold]
-        ParentFont = False
-        TabOrder = 2
-        OnClick = btn3Click
-      end
-    end
     object btnSimpan: TButton
-      Left = 280
-      Top = 560
+      Left = 48
+      Top = 504
       Width = 129
       Height = 41
       Caption = 'SIMPAN'
-      TabOrder = 2
+      TabOrder = 0
     end
     object btnEdit: TButton
-      Left = 416
-      Top = 560
+      Left = 184
+      Top = 504
       Width = 129
       Height = 41
       Caption = 'EDIT'
-      TabOrder = 3
+      TabOrder = 1
     end
     object btnHapus: TButton
-      Left = 552
-      Top = 560
+      Left = 320
+      Top = 504
       Width = 129
       Height = 41
       Caption = 'HAPUS'
-      TabOrder = 4
+      TabOrder = 2
     end
     object EdtNis: TEdit
-      Left = 456
-      Top = 160
-      Width = 337
+      Left = 224
+      Top = 104
+      Width = 361
+      Height = 27
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -16
+      Font.Name = 'Tahoma'
+      Font.Style = []
+      ParentFont = False
+      TabOrder = 3
+    end
+    object EdtNisn: TEdit
+      Left = 224
+      Top = 136
+      Width = 361
+      Height = 27
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -16
+      Font.Name = 'Tahoma'
+      Font.Style = []
+      ParentFont = False
+      TabOrder = 4
+    end
+    object EdtNama_siswa: TEdit
+      Left = 224
+      Top = 168
+      Width = 361
       Height = 27
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clWindowText
@@ -365,35 +290,44 @@ object Form16: TForm16
       ParentFont = False
       TabOrder = 5
     end
-    object EdtNisn: TEdit
-      Left = 456
-      Top = 192
-      Width = 337
+    object CbbJKelamin: TComboBox
+      Left = 224
+      Top = 264
+      Width = 185
       Height = 27
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clWindowText
       Font.Height = -16
       Font.Name = 'Tahoma'
       Font.Style = []
+      ItemHeight = 19
       ParentFont = False
       TabOrder = 6
+      Items.Strings = (
+        'Laki-Laki'
+        'Perempuan')
     end
-    object EdtNama_siswa: TEdit
-      Left = 456
-      Top = 224
-      Width = 337
+    object CbbTingkat_kelas: TComboBox
+      Left = 224
+      Top = 200
+      Width = 185
       Height = 27
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clWindowText
       Font.Height = -16
       Font.Name = 'Tahoma'
       Font.Style = []
+      ItemHeight = 19
       ParentFont = False
       TabOrder = 7
+      Items.Strings = (
+        'X'
+        'XI'
+        'XII')
     end
-    object CbbJKelamin: TComboBox
-      Left = 456
-      Top = 320
+    object CbbJurusan: TComboBox
+      Left = 224
+      Top = 232
       Width = 185
       Height = 27
       Font.Charset = DEFAULT_CHARSET
@@ -405,48 +339,39 @@ object Form16: TForm16
       ParentFont = False
       TabOrder = 8
       Items.Strings = (
-        'Laki-Laki'
-        'Perempuan')
-    end
-    object CbbTingkat_kelas: TComboBox
-      Left = 456
-      Top = 256
-      Width = 185
-      Height = 27
-      Font.Charset = DEFAULT_CHARSET
-      Font.Color = clWindowText
-      Font.Height = -16
-      Font.Name = 'Tahoma'
-      Font.Style = []
-      ItemHeight = 19
-      ParentFont = False
-      TabOrder = 9
-      Items.Strings = (
-        'X'
-        'XI'
-        'XII')
-    end
-    object CbbJurusan: TComboBox
-      Left = 456
-      Top = 288
-      Width = 185
-      Height = 27
-      Font.Charset = DEFAULT_CHARSET
-      Font.Color = clWindowText
-      Font.Height = -16
-      Font.Name = 'Tahoma'
-      Font.Style = []
-      ItemHeight = 19
-      ParentFont = False
-      TabOrder = 10
-      Items.Strings = (
         'IPA'
         'IPS')
     end
     object EdtWali_kelas: TEdit
-      Left = 456
-      Top = 384
-      Width = 345
+      Left = 224
+      Top = 328
+      Width = 361
+      Height = 27
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -16
+      Font.Name = 'Tahoma'
+      Font.Style = []
+      ParentFont = False
+      TabOrder = 9
+    end
+    object EdtAlamat: TEdit
+      Left = 224
+      Top = 360
+      Width = 361
+      Height = 27
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -16
+      Font.Name = 'Tahoma'
+      Font.Style = []
+      ParentFont = False
+      TabOrder = 10
+    end
+    object EdtNohp_ortu: TEdit
+      Left = 224
+      Top = 392
+      Width = 361
       Height = 27
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clWindowText
@@ -456,35 +381,9 @@ object Form16: TForm16
       ParentFont = False
       TabOrder = 11
     end
-    object EdtAlamat: TEdit
-      Left = 456
-      Top = 416
-      Width = 345
-      Height = 27
-      Font.Charset = DEFAULT_CHARSET
-      Font.Color = clWindowText
-      Font.Height = -16
-      Font.Name = 'Tahoma'
-      Font.Style = []
-      ParentFont = False
-      TabOrder = 12
-    end
-    object EdtNohp_ortu: TEdit
-      Left = 456
-      Top = 448
-      Width = 345
-      Height = 27
-      Font.Charset = DEFAULT_CHARSET
-      Font.Color = clWindowText
-      Font.Height = -16
-      Font.Name = 'Tahoma'
-      Font.Style = []
-      ParentFont = False
-      TabOrder = 13
-    end
     object CbbStatus: TComboBox
-      Left = 456
-      Top = 512
+      Left = 224
+      Top = 456
       Width = 185
       Height = 27
       Font.Charset = DEFAULT_CHARSET
@@ -494,22 +393,22 @@ object Form16: TForm16
       Font.Style = []
       ItemHeight = 19
       ParentFont = False
-      TabOrder = 14
+      TabOrder = 12
       Items.Strings = (
         'Aktif'
         'Tidak Aktif')
     end
     object btn1: TButton
-      Left = 688
-      Top = 560
+      Left = 456
+      Top = 504
       Width = 129
       Height = 41
       Caption = 'CLEAR FORM'
-      TabOrder = 15
+      TabOrder = 13
     end
     object dtpTanggal: TDateTimePicker
-      Left = 456
-      Top = 352
+      Left = 224
+      Top = 296
       Width = 186
       Height = 27
       Date = 45092.065244027780000000
@@ -520,14 +419,14 @@ object Form16: TForm16
       Font.Name = 'Tahoma'
       Font.Style = []
       ParentFont = False
-      TabOrder = 16
+      TabOrder = 14
     end
     object DBGrid1: TDBGrid
-      Left = 856
-      Top = 488
-      Width = 201
+      Left = 632
+      Top = 472
+      Width = 289
       Height = 120
-      TabOrder = 17
+      TabOrder = 15
       TitleFont.Charset = DEFAULT_CHARSET
       TitleFont.Color = clWindowText
       TitleFont.Height = -11
@@ -535,11 +434,11 @@ object Form16: TForm16
       TitleFont.Style = []
     end
     object DBGrid2: TDBGrid
-      Left = 1072
-      Top = 488
-      Width = 201
+      Left = 960
+      Top = 472
+      Width = 289
       Height = 120
-      TabOrder = 18
+      TabOrder = 16
       TitleFont.Charset = DEFAULT_CHARSET
       TitleFont.Color = clWindowText
       TitleFont.Height = -11
@@ -547,11 +446,11 @@ object Form16: TForm16
       TitleFont.Style = []
     end
     object DBGrid3: TDBGrid
-      Left = 856
-      Top = 200
-      Width = 417
+      Left = 632
+      Top = 184
+      Width = 481
       Height = 233
-      TabOrder = 19
+      TabOrder = 17
       TitleFont.Charset = DEFAULT_CHARSET
       TitleFont.Color = clWindowText
       TitleFont.Height = -11
@@ -559,9 +458,9 @@ object Form16: TForm16
       TitleFont.Style = []
     end
     object EdtPrestasi: TEdit
-      Left = 456
-      Top = 480
-      Width = 345
+      Left = 224
+      Top = 424
+      Width = 361
       Height = 27
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clWindowText
@@ -569,115 +468,71 @@ object Form16: TForm16
       Font.Name = 'Tahoma'
       Font.Style = []
       ParentFont = False
-      TabOrder = 20
+      TabOrder = 18
     end
   end
-  object btn6: TButton
-    Left = 8
-    Top = 216
-    Width = 209
-    Height = 49
-    Caption = 'DATA KELAS'
-    Font.Charset = ANSI_CHARSET
-    Font.Color = clWindowText
-    Font.Height = -16
-    Font.Name = 'Vastago Grotesk Medium'
-    Font.Style = [fsBold]
-    ParentFont = False
+  object pnl2: TPanel
+    Left = -8
+    Top = -64
+    Width = 1321
+    Height = 121
+    Color = clActiveBorder
     TabOrder = 1
-    OnClick = btn6Click
-  end
-  object btn4: TButton
-    Left = 8
-    Top = 272
-    Width = 209
-    Height = 49
-    Caption = 'DATA WALI KELAS'
-    Font.Charset = ANSI_CHARSET
-    Font.Color = clWindowText
-    Font.Height = -16
-    Font.Name = 'Vastago Grotesk Medium'
-    Font.Style = [fsBold]
-    ParentFont = False
-    TabOrder = 2
-    OnClick = btn4Click
-  end
-  object btn5: TButton
-    Left = 8
-    Top = 328
-    Width = 209
-    Height = 49
-    Caption = 'DATA POIN'
-    Font.Charset = ANSI_CHARSET
-    Font.Color = clWindowText
-    Font.Height = -16
-    Font.Name = 'Vastago Grotesk Medium'
-    Font.Style = [fsBold]
-    ParentFont = False
-    TabOrder = 3
-    OnClick = btn5Click
-  end
-  object btn7: TButton
-    Left = 8
-    Top = 384
-    Width = 209
-    Height = 49
-    Caption = 'DATA POIN SISWA'
-    Font.Charset = ANSI_CHARSET
-    Font.Color = clWindowText
-    Font.Height = -16
-    Font.Name = 'Vastago Grotesk Medium'
-    Font.Style = [fsBold]
-    ParentFont = False
-    TabOrder = 4
-    OnClick = btn7Click
-  end
-  object ZConnection1: TZConnection
-    ControlsCodePage = cGET_ACP
-    UTF8StringsAsWideField = False
-    AutoEncodeStrings = False
-    Connected = True
-    HostName = 'Localhost'
-    Port = 3306
-    Database = 'db_laporansiswa'
-    User = 'root'
-    Protocol = 'mysql'
-    LibraryLocation = 
-      'C:\Users\Asus\Documents\TUGAS SEMESTER 4\Pemrograman Visual 2\Tu' +
-      'gas_Akhir\libmysql.dll'
-    Left = 745
-    Top = 69
+    object l_3: TLabel
+      Left = 1032
+      Top = 80
+      Width = 264
+      Height = 27
+      Caption = 'PEMROGRAMAN VISUAL 2'
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -21
+      Font.Name = 'Vastago Grotesk SemiBold'
+      Font.Style = [fsBold]
+      ParentFont = False
+    end
+    object l_1: TLabel
+      Left = 48
+      Top = 80
+      Width = 296
+      Height = 27
+      Caption = 'DATA PELANGGARAN  SISWA'
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -21
+      Font.Name = 'Vastago Grotesk Bold'
+      Font.Style = [fsBold]
+      ParentFont = False
+    end
   end
   object ZQuery1: TZQuery
-    Connection = ZConnection1
-    Active = True
     SQL.Strings = (
       'select * from tb_siswa')
     Params = <>
-    Left = 809
+    Left = 657
     Top = 69
   end
   object ds1: TDataSource
     DataSet = ZQuery1
-    Left = 976
-    Top = 72
+    Left = 824
+    Top = 64
   end
   object ZQuery2: TZQuery
     Params = <>
-    Left = 865
+    Left = 713
     Top = 69
   end
   object ZQuery3: TZQuery
     Params = <>
-    Left = 921
+    Left = 769
     Top = 69
   end
   object ds2: TDataSource
-    Left = 1025
-    Top = 69
+    Left = 865
+    Top = 68
   end
   object ds3: TDataSource
-    Left = 1073
-    Top = 69
+    Left = 905
+    Top = 68
   end
 end

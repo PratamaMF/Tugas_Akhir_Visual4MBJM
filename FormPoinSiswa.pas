@@ -9,6 +9,14 @@ uses
 
 type
   TForm14 = class(TForm)
+    pnl1: TPanel;
+    pnl2: TPanel;
+    l_3: TLabel;
+    l_1: TLabel;
+    btn1: TButton;
+    btn2: TButton;
+    DBGrid1: TDBGrid;
+    l_2: TLabel;
     procedure btnDatasiswaClick(Sender: TObject);
     procedure btn2Click(Sender: TObject);
     procedure btn1Click(Sender: TObject);
