@@ -1,6 +1,6 @@
 object Form12: TForm12
-  Left = 125
-  Top = 157
+  Left = 169
+  Top = 132
   Width = 1356
   Height = 699
   Caption = 'Input Data Poin Pelanggaran'
@@ -53,6 +53,7 @@ object Form12: TForm12
       Height = 41
       Caption = 'SIMPAN'
       TabOrder = 0
+      OnClick = btnSimpanClick
     end
     object btnEdit: TButton
       Left = 592
@@ -61,6 +62,7 @@ object Form12: TForm12
       Height = 41
       Caption = 'EDIT'
       TabOrder = 1
+      OnClick = btnEditClick
     end
     object btnHapus: TButton
       Left = 592
@@ -69,6 +71,7 @@ object Form12: TForm12
       Height = 41
       Caption = 'HAPUS'
       TabOrder = 2
+      OnClick = btnHapusClick
     end
     object btn6: TButton
       Left = 592
@@ -77,18 +80,45 @@ object Form12: TForm12
       Height = 41
       Caption = 'CLEAR FORM'
       TabOrder = 3
+      OnClick = btn6Click
     end
     object DBGrid1: TDBGrid
       Left = 40
       Top = 192
-      Width = 513
+      Width = 529
       Height = 297
+      DataSource = ds1
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -13
+      Font.Name = 'Tahoma'
+      Font.Style = []
+      ParentFont = False
       TabOrder = 4
       TitleFont.Charset = DEFAULT_CHARSET
       TitleFont.Color = clWindowText
-      TitleFont.Height = -11
+      TitleFont.Height = -13
       TitleFont.Name = 'Tahoma'
       TitleFont.Style = []
+      OnCellClick = DBGrid1CellClick
+      Columns = <
+        item
+          Expanded = False
+          FieldName = 'poin_id'
+          Visible = True
+        end
+        item
+          Expanded = False
+          FieldName = 'nama_pelanggaran'
+          Width = 370
+          Visible = True
+        end
+        item
+          Expanded = False
+          FieldName = 'bobot'
+          Width = 45
+          Visible = True
+        end>
     end
     object EdtNama_pelanggaran: TEdit
       Left = 216
@@ -152,11 +182,16 @@ object Form12: TForm12
     end
   end
   object ZQuery1: TZQuery
+    Connection = Form10.ZConnection1
+    Active = True
+    SQL.Strings = (
+      'select * from tb_poin_pelanggaran')
     Params = <>
     Left = 816
     Top = 104
   end
   object ds1: TDataSource
+    DataSet = ZQuery1
     Left = 816
     Top = 168
   end

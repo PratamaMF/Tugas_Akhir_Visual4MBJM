@@ -1,6 +1,6 @@
 object Form11: TForm11
-  Left = 186
-  Top = 142
+  Left = 141
+  Top = 150
   Width = 1356
   Height = 706
   Caption = 'Input Data Poin Prestasi'
@@ -53,6 +53,7 @@ object Form11: TForm11
       Height = 41
       Caption = 'SIMPAN'
       TabOrder = 0
+      OnClick = btnSimpanClick
     end
     object btnEdit: TButton
       Left = 600
@@ -61,6 +62,7 @@ object Form11: TForm11
       Height = 41
       Caption = 'EDIT'
       TabOrder = 1
+      OnClick = btnEditClick
     end
     object btnHapus: TButton
       Left = 600
@@ -69,6 +71,7 @@ object Form11: TForm11
       Height = 41
       Caption = 'HAPUS'
       TabOrder = 2
+      OnClick = btnHapusClick
     end
     object EdtNama_prestasi: TEdit
       Left = 224
@@ -103,18 +106,39 @@ object Form11: TForm11
       Height = 41
       Caption = 'CLEAR FORM'
       TabOrder = 5
+      OnClick = btn6Click
     end
     object DBGrid1: TDBGrid
       Left = 48
       Top = 200
       Width = 513
       Height = 329
+      DataSource = ds1
       TabOrder = 6
       TitleFont.Charset = DEFAULT_CHARSET
       TitleFont.Color = clWindowText
       TitleFont.Height = -11
       TitleFont.Name = 'Tahoma'
       TitleFont.Style = []
+      OnCellClick = DBGrid1CellClick
+      Columns = <
+        item
+          Expanded = False
+          FieldName = 'poin_id'
+          Visible = True
+        end
+        item
+          Expanded = False
+          FieldName = 'nama_prestasi'
+          Width = 350
+          Visible = True
+        end
+        item
+          Alignment = taLeftJustify
+          Expanded = False
+          FieldName = 'bobot'
+          Visible = True
+        end>
     end
     object pnl2: TPanel
       Left = -16
@@ -150,5 +174,19 @@ object Form11: TForm11
         ParentFont = False
       end
     end
+  end
+  object ds1: TDataSource
+    DataSet = ZQuery1
+    Left = 952
+    Top = 200
+  end
+  object ZQuery1: TZQuery
+    Connection = Form10.ZConnection1
+    Active = True
+    SQL.Strings = (
+      'select * from tb_poin_prestasi')
+    Params = <>
+    Left = 952
+    Top = 136
   end
 end

@@ -1,6 +1,6 @@
 object Form10: TForm10
-  Left = 43
-  Top = 141
+  Left = 189
+  Top = 138
   Width = 1355
   Height = 713
   Caption = 'Data Poin'
@@ -22,7 +22,7 @@ object Form10: TForm10
     TabOrder = 0
     object l_2: TLabel
       Left = 40
-      Top = 144
+      Top = 152
       Width = 116
       Height = 18
       Caption = 'POIN PRESTASI :'
@@ -34,8 +34,8 @@ object Form10: TForm10
       ParentFont = False
     end
     object l_5: TLabel
-      Left = 504
-      Top = 144
+      Left = 648
+      Top = 152
       Width = 149
       Height = 18
       Caption = 'POIN PELANGGARAN :'
@@ -79,26 +79,77 @@ object Form10: TForm10
     object DBGrid1: TDBGrid
       Left = 40
       Top = 176
-      Width = 417
+      Width = 577
       Height = 377
+      DataSource = Form11.ds1
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -13
+      Font.Name = 'Tahoma'
+      Font.Style = []
+      ParentFont = False
       TabOrder = 2
       TitleFont.Charset = DEFAULT_CHARSET
       TitleFont.Color = clWindowText
-      TitleFont.Height = -11
+      TitleFont.Height = -13
       TitleFont.Name = 'Tahoma'
       TitleFont.Style = []
+      Columns = <
+        item
+          Expanded = False
+          FieldName = 'poin_id'
+          Visible = True
+        end
+        item
+          Expanded = False
+          FieldName = 'nama_prestasi'
+          Width = 400
+          Visible = True
+        end
+        item
+          Alignment = taLeftJustify
+          Expanded = False
+          FieldName = 'bobot'
+          Width = 50
+          Visible = True
+        end>
     end
     object DBGrid2: TDBGrid
-      Left = 504
+      Left = 648
       Top = 176
-      Width = 425
+      Width = 609
       Height = 377
+      DataSource = Form12.ds1
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -13
+      Font.Name = 'Tahoma'
+      Font.Style = []
+      ParentFont = False
       TabOrder = 3
       TitleFont.Charset = DEFAULT_CHARSET
       TitleFont.Color = clWindowText
-      TitleFont.Height = -11
+      TitleFont.Height = -13
       TitleFont.Name = 'Tahoma'
       TitleFont.Style = []
+      Columns = <
+        item
+          Expanded = False
+          FieldName = 'poin_id'
+          Visible = True
+        end
+        item
+          Expanded = False
+          FieldName = 'nama_pelanggaran'
+          Width = 450
+          Visible = True
+        end
+        item
+          Expanded = False
+          FieldName = 'bobot'
+          Width = 45
+          Visible = True
+        end>
     end
     object pnl2: TPanel
       Left = -8
@@ -134,5 +185,21 @@ object Form10: TForm10
         ParentFont = False
       end
     end
+  end
+  object ZConnection1: TZConnection
+    ControlsCodePage = cGET_ACP
+    UTF8StringsAsWideField = False
+    AutoEncodeStrings = False
+    Connected = True
+    HostName = 'Localhost'
+    Port = 3306
+    Database = 'db_laporansiswa'
+    User = 'root'
+    Protocol = 'mysql'
+    LibraryLocation = 
+      'C:\Users\Asus\Documents\TUGAS SEMESTER 4\Pemrograman Visual 2\Tu' +
+      'gas_Akhir\libmysql.dll'
+    Left = 1072
+    Top = 88
   end
 end

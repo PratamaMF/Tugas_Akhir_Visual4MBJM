@@ -4,7 +4,8 @@ interface
 
 uses
   Windows, Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms,
-  Dialogs, Grids, DBGrids, StdCtrls, ExtCtrls;
+  Dialogs, Grids, DBGrids, StdCtrls, ExtCtrls, ZAbstractConnection,
+  ZConnection;
 
 type
   TForm10 = class(TForm)
@@ -18,6 +19,7 @@ type
     pnl2: TPanel;
     l_3: TLabel;
     l_1: TLabel;
+    ZConnection1: TZConnection;
     procedure btn6Click(Sender: TObject);
     procedure btn7Click(Sender: TObject);
   private
