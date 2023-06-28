@@ -1,6 +1,6 @@
 object Form12: TForm12
-  Left = 169
-  Top = 132
+  Left = -62
+  Top = 225
   Width = 1356
   Height = 699
   Caption = 'Input Data Poin Pelanggaran'
