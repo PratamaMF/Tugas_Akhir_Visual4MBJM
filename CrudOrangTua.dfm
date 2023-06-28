@@ -22,7 +22,7 @@ object Form5: TForm5
     TabOrder = 0
     object l_2: TLabel
       Left = 40
-      Top = 112
+      Top = 104
       Width = 26
       Height = 19
       Caption = 'NIK'
@@ -35,7 +35,7 @@ object Form5: TForm5
     end
     object l_6: TLabel
       Left = 40
-      Top = 144
+      Top = 136
       Width = 45
       Height = 19
       Caption = 'NAMA'
@@ -48,7 +48,7 @@ object Form5: TForm5
     end
     object l_7: TLabel
       Left = 40
-      Top = 176
+      Top = 168
       Width = 94
       Height = 19
       Caption = 'PENDIDIKAN'
@@ -61,7 +61,7 @@ object Form5: TForm5
     end
     object l_8: TLabel
       Left = 40
-      Top = 208
+      Top = 200
       Width = 86
       Height = 19
       Caption = 'PEKERJAAN'
@@ -74,7 +74,7 @@ object Form5: TForm5
     end
     object l_9: TLabel
       Left = 40
-      Top = 240
+      Top = 232
       Width = 96
       Height = 19
       Caption = 'NO TELEPON'
@@ -87,7 +87,7 @@ object Form5: TForm5
     end
     object l_10: TLabel
       Left = 40
-      Top = 272
+      Top = 264
       Width = 63
       Height = 19
       Caption = 'ALAMAT'
@@ -100,7 +100,7 @@ object Form5: TForm5
     end
     object l_11: TLabel
       Left = 40
-      Top = 304
+      Top = 296
       Width = 56
       Height = 19
       Caption = 'AGAMA'
@@ -113,7 +113,7 @@ object Form5: TForm5
     end
     object l_12: TLabel
       Left = 40
-      Top = 336
+      Top = 328
       Width = 113
       Height = 19
       Caption = 'JENIS KELAMIN'
@@ -126,7 +126,7 @@ object Form5: TForm5
     end
     object l_17: TLabel
       Left = 40
-      Top = 368
+      Top = 360
       Width = 60
       Height = 19
       Caption = 'STATUS'
@@ -152,7 +152,7 @@ object Form5: TForm5
     end
     object btnSimpan: TButton
       Left = 40
-      Top = 424
+      Top = 416
       Width = 129
       Height = 41
       Caption = 'SIMPAN'
@@ -161,7 +161,7 @@ object Form5: TForm5
     end
     object btnEdit: TButton
       Left = 176
-      Top = 424
+      Top = 416
       Width = 129
       Height = 41
       Caption = 'EDIT'
@@ -170,7 +170,7 @@ object Form5: TForm5
     end
     object btnHapus: TButton
       Left = 312
-      Top = 424
+      Top = 416
       Width = 129
       Height = 41
       Caption = 'HAPUS'
@@ -179,7 +179,7 @@ object Form5: TForm5
     end
     object EdtNik: TEdit
       Left = 216
-      Top = 112
+      Top = 104
       Width = 361
       Height = 27
       Font.Charset = DEFAULT_CHARSET
@@ -192,7 +192,7 @@ object Form5: TForm5
     end
     object EdtNama: TEdit
       Left = 216
-      Top = 144
+      Top = 136
       Width = 361
       Height = 27
       Font.Charset = DEFAULT_CHARSET
@@ -205,7 +205,7 @@ object Form5: TForm5
     end
     object EdtPekerjaan: TEdit
       Left = 216
-      Top = 208
+      Top = 200
       Width = 361
       Height = 27
       Font.Charset = DEFAULT_CHARSET
@@ -218,7 +218,7 @@ object Form5: TForm5
     end
     object CbbJKelamin: TComboBox
       Left = 216
-      Top = 336
+      Top = 328
       Width = 185
       Height = 27
       Font.Charset = DEFAULT_CHARSET
@@ -236,7 +236,7 @@ object Form5: TForm5
     end
     object CbbStatus: TComboBox
       Left = 216
-      Top = 368
+      Top = 360
       Width = 185
       Height = 27
       Font.Charset = DEFAULT_CHARSET
@@ -322,7 +322,7 @@ object Form5: TForm5
     end
     object btn1: TButton
       Left = 448
-      Top = 424
+      Top = 416
       Width = 129
       Height = 41
       Caption = 'CLEAR FORM'
@@ -331,7 +331,7 @@ object Form5: TForm5
     end
     object EdtNo_telp: TEdit
       Left = 216
-      Top = 240
+      Top = 232
       Width = 361
       Height = 27
       Font.Charset = DEFAULT_CHARSET
@@ -344,7 +344,7 @@ object Form5: TForm5
     end
     object EdtAlamat: TEdit
       Left = 216
-      Top = 272
+      Top = 264
       Width = 361
       Height = 27
       Font.Charset = DEFAULT_CHARSET
@@ -357,7 +357,7 @@ object Form5: TForm5
     end
     object EdtAgama: TEdit
       Left = 216
-      Top = 304
+      Top = 296
       Width = 361
       Height = 27
       Font.Charset = DEFAULT_CHARSET
@@ -370,7 +370,7 @@ object Form5: TForm5
     end
     object CbbPendidikan: TComboBox
       Left = 216
-      Top = 176
+      Top = 168
       Width = 185
       Height = 27
       Font.Charset = DEFAULT_CHARSET
@@ -421,6 +421,14 @@ object Form5: TForm5
         Font.Style = [fsBold]
         ParentFont = False
       end
+    end
+    object btn2: TButton
+      Left = 232
+      Top = 472
+      Width = 145
+      Height = 41
+      Caption = 'HUBUNGAN'
+      TabOrder = 15
     end
   end
   object ZConnection1: TZConnection

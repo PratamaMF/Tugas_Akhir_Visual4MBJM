@@ -40,28 +40,29 @@ var
 implementation
 
 uses FormSiswa, FormOrangTua, FormKelas, FormWaliKelas, FormPoin,
-  FormPoinSiswa, FormLaporan;
+  FormPoinSiswa, FormLaporan, CrudSiswa, CrudOrangTua, CrudKelas,
+  CrudWaliKelas;
 
 {$R *.dfm}
 
 procedure TForm1.btnDatasiswaClick(Sender: TObject);
 begin
-  Form2.showmodal;
+  Form3.showmodal;
 end;
 
 procedure TForm1.btn2Click(Sender: TObject);
 begin
-  Form4.showmodal;
+  Form5.showmodal;
 end;
 
 procedure TForm1.btn1Click(Sender: TObject);
 begin
-  Form6.showmodal;
+  Form7.showmodal;
 end;
 
 procedure TForm1.btn4Click(Sender: TObject);
 begin
- Form8.showmodal;
+ Form9.showmodal;
 end;
 
 procedure TForm1.btn5Click(Sender: TObject);

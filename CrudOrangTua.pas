@@ -41,18 +41,13 @@ type
     l_3: TLabel;
     l_1: TLabel;
     l_4: TLabel;
+    btn2: TButton;
     procedure btnSimpanClick(Sender: TObject);
     procedure btnEditClick(Sender: TObject);
     procedure btnHapusClick(Sender: TObject);
     procedure DBGrid1CellClick(Column: TColumn);
     procedure btn1Click(Sender: TObject);
-    procedure btn2Click(Sender: TObject);
-    procedure btnDatasiswaClick(Sender: TObject);
     procedure btn6Click(Sender: TObject);
-    procedure btn4Click(Sender: TObject);
-    procedure btn5Click(Sender: TObject);
-    procedure btn7Click(Sender: TObject);
-    procedure btn3Click(Sender: TObject);
   private
     { Private declarations }
   public
@@ -132,39 +127,9 @@ begin
   CbbStatus.Clear;
 end;
 
-procedure TForm5.btn2Click(Sender: TObject);
-begin
-Form4.showmodal;
-end;
-
-procedure TForm5.btnDatasiswaClick(Sender: TObject);
-begin
-Form2.showmodal;
-end;
-
 procedure TForm5.btn6Click(Sender: TObject);
 begin
 Form6.showmodal;
-end;
-
-procedure TForm5.btn4Click(Sender: TObject);
-begin
-Form8.showmodal;
-end;
-
-procedure TForm5.btn5Click(Sender: TObject);
-begin
-Form10.showmodal;
-end;
-
-procedure TForm5.btn7Click(Sender: TObject);
-begin
-Form14.showmodal;
-end;
-
-procedure TForm5.btn3Click(Sender: TObject);
-begin
-Form13.showmodal;
 end;
 
 end.

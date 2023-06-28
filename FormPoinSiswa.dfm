@@ -1,6 +1,6 @@
 object Form14: TForm14
-  Left = 57
-  Top = 181
+  Left = 191
+  Top = 212
   Width = 1353
   Height = 694
   Caption = 'DATA POIN SISWA'
@@ -80,6 +80,7 @@ object Form14: TForm14
       Font.Style = []
       ParentFont = False
       TabOrder = 1
+      OnClick = btn1Click
     end
     object btn2: TButton
       Left = 272
@@ -94,6 +95,7 @@ object Form14: TForm14
       Font.Style = []
       ParentFont = False
       TabOrder = 2
+      OnClick = btn2Click
     end
     object DBGrid1: TDBGrid
       Left = 56

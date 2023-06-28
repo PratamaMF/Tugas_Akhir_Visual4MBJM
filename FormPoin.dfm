@@ -1,6 +1,6 @@
 object Form10: TForm10
-  Left = 113
-  Top = 156
+  Left = 43
+  Top = 141
   Width = 1355
   Height = 713
   Caption = 'Data Poin'
@@ -59,6 +59,7 @@ object Form10: TForm10
       Font.Style = []
       ParentFont = False
       TabOrder = 0
+      OnClick = btn6Click
     end
     object btn7: TButton
       Left = 216
@@ -73,6 +74,7 @@ object Form10: TForm10
       Font.Style = []
       ParentFont = False
       TabOrder = 1
+      OnClick = btn7Click
     end
     object DBGrid1: TDBGrid
       Left = 40

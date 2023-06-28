@@ -1,6 +1,6 @@
 object Form15: TForm15
-  Left = 87
-  Top = 173
+  Left = 192
+  Top = 178
   Width = 1352
   Height = 703
   Caption = 'Input Prestasi'

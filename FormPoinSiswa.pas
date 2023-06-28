@@ -36,7 +36,7 @@ var
 implementation
 
 uses FormSiswa, FormOrangTua, FormKelas, FormWaliKelas, FormPoin,
-  FormLaporan;
+  FormLaporan, CrudPelanggaran, CrudPrestasi;
 
 {$R *.dfm}
 
@@ -47,12 +47,12 @@ end;
 
 procedure TForm14.btn2Click(Sender: TObject);
 begin
-Form4.showmodal;
+Form16.showmodal;
 end;
 
 procedure TForm14.btn1Click(Sender: TObject);
 begin
-Form6.showmodal;
+Form15.showmodal;
 end;
 
 procedure TForm14.btn4Click(Sender: TObject);

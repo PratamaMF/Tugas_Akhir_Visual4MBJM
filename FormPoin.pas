@@ -25,6 +25,8 @@ type
     procedure btn5Click(Sender: TObject);
     procedure btn8Click(Sender: TObject);
     procedure btn3Click(Sender: TObject);
+    procedure btn6Click(Sender: TObject);
+    procedure btn7Click(Sender: TObject);
   private
     { Private declarations }
   public
@@ -37,7 +39,7 @@ var
 implementation
 
 uses FormSiswa, FormOrangTua, FormKelas, FormWaliKelas, FormPoinSiswa,
-  FormLaporan;
+  FormLaporan, CrudPoinPrestasi, CrudPoinPelanggaran;
 
 {$R *.dfm}
 
@@ -74,6 +76,16 @@ end;
 procedure TForm10.btn3Click(Sender: TObject);
 begin
 Form13.showmodal;
+end;
+
+procedure TForm10.btn6Click(Sender: TObject);
+begin
+ Form11.showmodal;
+end;
+
+procedure TForm10.btn7Click(Sender: TObject);
+begin
+  Form12.showmodal;
 end;
 
 end.
