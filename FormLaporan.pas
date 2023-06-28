@@ -31,6 +31,8 @@ type
     pnl2: TPanel;
     l_3: TLabel;
     l_1: TLabel;
+    dsHub: TDataSource;
+    ZQueryHub: TZQuery;
   private
     { Private declarations }
   public

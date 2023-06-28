@@ -608,7 +608,6 @@ object Form16: TForm16
   end
   object ZQueryPelanggaran: TZQuery
     Connection = Form14.ZConnection1
-    Active = True
     SQL.Strings = (
       'select * from tb_poin_pelanggaran')
     Params = <>
@@ -622,7 +621,6 @@ object Form16: TForm16
   end
   object ZQuery1: TZQuery
     Connection = Form14.ZConnection1
-    Active = True
     SQL.Strings = (
       
         'SELECT *  FROM tb_siswa JOIN tb_walikelas  ON tb_siswa.siswa_id ' +
@@ -634,7 +632,6 @@ object Form16: TForm16
   end
   object ZQueryRiwayat: TZQuery
     Connection = Form14.ZConnection1
-    Active = True
     SQL.Strings = (
       'select * from tb_riwayat_poinn')
     Params = <>
