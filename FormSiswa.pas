@@ -12,16 +12,6 @@ type
     pnl2: TPanel;
     l_3: TLabel;
     l_1: TLabel;
-    procedure btnTambahClick(Sender: TObject);
-    procedure btnData_orangtuaClick(Sender: TObject);
-    procedure btnDatasiswaClick(Sender: TObject);
-    procedure btn2Click(Sender: TObject);
-    procedure btn1Click(Sender: TObject);
-    procedure btn4Click(Sender: TObject);
-    procedure btn5Click(Sender: TObject);
-    procedure btn7Click(Sender: TObject);
-    procedure btn3Click(Sender: TObject);
-    procedure btn6Click(Sender: TObject);
   private
     { Private declarations }
   public
@@ -38,54 +28,5 @@ uses CrudSiswa, FormOrangTua, FormKelas, FormWaliKelas, FormPoin,
 
 {$R *.dfm}
 
-procedure TForm2.btnTambahClick(Sender: TObject);
-begin
-  Form3.showmodal;
-end;
-
-procedure TForm2.btnData_orangtuaClick(Sender: TObject);
-begin
-Form4.showmodal;
-end;
-
-procedure TForm2.btnDatasiswaClick(Sender: TObject);
-begin
-Form2.showmodal;
-end;
-
-procedure TForm2.btn2Click(Sender: TObject);
-begin
-  Form4.showmodal;
-end;
-
-procedure TForm2.btn1Click(Sender: TObject);
-begin
-Form6.showmodal;
-end;
-
-procedure TForm2.btn4Click(Sender: TObject);
-begin
-Form8.showmodal;
-end;
-
-procedure TForm2.btn5Click(Sender: TObject);
-begin
-   Form10.showmodal;
-end;
-
-procedure TForm2.btn7Click(Sender: TObject);
-begin
-Form14.showmodal;
-end;
-
-procedure TForm2.btn3Click(Sender: TObject);
-begin
-Form13.showmodal;
-end;
-
-procedure TForm2.btn6Click(Sender: TObject);
-begin
-Form1.showmodal;
-end;
 
 end.

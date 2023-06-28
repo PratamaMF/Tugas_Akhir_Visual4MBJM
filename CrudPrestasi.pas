@@ -54,13 +54,6 @@ type
     pnl2: TPanel;
     l_3: TLabel;
     l_1: TLabel;
-    procedure btnDatasiswaClick(Sender: TObject);
-    procedure btn2Click(Sender: TObject);
-    procedure btn6Click(Sender: TObject);
-    procedure btn4Click(Sender: TObject);
-    procedure btn5Click(Sender: TObject);
-    procedure btn7Click(Sender: TObject);
-    procedure btn3Click(Sender: TObject);
   private
     { Private declarations }
   public
@@ -76,40 +69,5 @@ uses FormSiswa, FormOrangTua, FormKelas, FormWaliKelas, FormPoin,
   FormPoinSiswa, FormLaporan;
 
 {$R *.dfm}
-
-procedure TForm15.btnDatasiswaClick(Sender: TObject);
-begin
-Form2.showmodal;
-end;
-
-procedure TForm15.btn2Click(Sender: TObject);
-begin
-Form4.showmodal;
-end;
-
-procedure TForm15.btn6Click(Sender: TObject);
-begin
-Form6.showmodal;
-end;
-
-procedure TForm15.btn4Click(Sender: TObject);
-begin
-Form8.showmodal;
-end;
-
-procedure TForm15.btn5Click(Sender: TObject);
-begin
-Form10.showmodal;
-end;
-
-procedure TForm15.btn7Click(Sender: TObject);
-begin
-Form14.showmodal;
-end;
-
-procedure TForm15.btn3Click(Sender: TObject);
-begin
-Form13.showmodal;
-end;
 
 end.

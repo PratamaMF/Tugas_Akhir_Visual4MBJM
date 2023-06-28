@@ -48,6 +48,7 @@ type
     procedure DBGrid1CellClick(Column: TColumn);
     procedure btn1Click(Sender: TObject);
     procedure btn6Click(Sender: TObject);
+    procedure btn2Click(Sender: TObject);
   private
     { Private declarations }
   public
@@ -130,6 +131,11 @@ end;
 procedure TForm5.btn6Click(Sender: TObject);
 begin
 Form6.showmodal;
+end;
+
+procedure TForm5.btn2Click(Sender: TObject);
+begin
+  Form6.ShowModal;
 end;
 
 end.

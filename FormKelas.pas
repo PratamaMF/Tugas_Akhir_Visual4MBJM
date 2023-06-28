@@ -37,13 +37,13 @@ type
     pnl2: TPanel;
     l_3: TLabel;
     l_1: TLabel;
-    procedure btnData_siswaClick(Sender: TObject);
-    procedure btnData_orangtuaClick(Sender: TObject);
+    procedure btnSimpanClick(Sender: TObject);
+    procedure btnEditClick(Sender: TObject);
+    procedure btnHapusClick(Sender: TObject);
     procedure btn1Click(Sender: TObject);
-    procedure btn4Click(Sender: TObject);
-    procedure btn5Click(Sender: TObject);
-    procedure btn6Click(Sender: TObject);
-    procedure btn3Click(Sender: TObject);
+    procedure DBGrid1CellClick(Column: TColumn);
+    procedure DBGrid2CellClick(Column: TColumn);
+    procedure DBGrid3CellClick(Column: TColumn);
   private
     { Private declarations }
   public
@@ -52,49 +52,79 @@ type
 
 var
   Form6: TForm6;
+  id : string;
 
 implementation
 
-uses CrudOrangTua;
-
-uses FormSiswa, FormOrangTua, FormWaliKelas, FormPoin, FormPoinSiswa,
-  FormLaporan;
+uses CrudOrangTua, FormSiswa, FormOrangTua, FormWaliKelas, FormPoin,
+  FormPoinSiswa, FormLaporan;
 
 {$R *.dfm}
 
-procedure TForm6.btnData_siswaClick(Sender: TObject);
+procedure TForm6.btnSimpanClick(Sender: TObject);
 begin
-Form2.showmodal;
+  ZQuery2.SQL.Clear;
+  ZQuery2.SQL.Add('insert into tb_hubungan values(null,"'+EdtId_siswa.Text+'","'+EdtNama_siswa.Text+'","'+EdtId_ortu.Text+'","'+EdtNama_ortu.Text+'","'+CbbStatus_hubungan.Text+'","'+CbbKeterangan.Text+'")');
+  ZQuery2.ExecSQL ;
+
+  ZQuery2.SQL.Clear;
+  ZQuery2.SQL.Add('select * from tb_hubungan');
+  ZQuery2.Open;
+  Showmessage('DATA BERHASIL DI SIMPAN');
 end;
 
-procedure TForm6.btnData_orangtuaClick(Sender: TObject);
+procedure TForm6.btnEditClick(Sender: TObject);
 begin
-Form4.showmodal;
+  ZQuery2.SQL.Clear;
+  ZQuery2.SQL.Add('update tb_hubungan set siswa_id="'+EdtId_siswa.Text+'",nama_siswa="'+EdtNama_siswa.Text+'",ortu_id="'+EdtId_ortu.Text+'",nama_ortu="'+EdtNama_ortu.Text+'",status_hub="'+CbbStatus_hubungan.Text+'",keterangan="'+CbbKeterangan.Text+'" where id="'+id+'"');
+  ZQuery2.ExecSQL;
+
+  ZQuery2.SQL.Clear;
+  ZQuery2.SQL.Add('select * from tb_hubungan');
+  ZQuery2.Open;
+  Showmessage('DATA BERHASIL DI EDIT');
+end;
+
+procedure TForm6.btnHapusClick(Sender: TObject);
+begin
+  ZQuery2.SQL.Clear;
+  ZQuery2.SQL.Add('delete from tb_hubungan where id="'+id+'"');
+  ZQuery2.ExecSQL;
+  ZQuery2.SQL.Clear;
+  ZQuery2.SQL.Add('select * from tb_hubungan');
+  ZQuery2.Open;
+  ShowMessage('DATA BERHASIL DIHAPUS!');
 end;
 
 procedure TForm6.btn1Click(Sender: TObject);
 begin
-Form6.showmodal;
+  EdtNama_siswa.Clear;
+  EdtNama_ortu.Clear;
+  CbbStatus_hubungan.Text:='==== PILIH ====';
+  CbbKeterangan.Text:='==== PILIH ====';
 end;
 
-procedure TForm6.btn4Click(Sender: TObject);
+procedure TForm6.DBGrid1CellClick(Column: TColumn);
 begin
-Form8.showmodal;
+  id:=ZQuery2.Fields[0].AsString;
+  EdtId_siswa.Text:=ZQuery2.Fields[1].AsString;
+  EdtNama_siswa.Text:=ZQuery2.Fields[2].AsString;
+  EdtId_ortu.Text:=ZQuery2.Fields[3].AsString;
+  EdtNama_ortu.Text:=ZQuery2.Fields[4].AsString;
+  CbbStatus_hubungan.Text:=ZQuery2.Fields[5].AsString;
+  CbbKeterangan.Text:=ZQuery2.Fields[6].AsString;
 end;
 
-procedure TForm6.btn5Click(Sender: TObject);
+procedure TForm6.DBGrid2CellClick(Column: TColumn);
 begin
-Form10.showmodal;
+  EdtId_siswa.Text:=ZQuery1.Fields[0].AsString;
+  EdtNama_siswa.Text:=ZQuery1.Fields[3].AsString;
 end;
 
-procedure TForm6.btn6Click(Sender: TObject);
+procedure TForm6.DBGrid3CellClick(Column: TColumn);
 begin
-Form14.showmodal;
-end;
-
-procedure TForm6.btn3Click(Sender: TObject);
-begin
-Form13.showmodal;
+  EdtId_ortu.Text:=ZQuery1.Fields[15].AsString;
+  EdtNama_ortu.Text:=ZQuery1.Fields[17].AsString;
 end;
 
 end.

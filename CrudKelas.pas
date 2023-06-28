@@ -28,13 +28,11 @@ type
     l_3: TLabel;
     l_1: TLabel;
     l_2: TLabel;
-    procedure btnDatasiswaClick(Sender: TObject);
-    procedure btn2Click(Sender: TObject);
-    procedure btn6Click(Sender: TObject);
-    procedure btn4Click(Sender: TObject);
-    procedure btn5Click(Sender: TObject);
-    procedure btn7Click(Sender: TObject);
-    procedure btn3Click(Sender: TObject);
+    procedure btnSimpanClick(Sender: TObject);
+    procedure btnEditClick(Sender: TObject);
+    procedure btnHapusClick(Sender: TObject);
+    procedure btn1Click(Sender: TObject);
+    procedure DBGrid1CellClick(Column: TColumn);
   private
     { Private declarations }
   public
@@ -43,6 +41,7 @@ type
 
 var
   Form7: TForm7;
+  id : string;
 
 implementation
 
@@ -51,39 +50,54 @@ uses FormSiswa, FormOrangTua, FormKelas, FormWaliKelas, FormPoin,
 
 {$R *.dfm}
 
-procedure TForm7.btnDatasiswaClick(Sender: TObject);
+procedure TForm7.btnSimpanClick(Sender: TObject);
 begin
-Form2.showmodal;
+  ZQuery1.SQL.Clear;
+  ZQuery1.SQL.Add('insert into tb_kelas values(null,"'+CbbNama_kelas.Text+'","'+CbbJenis.Text+'","'+CbbJurusan.Text+'")');
+  ZQuery1.ExecSQL ;
+
+  ZQuery1.SQL.Clear;
+  ZQuery1.SQL.Add('select * from tb_kelas');
+  ZQuery1.Open;
+  Showmessage('DATA BERHASIL DI SIMPAN');
 end;
 
-procedure TForm7.btn2Click(Sender: TObject);
+procedure TForm7.btnEditClick(Sender: TObject);
 begin
-Form4.showmodal;
+  ZQuery1.SQL.Clear;
+  ZQuery1.SQL.Add('update tb_kelas set nama_kelas="'+CbbNama_kelas.Text+'",jenis="'+CbbJenis.Text+'",jurusan="'+CbbJurusan.Text+'" where kelas_id="'+id+'"');
+  ZQuery1.ExecSQL;
+
+  ZQuery1.SQL.Clear;
+  ZQuery1.SQL.Add('select * from tb_kelas');
+  ZQuery1.Open;
+  Showmessage('DATA BERHASIL DI EDIT');
 end;
 
-procedure TForm7.btn6Click(Sender: TObject);
+procedure TForm7.btnHapusClick(Sender: TObject);
 begin
-Form6.showmodal;
+  ZQuery1.SQL.Clear;
+  ZQuery1.SQL.Add('delete from tb_kelas where kelas_id="'+id+'"');
+  ZQuery1.ExecSQL;
+  ZQuery1.SQL.Clear;
+  ZQuery1.SQL.Add('select * from tb_kelas');
+  ZQuery1.Open;
+  ShowMessage('DATA BERHASIL DIHAPUS!');
 end;
 
-procedure TForm7.btn4Click(Sender: TObject);
+procedure TForm7.btn1Click(Sender: TObject);
 begin
-Form8.showmodal;
+  CbbNama_kelas.Text:='==== PILIH ====';
+  CbbJenis.Text:='==== PILIH ====';
+  CbbJurusan.Text:='==== PILIH ====';
 end;
 
-procedure TForm7.btn5Click(Sender: TObject);
+procedure TForm7.DBGrid1CellClick(Column: TColumn);
 begin
-Form10.showmodal;
-end;
-
-procedure TForm7.btn7Click(Sender: TObject);
-begin
-Form14.showmodal;
-end;
-
-procedure TForm7.btn3Click(Sender: TObject);
-begin
-Form13.showmodal;
+  id:=ZQuery1.Fields[0].AsString;
+  CbbNama_kelas.Text:=ZQuery1.Fields[1].AsString;
+  CbbJenis.Text:=ZQuery1.Fields[2].AsString;
+  CbbJurusan.Text:=ZQuery1.Fields[3].AsString;
 end;
 
 end.

@@ -1,6 +1,6 @@
 object Form6: TForm6
-  Left = 174
-  Top = 128
+  Left = 173
+  Top = 129
   Width = 1350
   Height = 705
   Caption = 'Input Hubungan'
@@ -123,6 +123,7 @@ object Form6: TForm6
         TitleFont.Height = -13
         TitleFont.Name = 'Tahoma'
         TitleFont.Style = []
+        OnCellClick = DBGrid3CellClick
         Columns = <
           item
             Expanded = False
@@ -143,6 +144,7 @@ object Form6: TForm6
       Height = 41
       Caption = 'SIMPAN'
       TabOrder = 0
+      OnClick = btnSimpanClick
     end
     object btnEdit: TButton
       Left = 480
@@ -151,6 +153,7 @@ object Form6: TForm6
       Height = 41
       Caption = 'EDIT'
       TabOrder = 1
+      OnClick = btnEditClick
     end
     object btnHapus: TButton
       Left = 480
@@ -159,6 +162,7 @@ object Form6: TForm6
       Height = 41
       Caption = 'HAPUS'
       TabOrder = 2
+      OnClick = btnHapusClick
     end
     object btn1: TButton
       Left = 480
@@ -167,6 +171,7 @@ object Form6: TForm6
       Height = 41
       Caption = 'CLEAR FORM'
       TabOrder = 3
+      OnClick = btn1Click
     end
     object CbbStatus_hubungan: TComboBox
       Left = 232
@@ -223,6 +228,7 @@ object Form6: TForm6
       TitleFont.Height = -13
       TitleFont.Name = 'Tahoma'
       TitleFont.Style = []
+      OnCellClick = DBGrid1CellClick
       Columns = <
         item
           Expanded = False
@@ -310,6 +316,7 @@ object Form6: TForm6
       TitleFont.Height = -13
       TitleFont.Name = 'Tahoma'
       TitleFont.Style = []
+      OnCellClick = DBGrid2CellClick
       Columns = <
         item
           Expanded = False

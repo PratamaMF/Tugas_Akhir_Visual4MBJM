@@ -429,6 +429,7 @@ object Form5: TForm5
       Height = 41
       Caption = 'HUBUNGAN'
       TabOrder = 15
+      OnClick = btn2Click
     end
   end
   object ZConnection1: TZConnection

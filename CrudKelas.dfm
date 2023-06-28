@@ -1,6 +1,6 @@
 object Form7: TForm7
-  Left = 179
-  Top = 115
+  Left = 215
+  Top = 124
   Width = 1346
   Height = 710
   Caption = 'Input Data Kelas'
@@ -79,6 +79,7 @@ object Form7: TForm7
       Height = 41
       Caption = 'SIMPAN'
       TabOrder = 0
+      OnClick = btnSimpanClick
     end
     object btnEdit: TButton
       Left = 176
@@ -87,6 +88,7 @@ object Form7: TForm7
       Height = 41
       Caption = 'EDIT'
       TabOrder = 1
+      OnClick = btnEditClick
     end
     object btnHapus: TButton
       Left = 304
@@ -95,6 +97,7 @@ object Form7: TForm7
       Height = 41
       Caption = 'HAPUS'
       TabOrder = 2
+      OnClick = btnHapusClick
     end
     object CbbJenis: TComboBox
       Left = 224
@@ -111,8 +114,8 @@ object Form7: TForm7
       TabOrder = 3
       Text = '==== PILIH ===='
       Items.Strings = (
-        'Pagi'
-        'Siang')
+        'A'
+        'B')
     end
     object CbbJurusan: TComboBox
       Left = 224
@@ -139,6 +142,7 @@ object Form7: TForm7
       Height = 41
       Caption = 'CLEAR FORM'
       TabOrder = 5
+      OnClick = btn1Click
     end
     object CbbNama_kelas: TComboBox
       Left = 224
@@ -162,14 +166,40 @@ object Form7: TForm7
     object DBGrid1: TDBGrid
       Left = 608
       Top = 192
-      Width = 649
+      Width = 361
       Height = 177
+      DataSource = ds1
       TabOrder = 7
       TitleFont.Charset = DEFAULT_CHARSET
       TitleFont.Color = clWindowText
       TitleFont.Height = -11
       TitleFont.Name = 'Tahoma'
       TitleFont.Style = []
+      OnCellClick = DBGrid1CellClick
+      Columns = <
+        item
+          Expanded = False
+          FieldName = 'kelas_id'
+          Visible = True
+        end
+        item
+          Expanded = False
+          FieldName = 'nama_kelas'
+          Width = 90
+          Visible = True
+        end
+        item
+          Expanded = False
+          FieldName = 'jenis'
+          Width = 90
+          Visible = True
+        end
+        item
+          Expanded = False
+          FieldName = 'jurusan'
+          Width = 90
+          Visible = True
+        end>
     end
   end
   object pnl2: TPanel
@@ -226,7 +256,7 @@ object Form7: TForm7
     Connection = ZConnection1
     Active = True
     SQL.Strings = (
-      'select * from tb_ortu')
+      'select * from tb_kelas')
     Params = <>
     Left = 1121
     Top = 61
