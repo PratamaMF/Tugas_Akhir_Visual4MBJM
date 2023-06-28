@@ -144,6 +144,7 @@ object Form9: TForm9
       Height = 41
       Caption = 'SIMPAN'
       TabOrder = 0
+      OnClick = btnSimpanClick
     end
     object btnEdit: TButton
       Left = 184
@@ -152,6 +153,7 @@ object Form9: TForm9
       Height = 41
       Caption = 'EDIT'
       TabOrder = 1
+      OnClick = btnEditClick
     end
     object btnHapus: TButton
       Left = 320
@@ -160,6 +162,7 @@ object Form9: TForm9
       Height = 41
       Caption = 'HAPUS'
       TabOrder = 2
+      OnClick = btnHapusClick
     end
     object EdtNip: TEdit
       Left = 224
@@ -243,6 +246,7 @@ object Form9: TForm9
       Height = 41
       Caption = 'CLEAR FORM'
       TabOrder = 8
+      OnClick = btn1Click
     end
     object EdtNo_telp: TEdit
       Left = 224
@@ -295,12 +299,14 @@ object Form9: TForm9
       Top = 216
       Width = 665
       Height = 201
+      DataSource = ds1
       TabOrder = 12
       TitleFont.Charset = DEFAULT_CHARSET
       TitleFont.Color = clWindowText
       TitleFont.Height = -11
       TitleFont.Name = 'Tahoma'
       TitleFont.Style = []
+      OnCellClick = DBGrid1CellClick
     end
   end
   object pnl2: TPanel
@@ -357,7 +363,7 @@ object Form9: TForm9
     Connection = ZConnection1
     Active = True
     SQL.Strings = (
-      'select * from tb_ortu')
+      'select * from tb_walikelas')
     Params = <>
     Left = 1121
     Top = 77
