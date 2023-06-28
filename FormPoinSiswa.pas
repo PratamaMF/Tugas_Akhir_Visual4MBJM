@@ -17,6 +17,9 @@ type
     btn2: TButton;
     DBGrid1: TDBGrid;
     l_2: TLabel;
+    ZConnection1: TZConnection;
+    ZQuery1: TZQuery;
+    ds1: TDataSource;
     procedure btn2Click(Sender: TObject);
     procedure btn1Click(Sender: TObject);
   private
