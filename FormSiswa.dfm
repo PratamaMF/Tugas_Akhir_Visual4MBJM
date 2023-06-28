@@ -41,7 +41,7 @@ object Form2: TForm2
         ParentFont = False
       end
       object l_1: TLabel
-        Left = 24
+        Left = 32
         Top = 80
         Width = 71
         Height = 27

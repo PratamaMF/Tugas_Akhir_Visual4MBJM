@@ -8,21 +8,6 @@ uses
 
 type
   TForm4 = class(TForm)
-    pnl1: TPanel;
-    l_4: TLabel;
-    pnl2: TPanel;
-    l_3: TLabel;
-    grp1: TGroupBox;
-    l_1: TLabel;
-    btnData_siswa: TButton;
-    btnData_orangtua: TButton;
-    btn3: TButton;
-    btnTambah: TButton;
-    DBGrid1: TDBGrid;
-    btn1: TButton;
-    btn4: TButton;
-    btn5: TButton;
-    btn7: TButton;
     procedure btnData_orangtuaClick(Sender: TObject);
     procedure btnTambahClick(Sender: TObject);
     procedure btn7Click(Sender: TObject);
