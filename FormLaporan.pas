@@ -16,7 +16,6 @@ type
     btn6: TButton;
     btn7: TButton;
     btn8: TButton;
-    DBGrid1: TDBGrid;
     ZConnectioncon1: TZConnection;
     ZQuery1: TZQuery;
     ds1: TDataSource;
@@ -31,8 +30,10 @@ type
     pnl2: TPanel;
     l_3: TLabel;
     l_1: TLabel;
-    dsHub: TDataSource;
     ZQueryHub: TZQuery;
+    DBGrid1: TDBGrid;
+    procedure btn2Click(Sender: TObject);
+    procedure btn6Click(Sender: TObject);
   private
     { Private declarations }
   public
@@ -48,4 +49,14 @@ uses FormSiswa, FormOrangTua, FormKelas, FormWaliKelas, FormPoin,
   FormPoinSiswa;
 
 {$R *.dfm}
+procedure TForm13.btn2Click(Sender: TObject);
+begin
+  frxReportData_siswa.ShowReport();
+end;
+
+procedure TForm13.btn6Click(Sender: TObject);
+begin
+  frxReportPrestasi.ShowReport();
+end;
+
 end.

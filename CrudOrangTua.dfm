@@ -249,8 +249,8 @@ object Form5: TForm5
       TabOrder = 7
       Text = '==== PILIH ===='
       Items.Strings = (
-        'Kandung'
-        'Wali')
+        'AYAH KANDUNG'
+        'IBU KANDUNG')
     end
     object DBGrid1: TDBGrid
       Left = 608
