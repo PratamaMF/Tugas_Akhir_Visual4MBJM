@@ -17,12 +17,15 @@ uses
   FormLaporan in 'FormLaporan.pas' {Form13},
   FormPoinSiswa in 'FormPoinSiswa.pas' {Form14},
   CrudPrestasi in 'CrudPrestasi.pas' {Form15},
-  CrudPelanggaran in 'CrudPelanggaran.pas' {Form16};
+  CrudPelanggaran in 'CrudPelanggaran.pas' {Form16},
+  Login in 'Login.pas' {Form17},
+  dm in 'dm.pas' {dm1: TDataModule};
 
 {$R *.res}
 
 begin
   Application.Initialize;
+  Application.CreateForm(TForm17, Form17);
   Application.CreateForm(TForm1, Form1);
   Application.CreateForm(TForm2, Form2);
   Application.CreateForm(TForm3, Form3);
@@ -39,5 +42,6 @@ begin
   Application.CreateForm(TForm14, Form14);
   Application.CreateForm(TForm15, Form15);
   Application.CreateForm(TForm16, Form16);
+  Application.CreateForm(Tdm1, dm1);
   Application.Run;
 end.

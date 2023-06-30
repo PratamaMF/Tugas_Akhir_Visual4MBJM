@@ -11,22 +11,22 @@ type
     pnl1: TPanel;
     grp1: TGroupBox;
     btnDatasiswa: TButton;
-    btn2: TButton;
+    btnDataOrangTua: TButton;
     l_1: TLabel;
     pnl2: TPanel;
     l_3: TLabel;
-    btn3: TButton;
-    btn1: TButton;
-    btn4: TButton;
-    btn5: TButton;
-    btn7: TButton;
+    btnLaporan: TButton;
+    btnDataKelas: TButton;
+    btnDataWaliKelas: TButton;
+    btnDataPoin: TButton;
+    btnDataPoinSiswa: TButton;
     procedure btnDatasiswaClick(Sender: TObject);
-    procedure btn2Click(Sender: TObject);
-    procedure btn1Click(Sender: TObject);
-    procedure btn4Click(Sender: TObject);
-    procedure btn5Click(Sender: TObject);
+    procedure btnDataOrangTuaClick(Sender: TObject);
+    procedure btnDataKelasClick(Sender: TObject);
+    procedure btnDataWaliKelasClick(Sender: TObject);
+    procedure btnDataPoinClick(Sender: TObject);
     procedure btn7Click(Sender: TObject);
-    procedure btn3Click(Sender: TObject);
+    procedure btnLaporanClick(Sender: TObject);
     procedure btn6Click(Sender: TObject);
   private
     { Private declarations }
@@ -50,22 +50,22 @@ begin
   Form3.showmodal;
 end;
 
-procedure TForm1.btn2Click(Sender: TObject);
+procedure TForm1.btnDataOrangTuaClick(Sender: TObject);
 begin
   Form5.showmodal;
 end;
 
-procedure TForm1.btn1Click(Sender: TObject);
+procedure TForm1.btnDataKelasClick(Sender: TObject);
 begin
   Form7.showmodal;
 end;
 
-procedure TForm1.btn4Click(Sender: TObject);
+procedure TForm1.btnDataWaliKelasClick(Sender: TObject);
 begin
  Form9.showmodal;
 end;
 
-procedure TForm1.btn5Click(Sender: TObject);
+procedure TForm1.btnDataPoinClick(Sender: TObject);
 begin
   Form10.showmodal;
 end;
@@ -75,7 +75,7 @@ begin
  Form14.showmodal;
 end;
 
-procedure TForm1.btn3Click(Sender: TObject);
+procedure TForm1.btnLaporanClick(Sender: TObject);
 begin
   Form13.showmodal;
 end;

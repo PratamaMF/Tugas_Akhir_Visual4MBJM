@@ -1,6 +1,6 @@
 object Form1: TForm1
-  Left = 109
-  Top = 261
+  Left = 234
+  Top = 149
   Width = 1354
   Height = 715
   Caption = 'FormUtama'
@@ -77,7 +77,7 @@ object Form1: TForm1
         TabOrder = 0
         OnClick = btnDatasiswaClick
       end
-      object btn2: TButton
+      object btnDataOrangTua: TButton
         Left = 24
         Top = 160
         Width = 209
@@ -90,9 +90,9 @@ object Form1: TForm1
         Font.Style = [fsBold]
         ParentFont = False
         TabOrder = 1
-        OnClick = btn2Click
+        OnClick = btnDataOrangTuaClick
       end
-      object btn3: TButton
+      object btnLaporan: TButton
         Left = 24
         Top = 600
         Width = 209
@@ -105,9 +105,9 @@ object Form1: TForm1
         Font.Style = [fsBold]
         ParentFont = False
         TabOrder = 2
-        OnClick = btn3Click
+        OnClick = btnLaporanClick
       end
-      object btn1: TButton
+      object btnDataKelas: TButton
         Left = 24
         Top = 216
         Width = 209
@@ -120,9 +120,9 @@ object Form1: TForm1
         Font.Style = [fsBold]
         ParentFont = False
         TabOrder = 3
-        OnClick = btn1Click
+        OnClick = btnDataKelasClick
       end
-      object btn4: TButton
+      object btnDataWaliKelas: TButton
         Left = 24
         Top = 272
         Width = 209
@@ -135,9 +135,9 @@ object Form1: TForm1
         Font.Style = [fsBold]
         ParentFont = False
         TabOrder = 4
-        OnClick = btn4Click
+        OnClick = btnDataWaliKelasClick
       end
-      object btn5: TButton
+      object btnDataPoin: TButton
         Left = 24
         Top = 328
         Width = 209
@@ -150,9 +150,9 @@ object Form1: TForm1
         Font.Style = [fsBold]
         ParentFont = False
         TabOrder = 5
-        OnClick = btn5Click
+        OnClick = btnDataPoinClick
       end
-      object btn7: TButton
+      object btnDataPoinSiswa: TButton
         Left = 24
         Top = 384
         Width = 209

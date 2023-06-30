@@ -15,7 +15,7 @@ object Form13: TForm13
   TextHeight = 13
   object pnl1: TPanel
     Left = 0
-    Top = -10
+    Top = -2
     Width = 1313
     Height = 673
     Color = clWhite
