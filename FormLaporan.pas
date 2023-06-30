@@ -32,8 +32,12 @@ type
     ZQueryHub: TZQuery;
     ZQuery2: TZQuery;
     ZQuery3: TZQuery;
+    ZQuery4: TZQuery;
+    frxDataset1: TfrxDBDataset;
     procedure btn2Click(Sender: TObject);
     procedure btn6Click(Sender: TObject);
+    procedure btn7Click(Sender: TObject);
+    procedure btn8Click(Sender: TObject);
   private
     { Private declarations }
   public
@@ -57,6 +61,16 @@ end;
 procedure TForm13.btn6Click(Sender: TObject);
 begin
   frxReportPrestasi.ShowReport();
+end;
+
+procedure TForm13.btn7Click(Sender: TObject);
+begin
+frxReportPelanggaran.ShowReport();
+end;
+
+procedure TForm13.btn8Click(Sender: TObject);
+begin
+frxReportLap_akhir.ShowReport();
 end;
 
 end.
