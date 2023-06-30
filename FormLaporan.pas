@@ -11,7 +11,6 @@ uses
 type
   TForm13 = class(TForm)
     pnl1: TPanel;
-    l_2: TLabel;
     btn2: TButton;
     btn6: TButton;
     btn7: TButton;
@@ -31,7 +30,8 @@ type
     l_3: TLabel;
     l_1: TLabel;
     ZQueryHub: TZQuery;
-    DBGrid1: TDBGrid;
+    ZQuery2: TZQuery;
+    ZQuery3: TZQuery;
     procedure btn2Click(Sender: TObject);
     procedure btn6Click(Sender: TObject);
   private

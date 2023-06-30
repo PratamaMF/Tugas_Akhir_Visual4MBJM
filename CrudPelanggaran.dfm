@@ -1,6 +1,6 @@
 object Form16: TForm16
-  Left = 123
-  Top = 234
+  Left = 140
+  Top = 117
   Width = 1350
   Height = 700
   Caption = 'Input Pelanggaran'
@@ -347,8 +347,8 @@ object Form16: TForm16
       ParentFont = False
       TabOrder = 8
       Items.Strings = (
-        'Aktif'
-        'Tidak Aktif')
+        'Prestasi'
+        'Pelanggaran')
     end
     object btn1: TButton
       Left = 448
@@ -485,26 +485,6 @@ object Form16: TForm16
         ParentFont = False
       end
     end
-    object DBGrid4: TDBGrid
-      Left = 40
-      Top = 568
-      Width = 1225
-      Height = 73
-      DataSource = dsRiwayat
-      Font.Charset = DEFAULT_CHARSET
-      Font.Color = clWindowText
-      Font.Height = -13
-      Font.Name = 'Tahoma'
-      Font.Style = []
-      ParentFont = False
-      TabOrder = 15
-      TitleFont.Charset = DEFAULT_CHARSET
-      TitleFont.Color = clWindowText
-      TitleFont.Height = -13
-      TitleFont.Name = 'Tahoma'
-      TitleFont.Style = []
-      OnCellClick = DBGrid4CellClick
-    end
     object CbbWakel: TComboBox
       Left = 216
       Top = 312
@@ -517,7 +497,7 @@ object Form16: TForm16
       Font.Style = []
       ItemHeight = 19
       ParentFont = False
-      TabOrder = 16
+      TabOrder = 15
       Text = '==== PILIH ===='
     end
     object EdtTingkat_kelas: TEdit
@@ -531,7 +511,7 @@ object Form16: TForm16
       Font.Name = 'Tahoma'
       Font.Style = []
       ParentFont = False
-      TabOrder = 17
+      TabOrder = 16
     end
     object EdtJurusan: TEdit
       Left = 216
@@ -544,7 +524,7 @@ object Form16: TForm16
       Font.Name = 'Tahoma'
       Font.Style = []
       ParentFont = False
-      TabOrder = 18
+      TabOrder = 17
     end
     object EdtJKelamin: TEdit
       Left = 216
@@ -557,7 +537,7 @@ object Form16: TForm16
       Font.Name = 'Tahoma'
       Font.Style = []
       ParentFont = False
-      TabOrder = 19
+      TabOrder = 18
     end
     object EdtBobot: TEdit
       Left = 216
@@ -570,7 +550,7 @@ object Form16: TForm16
       Font.Name = 'Tahoma'
       Font.Style = []
       ParentFont = False
-      TabOrder = 20
+      TabOrder = 19
     end
     object DBGrid3: TDBGrid
       Left = 608
@@ -584,7 +564,7 @@ object Form16: TForm16
       Font.Name = 'Tahoma'
       Font.Style = []
       ParentFont = False
-      TabOrder = 21
+      TabOrder = 20
       TitleFont.Charset = DEFAULT_CHARSET
       TitleFont.Color = clWindowText
       TitleFont.Height = -13
@@ -605,9 +585,24 @@ object Form16: TForm16
           Visible = True
         end>
     end
+    object DBGrid4: TDBGrid
+      Left = 40
+      Top = 568
+      Width = 1233
+      Height = 81
+      DataSource = dsRiwayat
+      TabOrder = 21
+      TitleFont.Charset = DEFAULT_CHARSET
+      TitleFont.Color = clWindowText
+      TitleFont.Height = -11
+      TitleFont.Name = 'Tahoma'
+      TitleFont.Style = []
+      OnCellClick = DBGrid4CellClick
+    end
   end
   object ZQueryPelanggaran: TZQuery
     Connection = Form14.ZConnection1
+    Active = True
     SQL.Strings = (
       'select * from tb_poin_pelanggaran')
     Params = <>
@@ -633,6 +628,7 @@ object Form16: TForm16
   end
   object ZQueryRiwayat: TZQuery
     Connection = Form14.ZConnection1
+    Active = True
     SQL.Strings = (
       'select * from tb_riwayat_poinn')
     Params = <>

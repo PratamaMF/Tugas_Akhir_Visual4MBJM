@@ -44,7 +44,6 @@ type
     pnl2: TPanel;
     l_3: TLabel;
     l_1: TLabel;
-    DBGrid4: TDBGrid;
     CbbWakel: TComboBox;
     EdtTingkat_kelas: TEdit;
     EdtJurusan: TEdit;
@@ -57,6 +56,7 @@ type
     ds1: TDataSource;
     dsRiwayat: TDataSource;
     DBGrid3: TDBGrid;
+    DBGrid4: TDBGrid;
     procedure btnSimpanClick(Sender: TObject);
     procedure btnEditClick(Sender: TObject);
     procedure btnHapusClick(Sender: TObject);
@@ -169,8 +169,8 @@ end;
 
 procedure TForm16.DBGrid2CellClick(Column: TColumn);
 begin
-  EdtNama_ortu.Text:=ZQuery1.Fields[2].AsString;
-  EdtNohp_ortu.Text:=ZQuery1.Fields[5].AsString;
+  EdtNama_ortu.Text:=ZQuery1.Fields[26].AsString;
+  EdtNohp_ortu.Text:=ZQuery1.Fields[29].AsString;
 end;
 
 procedure TForm16.FormCreate(Sender: TObject);
