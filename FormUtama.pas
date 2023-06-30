@@ -4,7 +4,7 @@ interface
 
 uses
   Windows, Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms,
-  Dialogs, StdCtrls, ExtCtrls;
+  Dialogs, StdCtrls, ExtCtrls, frxpngimage;
 
 type
   TForm1 = class(TForm)
@@ -20,6 +20,10 @@ type
     btnDataWaliKelas: TButton;
     btnDataPoin: TButton;
     btnDataPoinSiswa: TButton;
+    img1: TImage;
+    l_2: TLabel;
+    l_4: TLabel;
+    l_5: TLabel;
     procedure btnDatasiswaClick(Sender: TObject);
     procedure btnDataOrangTuaClick(Sender: TObject);
     procedure btnDataKelasClick(Sender: TObject);
