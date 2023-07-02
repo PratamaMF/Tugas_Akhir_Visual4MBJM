@@ -39,6 +39,7 @@ type
     procedure btn7Click(Sender: TObject);
     procedure btn8Click(Sender: TObject);
     procedure DBGrid1CellClick(Column: TColumn);
+    procedure btn6Click(Sender: TObject);
   private
     { Private declarations }
   public
@@ -72,6 +73,11 @@ end;
 procedure TForm13.DBGrid1CellClick(Column: TColumn);
 begin
   EdtID.Text:=ZQuerySiswa.Fields[0].AsString;
+end;
+
+procedure TForm13.btn6Click(Sender: TObject);
+begin
+frxReportPrestasi.ShowReport();
 end;
 
 end.

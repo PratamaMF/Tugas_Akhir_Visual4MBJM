@@ -1,6 +1,6 @@
 object Form13: TForm13
-  Left = 148
-  Top = 117
+  Left = 84
+  Top = 158
   Width = 1429
   Height = 711
   Caption = 'Laporan'
@@ -36,6 +36,7 @@ object Form13: TForm13
       Height = 49
       Caption = 'LAPORAN PRESTASI'
       TabOrder = 1
+      OnClick = btn6Click
     end
     object btn7: TButton
       Left = 656
@@ -95,10 +96,16 @@ object Form13: TForm13
       Width = 425
       Height = 177
       DataSource = ds1
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -15
+      Font.Name = 'Tahoma'
+      Font.Style = []
+      ParentFont = False
       TabOrder = 5
       TitleFont.Charset = DEFAULT_CHARSET
       TitleFont.Color = clWindowText
-      TitleFont.Height = -11
+      TitleFont.Height = -15
       TitleFont.Name = 'Tahoma'
       TitleFont.Style = []
       OnCellClick = DBGrid1CellClick
@@ -107,7 +114,13 @@ object Form13: TForm13
       Left = 1000
       Top = 400
       Width = 121
-      Height = 21
+      Height = 26
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -15
+      Font.Name = 'Tahoma'
+      Font.Style = []
+      ParentFont = False
       TabOrder = 6
     end
   end
@@ -791,7 +804,7 @@ object Form13: TForm13
           Width = 124.724490000000000000
           Height = 26.456710000000000000
           ShowHint = False
-          DataField = 'hp'
+          DataField = 'telp'
           DataSet = frxDatasetData_siswa
           DataSetName = 'frxDBDataset1'
           Font.Charset = DEFAULT_CHARSET
@@ -802,7 +815,7 @@ object Form13: TForm13
           Frame.Typ = [ftLeft, ftRight, ftTop, ftBottom]
           HAlign = haCenter
           Memo.UTF8 = (
-            '[frxDBDataset1."hp"]')
+            '[frxDBDataset1."telp"]')
           ParentFont = False
           VAlign = vaCenter
         end
@@ -931,7 +944,7 @@ object Form13: TForm13
           Width = 170.078850000000000000
           Height = 26.456710000000000000
           ShowHint = False
-          DataField = 'status_1'
+          DataField = 'status_hub'
           DataSet = frxDatasetData_siswa
           DataSetName = 'frxDBDataset1'
           Font.Charset = DEFAULT_CHARSET
@@ -942,7 +955,7 @@ object Form13: TForm13
           Frame.Typ = [ftLeft, ftRight, ftTop, ftBottom]
           HAlign = haCenter
           Memo.UTF8 = (
-            '[frxDBDataset1."status_1"]')
+            '[frxDBDataset1."status_hub"]')
           ParentFont = False
           VAlign = vaCenter
         end
@@ -953,7 +966,11 @@ object Form13: TForm13
     UserName = 'frxDBDataset1'
     CloseDataSource = False
     FieldAliases.Strings = (
+      'id=id'
       'siswa_id=siswa_id'
+      'ortu_id=ortu_id'
+      'status_hub=status_hub'
+      'keterangan=keterangan'
       'nis=nis'
       'nisn=nisn'
       'nama_siswa=nama_siswa'
@@ -966,18 +983,12 @@ object Form13: TForm13
       'wali_kelas=wali_kelas'
       'alamat=alamat'
       'telp=telp'
-      'hp=hp'
-      'status=status'
-      'ortu_id=ortu_id'
-      'nik_1=nik_1'
       'nama=nama'
+      'nik_1=nik_1'
       'pendidikan=pendidikan'
       'pekerjaan=pekerjaan'
       'telp_1=telp_1'
-      'alamat_1=alamat_1'
-      'agama=agama'
-      'jenis_kelamin_1=jenis_kelamin_1'
-      'status_1=status_1')
+      'alamat_1=alamat_1')
     DataSet = ZQueryHub
     BCDToCurrency = False
     Left = 328
@@ -3611,10 +3622,21 @@ object Form13: TForm13
   end
   object ZQueryHub: TZQuery
     Connection = ZConnectioncon1
+    Active = True
     SQL.Strings = (
       
-        'SELECT * FROM tb_siswa RIGHT JOIN tb_ortu ON tb_siswa.siswa_id =' +
-        ' tb_ortu.ortu_id')
+        'SELECT tb_hubungan.*, tb_siswa.nis, tb_siswa.nisn, tb_siswa.nama' +
+        '_siswa, tb_siswa.nik, tb_siswa.tempat_lahir, tb_siswa.tgl_lahir,' +
+        ' tb_siswa.jenis_kelamin, tb_siswa.tingkat_kelas, tb_siswa.jurusa' +
+        'n, tb_siswa.wali_kelas, tb_siswa.alamat, tb_siswa.telp,'
+      
+        'tb_ortu.nama, tb_ortu.nik, tb_ortu.pendidikan, tb_ortu.pekerjaan' +
+        ', tb_ortu.telp, tb_ortu.alamat'
+      'FROM tb_hubungan'
+      'RIGHT JOIN tb_siswa'
+      'ON tb_hubungan.siswa_id = tb_siswa.siswa_id'
+      'RIGHT JOIN tb_ortu'
+      'ON tb_hubungan.ortu_id=tb_ortu.ortu_id;')
     Params = <>
     Left = 280
     Top = 94

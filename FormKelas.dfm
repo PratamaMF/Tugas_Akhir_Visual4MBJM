@@ -1,6 +1,6 @@
 object Form6: TForm6
-  Left = 173
-  Top = 129
+  Left = 145
+  Top = 128
   Width = 1350
   Height = 705
   Caption = 'Input Hubungan'
@@ -14,8 +14,8 @@ object Form6: TForm6
   PixelsPerInch = 96
   TextHeight = 13
   object pnl1: TPanel
-    Left = -10
-    Top = -11
+    Left = -2
+    Top = -3
     Width = 1323
     Height = 673
     Color = clWhite
@@ -23,9 +23,9 @@ object Form6: TForm6
     object l_2: TLabel
       Left = 56
       Top = 128
-      Width = 99
+      Width = 71
       Height = 19
-      Caption = 'NAMA SISWA'
+      Caption = 'ID SISWA'
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clWindowText
       Font.Height = -16
@@ -36,9 +36,9 @@ object Form6: TForm6
     object l_6: TLabel
       Left = 56
       Top = 168
-      Width = 142
+      Width = 114
       Height = 19
-      Caption = 'NAMA ORANG TUA'
+      Caption = 'ID ORANG TUA'
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clWindowText
       Font.Height = -16
@@ -78,7 +78,7 @@ object Form6: TForm6
       Width = 345
       Height = 369
       Color = clActiveBorder
-      TabOrder = 10
+      TabOrder = 8
       object l_9: TLabel
         Left = 24
         Top = 24
@@ -107,27 +107,21 @@ object Form6: TForm6
       end
       object DBGrid3: TDBGrid
         Left = 24
-        Top = 224
+        Top = 232
         Width = 297
         Height = 120
-        DataSource = ds1
-        Font.Charset = DEFAULT_CHARSET
-        Font.Color = clWindowText
-        Font.Height = -13
-        Font.Name = 'Tahoma'
-        Font.Style = []
-        ParentFont = False
+        DataSource = ds2
         TabOrder = 0
         TitleFont.Charset = DEFAULT_CHARSET
         TitleFont.Color = clWindowText
-        TitleFont.Height = -13
+        TitleFont.Height = -11
         TitleFont.Name = 'Tahoma'
         TitleFont.Style = []
         OnCellClick = DBGrid3CellClick
         Columns = <
           item
             Expanded = False
-            FieldName = 'nik_1'
+            FieldName = 'nik'
             Visible = True
           end
           item
@@ -215,7 +209,7 @@ object Form6: TForm6
       Top = 328
       Width = 665
       Height = 193
-      DataSource = ds2
+      DataSource = ds3
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clWindowText
       Font.Height = -13
@@ -242,19 +236,7 @@ object Form6: TForm6
         end
         item
           Expanded = False
-          FieldName = 'nama_siswa'
-          Width = 150
-          Visible = True
-        end
-        item
-          Expanded = False
           FieldName = 'ortu_id'
-          Visible = True
-        end
-        item
-          Expanded = False
-          FieldName = 'nama_ortu'
-          Width = 150
           Visible = True
         end
         item
@@ -270,34 +252,6 @@ object Form6: TForm6
           Visible = True
         end>
     end
-    object EdtNama_siswa: TEdit
-      Left = 232
-      Top = 120
-      Width = 217
-      Height = 27
-      Font.Charset = DEFAULT_CHARSET
-      Font.Color = clWindowText
-      Font.Height = -16
-      Font.Name = 'Tahoma'
-      Font.Style = []
-      ParentFont = False
-      ReadOnly = True
-      TabOrder = 7
-    end
-    object EdtNama_ortu: TEdit
-      Left = 232
-      Top = 160
-      Width = 217
-      Height = 27
-      Font.Charset = DEFAULT_CHARSET
-      Font.Color = clWindowText
-      Font.Height = -16
-      Font.Name = 'Tahoma'
-      Font.Style = []
-      ParentFont = False
-      ReadOnly = True
-      TabOrder = 8
-    end
     object DBGrid2: TDBGrid
       Left = 832
       Top = 216
@@ -310,7 +264,7 @@ object Form6: TForm6
       Font.Name = 'Tahoma'
       Font.Style = []
       ParentFont = False
-      TabOrder = 9
+      TabOrder = 7
       TitleFont.Charset = DEFAULT_CHARSET
       TitleFont.Color = clWindowText
       TitleFont.Height = -13
@@ -331,9 +285,9 @@ object Form6: TForm6
         end>
     end
     object EdtId_siswa: TEdit
-      Left = 80
-      Top = 536
-      Width = 145
+      Left = 232
+      Top = 128
+      Width = 217
       Height = 27
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clWindowText
@@ -341,13 +295,12 @@ object Form6: TForm6
       Font.Name = 'Tahoma'
       Font.Style = []
       ParentFont = False
-      TabOrder = 11
-      Visible = False
+      TabOrder = 9
     end
     object EdtId_ortu: TEdit
-      Left = 240
-      Top = 536
-      Width = 145
+      Left = 232
+      Top = 168
+      Width = 217
       Height = 27
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clWindowText
@@ -355,8 +308,7 @@ object Form6: TForm6
       Font.Name = 'Tahoma'
       Font.Style = []
       ParentFont = False
-      TabOrder = 12
-      Visible = False
+      TabOrder = 10
     end
     object pnl2: TPanel
       Left = 0
@@ -364,7 +316,7 @@ object Form6: TForm6
       Width = 1321
       Height = 121
       Color = clActiveBorder
-      TabOrder = 13
+      TabOrder = 11
       object l_3: TLabel
         Left = 1032
         Top = 80
@@ -397,30 +349,42 @@ object Form6: TForm6
     Connection = Form5.ZConnection1
     Active = True
     SQL.Strings = (
-      
-        'SELECT * FROM tb_siswa RIGHT JOIN tb_ortu ON tb_siswa.siswa_id =' +
-        ' tb_ortu.ortu_id;')
+      'SELECT * FROM tb_siswa ')
     Params = <>
-    Left = 681
-    Top = 77
+    Left = 1153
+    Top = 213
   end
   object ds1: TDataSource
     DataSet = ZQuery1
-    Left = 784
-    Top = 80
+    Left = 1152
+    Top = 264
   end
   object ZQuery2: TZQuery
     Connection = Form5.ZConnection1
     Active = True
     SQL.Strings = (
-      'select * from  tb_hubungan')
+      'select * from  tb_ortu')
     Params = <>
-    Left = 734
-    Top = 77
+    Left = 1166
+    Top = 405
   end
   object ds2: TDataSource
     DataSet = ZQuery2
-    Left = 830
-    Top = 77
+    Left = 1166
+    Top = 453
+  end
+  object ZQuery3: TZQuery
+    Connection = Form5.ZConnection1
+    Active = True
+    SQL.Strings = (
+      'select * from tb_hubungan')
+    Params = <>
+    Left = 574
+    Top = 45
+  end
+  object ds3: TDataSource
+    DataSet = ZQuery3
+    Left = 622
+    Top = 45
   end
 end
