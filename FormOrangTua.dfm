@@ -14,7 +14,7 @@ object Form4: TForm4
   PixelsPerInch = 96
   TextHeight = 13
   object pnl1: TPanel
-    Left = -7
+    Left = 1
     Top = -6
     Width = 1313
     Height = 673
@@ -362,10 +362,11 @@ object Form4: TForm4
       end
     end
     object DBGrid4: TDBGrid
-      Left = 40
-      Top = 568
-      Width = 1225
+      Left = 328
+      Top = 576
+      Width = 705
       Height = 73
+      DataSource = dsRiwayat
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clWindowText
       Font.Height = -13

@@ -1,7 +1,7 @@
 object Form13: TForm13
-  Left = 94
-  Top = 110
-  Width = 1398
+  Left = 148
+  Top = 117
+  Width = 1429
   Height = 711
   Caption = 'Laporan'
   Color = clBtnFace
@@ -36,7 +36,6 @@ object Form13: TForm13
       Height = 49
       Caption = 'LAPORAN PRESTASI'
       TabOrder = 1
-      OnClick = btn6Click
     end
     object btn7: TButton
       Left = 656
@@ -90,6 +89,27 @@ object Form13: TForm13
         ParentFont = False
       end
     end
+    object DBGrid1: TDBGrid
+      Left = 384
+      Top = 344
+      Width = 425
+      Height = 177
+      DataSource = ds1
+      TabOrder = 5
+      TitleFont.Charset = DEFAULT_CHARSET
+      TitleFont.Color = clWindowText
+      TitleFont.Height = -11
+      TitleFont.Name = 'Tahoma'
+      TitleFont.Style = []
+      OnCellClick = DBGrid1CellClick
+    end
+    object EdtID: TEdit
+      Left = 1000
+      Top = 400
+      Width = 121
+      Height = 21
+      TabOrder = 6
+    end
   end
   object ZConnectioncon1: TZConnection
     ControlsCodePage = cGET_ACP
@@ -105,10 +125,11 @@ object Form13: TForm13
       'C:\Users\Asus\Documents\TUGAS SEMESTER 4\Pemrograman Visual 2\Tu' +
       'gas_Akhir\libmysql.dll'
     Left = 632
-    Top = 70
+    Top = 6
   end
   object ZQuery1: TZQuery
     Connection = ZConnectioncon1
+    Active = True
     SQL.Strings = (
       
         'SELECT tb_riwayat_poin.*, tb_siswa.nama_siswa,tb_siswa.nis, tb_s' +
@@ -129,12 +150,13 @@ object Form13: TForm13
       'INNER JOIN tb_kelas'
       'ON tb_riwayat_poin.kelas_id=tb_kelas.kelas_id;')
     Params = <>
-    Left = 504
+    Left = 512
     Top = 94
   end
   object ds1: TDataSource
-    Left = 40
-    Top = 166
+    DataSet = ZQuerySiswa
+    Left = 1344
+    Top = 118
   end
   object frxReportData_siswa: TfrxReport
     Version = '4.12.6'
@@ -976,7 +998,7 @@ object Form13: TForm13
       'begin'
       ''
       'end.')
-    Left = 464
+    Left = 456
     Top = 206
     Datasets = <
       item
@@ -997,34 +1019,14 @@ object Form13: TForm13
       RightMargin = 10.000000000000000000
       TopMargin = 10.000000000000000000
       BottomMargin = 10.000000000000000000
-      object ReportTitle1: TfrxReportTitle
-        Height = 56.692950000000000000
-        Top = 18.897650000000000000
-        Width = 718.110700000000000000
-        object Memo20: TfrxMemoView
-          Left = 166.299320000000000000
-          Top = 11.338590000000000000
-          Width = 393.071120000000000000
-          Height = 26.456710000000000000
-          ShowHint = False
-          Font.Charset = DEFAULT_CHARSET
-          Font.Color = clBlack
-          Font.Height = -21
-          Font.Name = 'Arial'
-          Font.Style = [fsBold]
-          Memo.UTF8 = (
-            'DATA LAPORAN PRESTASI SISWA')
-          ParentFont = False
-        end
-      end
       object GroupHeader1: TfrxGroupHeader
-        Height = 340.157700000000000000
-        Top = 136.063080000000000000
+        Height = 476.220780000000000000
+        Top = 18.897650000000000000
         Width = 718.110700000000000000
         Condition = 'frxDBDataset2."id"'
         object Memo1: TfrxMemoView
           Left = 18.897650000000000000
-          Top = 7.559060000000000000
+          Top = 154.960730000000000000
           Width = 139.842610000000000000
           Height = 26.456710000000000000
           ShowHint = False
@@ -1039,7 +1041,7 @@ object Form13: TForm13
         end
         object Memo2: TfrxMemoView
           Left = 18.897650000000000000
-          Top = 34.015770000000000000
+          Top = 181.417440000000000000
           Width = 139.842610000000000000
           Height = 26.456710000000000000
           ShowHint = False
@@ -1054,7 +1056,7 @@ object Form13: TForm13
         end
         object Memo3: TfrxMemoView
           Left = 18.897650000000000000
-          Top = 79.370130000000000000
+          Top = 226.771800000000000000
           Width = 139.842610000000000000
           Height = 26.456710000000000000
           ShowHint = False
@@ -1069,7 +1071,7 @@ object Form13: TForm13
         end
         object Memo4: TfrxMemoView
           Left = 18.897650000000000000
-          Top = 105.826840000000000000
+          Top = 253.228510000000000000
           Width = 139.842610000000000000
           Height = 26.456710000000000000
           ShowHint = False
@@ -1084,7 +1086,7 @@ object Form13: TForm13
         end
         object Memo5: TfrxMemoView
           Left = 18.897650000000000000
-          Top = 132.283550000000000000
+          Top = 279.685220000000000000
           Width = 139.842610000000000000
           Height = 26.456710000000000000
           ShowHint = False
@@ -1099,7 +1101,7 @@ object Form13: TForm13
         end
         object Memo6: TfrxMemoView
           Left = 18.897650000000000000
-          Top = 158.740260000000000000
+          Top = 306.141930000000000000
           Width = 139.842610000000000000
           Height = 26.456710000000000000
           ShowHint = False
@@ -1114,7 +1116,7 @@ object Form13: TForm13
         end
         object Memo7: TfrxMemoView
           Left = 18.897650000000000000
-          Top = 185.196970000000000000
+          Top = 332.598640000000000000
           Width = 139.842610000000000000
           Height = 26.456710000000000000
           ShowHint = False
@@ -1129,7 +1131,7 @@ object Form13: TForm13
         end
         object Memo8: TfrxMemoView
           Left = 18.897650000000000000
-          Top = 211.653680000000000000
+          Top = 359.055350000000000000
           Width = 139.842610000000000000
           Height = 26.456710000000000000
           ShowHint = False
@@ -1144,7 +1146,7 @@ object Form13: TForm13
         end
         object Memo9: TfrxMemoView
           Left = 18.897650000000000000
-          Top = 238.110390000000000000
+          Top = 385.512060000000000000
           Width = 139.842610000000000000
           Height = 26.456710000000000000
           ShowHint = False
@@ -1159,7 +1161,7 @@ object Form13: TForm13
         end
         object Memo10: TfrxMemoView
           Left = 158.740260000000000000
-          Top = 7.559060000000000000
+          Top = 154.960730000000000000
           Width = 11.338590000000000000
           Height = 26.456710000000000000
           ShowHint = False
@@ -1174,7 +1176,7 @@ object Form13: TForm13
         end
         object Memo11: TfrxMemoView
           Left = 158.740260000000000000
-          Top = 34.015770000000000000
+          Top = 181.417440000000000000
           Width = 11.338590000000000000
           Height = 26.456710000000000000
           ShowHint = False
@@ -1189,7 +1191,7 @@ object Form13: TForm13
         end
         object Memo12: TfrxMemoView
           Left = 158.740260000000000000
-          Top = 79.370130000000000000
+          Top = 226.771800000000000000
           Width = 11.338590000000000000
           Height = 26.456710000000000000
           ShowHint = False
@@ -1204,7 +1206,7 @@ object Form13: TForm13
         end
         object Memo14: TfrxMemoView
           Left = 158.740260000000000000
-          Top = 105.826840000000000000
+          Top = 253.228510000000000000
           Width = 11.338590000000000000
           Height = 26.456710000000000000
           ShowHint = False
@@ -1219,7 +1221,7 @@ object Form13: TForm13
         end
         object Memo15: TfrxMemoView
           Left = 158.740260000000000000
-          Top = 132.283550000000000000
+          Top = 279.685220000000000000
           Width = 11.338590000000000000
           Height = 26.456710000000000000
           ShowHint = False
@@ -1234,7 +1236,7 @@ object Form13: TForm13
         end
         object Memo16: TfrxMemoView
           Left = 158.740260000000000000
-          Top = 158.740260000000000000
+          Top = 306.141930000000000000
           Width = 11.338590000000000000
           Height = 26.456710000000000000
           ShowHint = False
@@ -1249,7 +1251,7 @@ object Form13: TForm13
         end
         object Memo17: TfrxMemoView
           Left = 158.740260000000000000
-          Top = 185.196970000000000000
+          Top = 332.598640000000000000
           Width = 11.338590000000000000
           Height = 26.456710000000000000
           ShowHint = False
@@ -1264,7 +1266,7 @@ object Form13: TForm13
         end
         object Memo18: TfrxMemoView
           Left = 158.740260000000000000
-          Top = 211.653680000000000000
+          Top = 359.055350000000000000
           Width = 11.338590000000000000
           Height = 26.456710000000000000
           ShowHint = False
@@ -1279,7 +1281,7 @@ object Form13: TForm13
         end
         object Memo19: TfrxMemoView
           Left = 158.740260000000000000
-          Top = 238.110390000000000000
+          Top = 385.512060000000000000
           Width = 11.338590000000000000
           Height = 26.456710000000000000
           ShowHint = False
@@ -1294,7 +1296,7 @@ object Form13: TForm13
         end
         object Memo21: TfrxMemoView
           Left = 18.897650000000000000
-          Top = 313.700990000000000000
+          Top = 449.764070000000000000
           Width = 34.015770000000000000
           Height = 26.456710000000000000
           ShowHint = False
@@ -1312,7 +1314,7 @@ object Form13: TForm13
         end
         object Memo22: TfrxMemoView
           Left = 52.913420000000000000
-          Top = 313.700990000000000000
+          Top = 449.764070000000000000
           Width = 400.630180000000000000
           Height = 26.456710000000000000
           ShowHint = False
@@ -1330,7 +1332,7 @@ object Form13: TForm13
         end
         object Memo23: TfrxMemoView
           Left = 453.543600000000000000
-          Top = 313.700990000000000000
+          Top = 449.764070000000000000
           Width = 128.504020000000000000
           Height = 26.456710000000000000
           ShowHint = False
@@ -1348,7 +1350,7 @@ object Form13: TForm13
         end
         object Memo24: TfrxMemoView
           Left = 582.047620000000000000
-          Top = 313.700990000000000000
+          Top = 449.764070000000000000
           Width = 128.504020000000000000
           Height = 26.456710000000000000
           ShowHint = False
@@ -1366,7 +1368,7 @@ object Form13: TForm13
         end
         object frxDBDataset2nama_siswa: TfrxMemoView
           Left = 177.637910000000000000
-          Top = 79.370130000000000000
+          Top = 226.771800000000000000
           Width = 158.740260000000000000
           Height = 26.456710000000000000
           ShowHint = False
@@ -1384,7 +1386,7 @@ object Form13: TForm13
         end
         object frxDBDataset2tanggal: TfrxMemoView
           Left = 177.637910000000000000
-          Top = 7.559060000000000000
+          Top = 154.960730000000000000
           Width = 158.740260000000000000
           Height = 26.456710000000000000
           ShowHint = False
@@ -1403,7 +1405,7 @@ object Form13: TForm13
         end
         object frxDBDataset2tanggal1: TfrxMemoView
           Left = 177.637910000000000000
-          Top = 34.015770000000000000
+          Top = 181.417440000000000000
           Width = 158.740260000000000000
           Height = 26.456710000000000000
           ShowHint = False
@@ -1422,7 +1424,7 @@ object Form13: TForm13
         end
         object frxDBDataset2nis: TfrxMemoView
           Left = 177.637910000000000000
-          Top = 105.826840000000000000
+          Top = 253.228510000000000000
           Width = 158.740260000000000000
           Height = 26.456710000000000000
           ShowHint = False
@@ -1439,7 +1441,7 @@ object Form13: TForm13
         end
         object frxDBDataset2nama_kelas: TfrxMemoView
           Left = 177.637910000000000000
-          Top = 132.283550000000000000
+          Top = 279.685220000000000000
           Width = 158.740260000000000000
           Height = 26.456710000000000000
           ShowHint = False
@@ -1458,7 +1460,7 @@ object Form13: TForm13
         end
         object frxDBDataset2jenis_kelamin: TfrxMemoView
           Left = 177.637910000000000000
-          Top = 158.740260000000000000
+          Top = 306.141930000000000000
           Width = 158.740260000000000000
           Height = 26.456710000000000000
           ShowHint = False
@@ -1476,7 +1478,7 @@ object Form13: TForm13
         end
         object frxDBDataset2nama_wakel: TfrxMemoView
           Left = 177.637910000000000000
-          Top = 185.196970000000000000
+          Top = 332.598640000000000000
           Width = 158.740260000000000000
           Height = 26.456710000000000000
           ShowHint = False
@@ -1494,7 +1496,7 @@ object Form13: TForm13
         end
         object frxDBDataset2nama_1: TfrxMemoView
           Left = 177.637910000000000000
-          Top = 211.653680000000000000
+          Top = 359.055350000000000000
           Width = 158.740260000000000000
           Height = 26.456710000000000000
           ShowHint = False
@@ -1512,7 +1514,7 @@ object Form13: TForm13
         end
         object frxDBDataset2telp: TfrxMemoView
           Left = 177.637910000000000000
-          Top = 241.889920000000000000
+          Top = 389.291590000000000000
           Width = 158.740260000000000000
           Height = 22.677180000000000000
           ShowHint = False
@@ -1528,10 +1530,25 @@ object Form13: TForm13
             '[frxDBDataset2."telp"]')
           ParentFont = False
         end
+        object Memo20: TfrxMemoView
+          Left = 192.756030000000000000
+          Top = 30.236240000000000000
+          Width = 393.071120000000000000
+          Height = 26.456710000000000000
+          ShowHint = False
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clBlack
+          Font.Height = -21
+          Font.Name = 'Arial'
+          Font.Style = [fsBold]
+          Memo.UTF8 = (
+            'DATA LAPORAN PRESTASI SISWA')
+          ParentFont = False
+        end
       end
       object MasterData1: TfrxMasterData
-        Height = 45.354360000000000000
-        Top = 498.897960000000000000
+        Height = 26.456710000000000000
+        Top = 517.795610000000000000
         Width = 718.110700000000000000
         DataSet = frxDatasetPrestasi
         DataSetName = 'frxDBDataset2'
@@ -1600,7 +1617,7 @@ object Form13: TForm13
           Width = 128.504020000000000000
           Height = 26.456710000000000000
           ShowHint = False
-          DataField = 'status'
+          DataField = 'status_1'
           DataSet = frxDatasetPrestasi
           DataSetName = 'frxDBDataset2'
           Font.Charset = DEFAULT_CHARSET
@@ -1611,7 +1628,7 @@ object Form13: TForm13
           Frame.Typ = [ftLeft, ftRight, ftTop, ftBottom]
           HAlign = haCenter
           Memo.UTF8 = (
-            '[frxDBDataset2."status"]')
+            '[frxDBDataset2."status_1"]')
           ParentFont = False
           VAlign = vaCenter
         end
@@ -1792,7 +1809,7 @@ object Form13: TForm13
       'jurusan=jurusan')
     DataSet = ZQuery1
     BCDToCurrency = False
-    Left = 568
+    Left = 552
     Top = 206
   end
   object frxReportPelanggaran: TfrxReport
@@ -1831,34 +1848,14 @@ object Form13: TForm13
       RightMargin = 10.000000000000000000
       TopMargin = 10.000000000000000000
       BottomMargin = 10.000000000000000000
-      object ReportTitle1: TfrxReportTitle
-        Height = 71.811070000000000000
-        Top = 18.897650000000000000
-        Width = 718.110700000000000000
-        object Memo20: TfrxMemoView
-          Left = 177.637910000000000000
-          Top = 30.236240000000000000
-          Width = 393.071120000000000000
-          Height = 26.456710000000000000
-          ShowHint = False
-          Font.Charset = DEFAULT_CHARSET
-          Font.Color = clBlack
-          Font.Height = -21
-          Font.Name = 'Arial'
-          Font.Style = [fsBold]
-          Memo.UTF8 = (
-            'DATA LAPORAN PELANGGARAN SISWA')
-          ParentFont = False
-        end
-      end
       object GroupHeader1: TfrxGroupHeader
-        Height = 400.630180000000000000
-        Top = 151.181200000000000000
+        Height = 529.134200000000000000
+        Top = 18.897650000000000000
         Width = 718.110700000000000000
         Condition = 'frxDBDataset3."id"'
         object Memo1: TfrxMemoView
           Left = 11.338590000000000000
-          Top = 22.677180000000000000
+          Top = 151.181200000000000000
           Width = 139.842610000000000000
           Height = 26.456710000000000000
           ShowHint = False
@@ -1873,7 +1870,7 @@ object Form13: TForm13
         end
         object Memo2: TfrxMemoView
           Left = 11.338590000000000000
-          Top = 49.133890000000000000
+          Top = 177.637910000000000000
           Width = 139.842610000000000000
           Height = 26.456710000000000000
           ShowHint = False
@@ -1888,7 +1885,7 @@ object Form13: TForm13
         end
         object Memo3: TfrxMemoView
           Left = 11.338590000000000000
-          Top = 94.488250000000000000
+          Top = 222.992270000000000000
           Width = 139.842610000000000000
           Height = 26.456710000000000000
           ShowHint = False
@@ -1903,7 +1900,7 @@ object Form13: TForm13
         end
         object Memo4: TfrxMemoView
           Left = 11.338590000000000000
-          Top = 120.944960000000000000
+          Top = 249.448980000000000000
           Width = 139.842610000000000000
           Height = 26.456710000000000000
           ShowHint = False
@@ -1918,7 +1915,7 @@ object Form13: TForm13
         end
         object Memo5: TfrxMemoView
           Left = 11.338590000000000000
-          Top = 147.401670000000000000
+          Top = 275.905690000000000000
           Width = 139.842610000000000000
           Height = 26.456710000000000000
           ShowHint = False
@@ -1933,7 +1930,7 @@ object Form13: TForm13
         end
         object Memo6: TfrxMemoView
           Left = 11.338590000000000000
-          Top = 173.858380000000000000
+          Top = 302.362400000000000000
           Width = 139.842610000000000000
           Height = 26.456710000000000000
           ShowHint = False
@@ -1948,7 +1945,7 @@ object Form13: TForm13
         end
         object Memo7: TfrxMemoView
           Left = 11.338590000000000000
-          Top = 200.315090000000000000
+          Top = 328.819110000000000000
           Width = 139.842610000000000000
           Height = 26.456710000000000000
           ShowHint = False
@@ -1963,7 +1960,7 @@ object Form13: TForm13
         end
         object Memo8: TfrxMemoView
           Left = 11.338590000000000000
-          Top = 226.771800000000000000
+          Top = 355.275820000000000000
           Width = 139.842610000000000000
           Height = 26.456710000000000000
           ShowHint = False
@@ -1978,7 +1975,7 @@ object Form13: TForm13
         end
         object Memo9: TfrxMemoView
           Left = 11.338590000000000000
-          Top = 253.228510000000000000
+          Top = 381.732530000000000000
           Width = 139.842610000000000000
           Height = 26.456710000000000000
           ShowHint = False
@@ -1993,7 +1990,7 @@ object Form13: TForm13
         end
         object Memo10: TfrxMemoView
           Left = 151.181200000000000000
-          Top = 22.677180000000000000
+          Top = 151.181200000000000000
           Width = 11.338590000000000000
           Height = 26.456710000000000000
           ShowHint = False
@@ -2008,7 +2005,7 @@ object Form13: TForm13
         end
         object Memo11: TfrxMemoView
           Left = 151.181200000000000000
-          Top = 49.133890000000000000
+          Top = 177.637910000000000000
           Width = 11.338590000000000000
           Height = 26.456710000000000000
           ShowHint = False
@@ -2023,7 +2020,7 @@ object Form13: TForm13
         end
         object Memo12: TfrxMemoView
           Left = 151.181200000000000000
-          Top = 94.488250000000000000
+          Top = 222.992270000000000000
           Width = 11.338590000000000000
           Height = 26.456710000000000000
           ShowHint = False
@@ -2038,7 +2035,7 @@ object Form13: TForm13
         end
         object Memo14: TfrxMemoView
           Left = 151.181200000000000000
-          Top = 120.944960000000000000
+          Top = 249.448980000000000000
           Width = 11.338590000000000000
           Height = 26.456710000000000000
           ShowHint = False
@@ -2053,7 +2050,7 @@ object Form13: TForm13
         end
         object Memo15: TfrxMemoView
           Left = 151.181200000000000000
-          Top = 147.401670000000000000
+          Top = 275.905690000000000000
           Width = 11.338590000000000000
           Height = 26.456710000000000000
           ShowHint = False
@@ -2068,7 +2065,7 @@ object Form13: TForm13
         end
         object Memo16: TfrxMemoView
           Left = 151.181200000000000000
-          Top = 173.858380000000000000
+          Top = 302.362400000000000000
           Width = 11.338590000000000000
           Height = 26.456710000000000000
           ShowHint = False
@@ -2083,7 +2080,7 @@ object Form13: TForm13
         end
         object Memo17: TfrxMemoView
           Left = 151.181200000000000000
-          Top = 200.315090000000000000
+          Top = 328.819110000000000000
           Width = 11.338590000000000000
           Height = 26.456710000000000000
           ShowHint = False
@@ -2098,7 +2095,7 @@ object Form13: TForm13
         end
         object Memo18: TfrxMemoView
           Left = 151.181200000000000000
-          Top = 226.771800000000000000
+          Top = 355.275820000000000000
           Width = 11.338590000000000000
           Height = 26.456710000000000000
           ShowHint = False
@@ -2113,7 +2110,7 @@ object Form13: TForm13
         end
         object Memo19: TfrxMemoView
           Left = 151.181200000000000000
-          Top = 253.228510000000000000
+          Top = 381.732530000000000000
           Width = 11.338590000000000000
           Height = 26.456710000000000000
           ShowHint = False
@@ -2128,7 +2125,7 @@ object Form13: TForm13
         end
         object Memo21: TfrxMemoView
           Left = 11.338590000000000000
-          Top = 374.173470000000000000
+          Top = 502.677490000000000000
           Width = 34.015770000000000000
           Height = 26.456710000000000000
           ShowHint = False
@@ -2146,7 +2143,7 @@ object Form13: TForm13
         end
         object Memo22: TfrxMemoView
           Left = 45.354360000000000000
-          Top = 374.173470000000000000
+          Top = 502.677490000000000000
           Width = 400.630180000000000000
           Height = 26.456710000000000000
           ShowHint = False
@@ -2164,7 +2161,7 @@ object Form13: TForm13
         end
         object Memo23: TfrxMemoView
           Left = 445.984540000000000000
-          Top = 374.173470000000000000
+          Top = 502.677490000000000000
           Width = 128.504020000000000000
           Height = 26.456710000000000000
           ShowHint = False
@@ -2182,7 +2179,7 @@ object Form13: TForm13
         end
         object Memo24: TfrxMemoView
           Left = 574.488560000000000000
-          Top = 374.173470000000000000
+          Top = 502.677490000000000000
           Width = 128.504020000000000000
           Height = 26.456710000000000000
           ShowHint = False
@@ -2200,7 +2197,7 @@ object Form13: TForm13
         end
         object frxDBDataset3tanggal: TfrxMemoView
           Left = 173.858380000000000000
-          Top = 22.677180000000000000
+          Top = 151.181200000000000000
           Width = 170.078850000000000000
           Height = 26.456710000000000000
           ShowHint = False
@@ -2219,7 +2216,7 @@ object Form13: TForm13
         end
         object Memo33: TfrxMemoView
           Left = 173.858380000000000000
-          Top = 49.133890000000000000
+          Top = 177.637910000000000000
           Width = 170.078850000000000000
           Height = 26.456710000000000000
           ShowHint = False
@@ -2238,7 +2235,7 @@ object Form13: TForm13
         end
         object frxDBDataset3nama_siswa: TfrxMemoView
           Left = 173.858380000000000000
-          Top = 94.488250000000000000
+          Top = 222.992270000000000000
           Width = 170.078850000000000000
           Height = 26.456710000000000000
           ShowHint = False
@@ -2256,7 +2253,7 @@ object Form13: TForm13
         end
         object frxDBDataset3nis: TfrxMemoView
           Left = 173.858380000000000000
-          Top = 120.944960000000000000
+          Top = 249.448980000000000000
           Width = 170.078850000000000000
           Height = 26.456710000000000000
           ShowHint = False
@@ -2273,7 +2270,7 @@ object Form13: TForm13
         end
         object frxDBDataset3nama_kelas: TfrxMemoView
           Left = 173.858380000000000000
-          Top = 147.401670000000000000
+          Top = 275.905690000000000000
           Width = 170.078850000000000000
           Height = 26.456710000000000000
           ShowHint = False
@@ -2292,7 +2289,7 @@ object Form13: TForm13
         end
         object frxDBDataset3jenis_kelamin: TfrxMemoView
           Left = 173.858380000000000000
-          Top = 173.858380000000000000
+          Top = 302.362400000000000000
           Width = 170.078850000000000000
           Height = 26.456710000000000000
           ShowHint = False
@@ -2310,7 +2307,7 @@ object Form13: TForm13
         end
         object frxDBDataset3nama_wakel: TfrxMemoView
           Left = 173.858380000000000000
-          Top = 200.315090000000000000
+          Top = 328.819110000000000000
           Width = 170.078850000000000000
           Height = 26.456710000000000000
           ShowHint = False
@@ -2328,7 +2325,7 @@ object Form13: TForm13
         end
         object frxDBDataset3nama_1: TfrxMemoView
           Left = 173.858380000000000000
-          Top = 226.771800000000000000
+          Top = 355.275820000000000000
           Width = 170.078850000000000000
           Height = 26.456710000000000000
           ShowHint = False
@@ -2346,7 +2343,7 @@ object Form13: TForm13
         end
         object frxDBDataset3telp: TfrxMemoView
           Left = 173.858380000000000000
-          Top = 253.228510000000000000
+          Top = 381.732530000000000000
           Width = 170.078850000000000000
           Height = 26.456710000000000000
           ShowHint = False
@@ -2362,10 +2359,25 @@ object Form13: TForm13
             '[frxDBDataset3."telp"]')
           ParentFont = False
         end
+        object Memo20: TfrxMemoView
+          Left = 204.094620000000000000
+          Top = 26.456710000000000000
+          Width = 393.071120000000000000
+          Height = 26.456710000000000000
+          ShowHint = False
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clBlack
+          Font.Height = -21
+          Font.Name = 'Arial'
+          Font.Style = [fsBold]
+          Memo.UTF8 = (
+            'DATA LAPORAN PELANGGARAN SISWA')
+          ParentFont = False
+        end
       end
       object MasterData1: TfrxMasterData
         Height = 45.354360000000000000
-        Top = 574.488560000000000000
+        Top = 570.709030000000000000
         Width = 718.110700000000000000
         DataSet = frxDatasetPelanggaran
         DataSetName = 'frxDBDataset3'
@@ -2446,7 +2458,7 @@ object Form13: TForm13
       end
       object GroupFooter1: TfrxGroupFooter
         Height = 408.189240000000000000
-        Top = 642.520100000000000000
+        Top = 638.740570000000000000
         Width = 718.110700000000000000
         object Memo28: TfrxMemoView
           Left = 253.228510000000000000
@@ -2661,33 +2673,14 @@ object Form13: TForm13
       RightMargin = 10.000000000000000000
       TopMargin = 10.000000000000000000
       BottomMargin = 10.000000000000000000
-      object ReportTitle1: TfrxReportTitle
-        Height = 68.031540000000000000
-        Top = 18.897650000000000000
-        Width = 718.110700000000000000
-        object Memo1: TfrxMemoView
-          Left = 173.858380000000000000
-          Top = 18.897650000000000000
-          Width = 381.732530000000000000
-          Height = 26.456710000000000000
-          ShowHint = False
-          Font.Charset = DEFAULT_CHARSET
-          Font.Color = clBlack
-          Font.Height = -21
-          Font.Name = 'Arial'
-          Font.Style = [fsBold]
-          Memo.UTF8 = (
-            'RANGKUMAN LAPORAN INFORMASI KESISWAAN')
-          ParentFont = False
-        end
-      end
       object GroupHeader1: TfrxGroupHeader
-        Height = 385.512060000000000000
-        Top = 147.401670000000000000
+        Height = 532.913730000000000000
+        Top = 18.897650000000000000
         Width = 718.110700000000000000
         Condition = 'frxDBDataset4."id"'
         object Memo2: TfrxMemoView
           Left = 15.118120000000000000
+          Top = 147.401670000000000000
           Width = 139.842610000000000000
           Height = 26.456710000000000000
           ShowHint = False
@@ -2702,7 +2695,7 @@ object Form13: TForm13
         end
         object Memo3: TfrxMemoView
           Left = 15.118120000000000000
-          Top = 26.456710000000000000
+          Top = 173.858380000000000000
           Width = 139.842610000000000000
           Height = 26.456710000000000000
           ShowHint = False
@@ -2717,7 +2710,7 @@ object Form13: TForm13
         end
         object Memo4: TfrxMemoView
           Left = 15.118120000000000000
-          Top = 105.826840000000000000
+          Top = 253.228510000000000000
           Width = 139.842610000000000000
           Height = 26.456710000000000000
           ShowHint = False
@@ -2732,7 +2725,7 @@ object Form13: TForm13
         end
         object Memo5: TfrxMemoView
           Left = 15.118120000000000000
-          Top = 132.283550000000000000
+          Top = 279.685220000000000000
           Width = 139.842610000000000000
           Height = 26.456710000000000000
           ShowHint = False
@@ -2747,7 +2740,7 @@ object Form13: TForm13
         end
         object Memo6: TfrxMemoView
           Left = 15.118120000000000000
-          Top = 158.740260000000000000
+          Top = 306.141930000000000000
           Width = 139.842610000000000000
           Height = 26.456710000000000000
           ShowHint = False
@@ -2762,7 +2755,7 @@ object Form13: TForm13
         end
         object Memo7: TfrxMemoView
           Left = 15.118120000000000000
-          Top = 185.196970000000000000
+          Top = 332.598640000000000000
           Width = 139.842610000000000000
           Height = 26.456710000000000000
           ShowHint = False
@@ -2777,7 +2770,7 @@ object Form13: TForm13
         end
         object Memo8: TfrxMemoView
           Left = 15.118120000000000000
-          Top = 211.653680000000000000
+          Top = 359.055350000000000000
           Width = 139.842610000000000000
           Height = 26.456710000000000000
           ShowHint = False
@@ -2792,7 +2785,7 @@ object Form13: TForm13
         end
         object Memo9: TfrxMemoView
           Left = 15.118120000000000000
-          Top = 238.110390000000000000
+          Top = 385.512060000000000000
           Width = 139.842610000000000000
           Height = 26.456710000000000000
           ShowHint = False
@@ -2807,7 +2800,7 @@ object Form13: TForm13
         end
         object Memo10: TfrxMemoView
           Left = 15.118120000000000000
-          Top = 264.567100000000000000
+          Top = 411.968770000000000000
           Width = 139.842610000000000000
           Height = 26.456710000000000000
           ShowHint = False
@@ -2822,6 +2815,7 @@ object Form13: TForm13
         end
         object Memo11: TfrxMemoView
           Left = 154.960730000000000000
+          Top = 147.401670000000000000
           Width = 11.338590000000000000
           Height = 26.456710000000000000
           ShowHint = False
@@ -2836,7 +2830,7 @@ object Form13: TForm13
         end
         object Memo12: TfrxMemoView
           Left = 154.960730000000000000
-          Top = 26.456710000000000000
+          Top = 173.858380000000000000
           Width = 11.338590000000000000
           Height = 26.456710000000000000
           ShowHint = False
@@ -2851,7 +2845,7 @@ object Form13: TForm13
         end
         object Memo13: TfrxMemoView
           Left = 154.960730000000000000
-          Top = 105.826840000000000000
+          Top = 253.228510000000000000
           Width = 11.338590000000000000
           Height = 26.456710000000000000
           ShowHint = False
@@ -2866,7 +2860,7 @@ object Form13: TForm13
         end
         object Memo14: TfrxMemoView
           Left = 154.960730000000000000
-          Top = 132.283550000000000000
+          Top = 279.685220000000000000
           Width = 11.338590000000000000
           Height = 26.456710000000000000
           ShowHint = False
@@ -2881,7 +2875,7 @@ object Form13: TForm13
         end
         object Memo15: TfrxMemoView
           Left = 154.960730000000000000
-          Top = 158.740260000000000000
+          Top = 306.141930000000000000
           Width = 11.338590000000000000
           Height = 26.456710000000000000
           ShowHint = False
@@ -2896,7 +2890,7 @@ object Form13: TForm13
         end
         object Memo16: TfrxMemoView
           Left = 154.960730000000000000
-          Top = 185.196970000000000000
+          Top = 332.598640000000000000
           Width = 11.338590000000000000
           Height = 26.456710000000000000
           ShowHint = False
@@ -2911,7 +2905,7 @@ object Form13: TForm13
         end
         object Memo17: TfrxMemoView
           Left = 154.960730000000000000
-          Top = 211.653680000000000000
+          Top = 359.055350000000000000
           Width = 11.338590000000000000
           Height = 26.456710000000000000
           ShowHint = False
@@ -2926,7 +2920,7 @@ object Form13: TForm13
         end
         object Memo18: TfrxMemoView
           Left = 154.960730000000000000
-          Top = 238.110390000000000000
+          Top = 385.512060000000000000
           Width = 11.338590000000000000
           Height = 26.456710000000000000
           ShowHint = False
@@ -2941,7 +2935,7 @@ object Form13: TForm13
         end
         object Memo19: TfrxMemoView
           Left = 154.960730000000000000
-          Top = 264.567100000000000000
+          Top = 411.968770000000000000
           Width = 11.338590000000000000
           Height = 26.456710000000000000
           ShowHint = False
@@ -2956,7 +2950,7 @@ object Form13: TForm13
         end
         object Memo21: TfrxMemoView
           Left = 15.118120000000000000
-          Top = 332.598640000000000000
+          Top = 480.000310000000000000
           Width = 34.015770000000000000
           Height = 52.913420000000000000
           ShowHint = False
@@ -2974,7 +2968,7 @@ object Form13: TForm13
         end
         object Memo22: TfrxMemoView
           Left = 49.133890000000000000
-          Top = 332.598640000000000000
+          Top = 480.000310000000000000
           Width = 245.669450000000000000
           Height = 52.913420000000000000
           ShowHint = False
@@ -2992,7 +2986,7 @@ object Form13: TForm13
         end
         object Memo23: TfrxMemoView
           Left = 540.472790000000000000
-          Top = 332.598640000000000000
+          Top = 480.000310000000000000
           Width = 166.299320000000000000
           Height = 26.456710000000000000
           ShowHint = False
@@ -3010,6 +3004,7 @@ object Form13: TForm13
         end
         object frxDBDataset4tanggal_input: TfrxMemoView
           Left = 181.417440000000000000
+          Top = 147.401670000000000000
           Width = 154.960730000000000000
           Height = 26.456710000000000000
           ShowHint = False
@@ -3028,7 +3023,7 @@ object Form13: TForm13
         end
         object frxDBDataset4tanggal_input1: TfrxMemoView
           Left = 181.417440000000000000
-          Top = 26.456710000000000000
+          Top = 173.858380000000000000
           Width = 154.960730000000000000
           Height = 26.456710000000000000
           ShowHint = False
@@ -3047,7 +3042,7 @@ object Form13: TForm13
         end
         object frxDBDataset4nama_siswa: TfrxMemoView
           Left = 181.417440000000000000
-          Top = 105.826840000000000000
+          Top = 253.228510000000000000
           Width = 166.299320000000000000
           Height = 26.456710000000000000
           ShowHint = False
@@ -3064,7 +3059,7 @@ object Form13: TForm13
         end
         object frxDBDataset4nisn: TfrxMemoView
           Left = 181.417440000000000000
-          Top = 136.063080000000000000
+          Top = 283.464750000000000000
           Width = 166.299320000000000000
           Height = 22.677180000000000000
           ShowHint = False
@@ -3082,7 +3077,7 @@ object Form13: TForm13
         end
         object frxDBDataset4tingkat_kelas: TfrxMemoView
           Left = 181.417440000000000000
-          Top = 158.740260000000000000
+          Top = 306.141930000000000000
           Width = 166.299320000000000000
           Height = 26.456710000000000000
           ShowHint = False
@@ -3101,7 +3096,7 @@ object Form13: TForm13
         end
         object frxDBDataset4jenis_kelamin: TfrxMemoView
           Left = 181.417440000000000000
-          Top = 188.976500000000000000
+          Top = 336.378170000000000000
           Width = 166.299320000000000000
           Height = 22.677180000000000000
           ShowHint = False
@@ -3119,7 +3114,7 @@ object Form13: TForm13
         end
         object frxDBDataset4nama_wakel: TfrxMemoView
           Left = 181.417440000000000000
-          Top = 211.653680000000000000
+          Top = 359.055350000000000000
           Width = 166.299320000000000000
           Height = 26.456710000000000000
           ShowHint = False
@@ -3137,7 +3132,7 @@ object Form13: TForm13
         end
         object frxDBDataset4nama_ortu: TfrxMemoView
           Left = 181.417440000000000000
-          Top = 241.889920000000000000
+          Top = 389.291590000000000000
           Width = 166.299320000000000000
           Height = 22.677180000000000000
           ShowHint = False
@@ -3154,7 +3149,7 @@ object Form13: TForm13
         end
         object frxDBDataset4no_hp: TfrxMemoView
           Left = 181.417440000000000000
-          Top = 268.346630000000000000
+          Top = 415.748300000000000000
           Width = 166.299320000000000000
           Height = 22.677180000000000000
           ShowHint = False
@@ -3171,7 +3166,7 @@ object Form13: TForm13
         end
         object Memo20: TfrxMemoView
           Left = 15.118120000000000000
-          Top = 52.913420000000000000
+          Top = 200.315090000000000000
           Width = 139.842610000000000000
           Height = 18.897650000000000000
           ShowHint = False
@@ -3186,7 +3181,7 @@ object Form13: TForm13
         end
         object Memo25: TfrxMemoView
           Left = 154.960730000000000000
-          Top = 52.913420000000000000
+          Top = 200.315090000000000000
           Width = 11.338590000000000000
           Height = 26.456710000000000000
           ShowHint = False
@@ -3201,7 +3196,7 @@ object Form13: TForm13
         end
         object Memo24: TfrxMemoView
           Left = 294.803340000000000000
-          Top = 332.598640000000000000
+          Top = 480.000310000000000000
           Width = 245.669450000000000000
           Height = 52.913420000000000000
           ShowHint = False
@@ -3219,7 +3214,7 @@ object Form13: TForm13
         end
         object Memo27: TfrxMemoView
           Left = 540.472790000000000000
-          Top = 359.055350000000000000
+          Top = 506.457020000000000000
           Width = 94.488250000000000000
           Height = 26.456710000000000000
           ShowHint = False
@@ -3237,7 +3232,7 @@ object Form13: TForm13
         end
         object Memo28: TfrxMemoView
           Left = 634.961040000000000000
-          Top = 359.055350000000000000
+          Top = 506.457020000000000000
           Width = 71.811070000000000000
           Height = 26.456710000000000000
           ShowHint = False
@@ -3255,7 +3250,7 @@ object Form13: TForm13
         end
         object frxDBDataset4semester: TfrxMemoView
           Left = 181.417440000000000000
-          Top = 52.913420000000000000
+          Top = 200.315090000000000000
           Width = 154.960730000000000000
           Height = 26.456710000000000000
           ShowHint = False
@@ -3271,11 +3266,27 @@ object Form13: TForm13
             '[frxDBDataset4."semester"]')
           ParentFont = False
         end
+        object Memo1: TfrxMemoView
+          Left = 200.315090000000000000
+          Top = 26.456710000000000000
+          Width = 381.732530000000000000
+          Height = 26.456710000000000000
+          ShowHint = False
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clBlack
+          Font.Height = -21
+          Font.Name = 'Arial'
+          Font.Style = [fsBold]
+          Memo.UTF8 = (
+            'RANGKUMAN LAPORAN INFORMASI KESISWAAN')
+          ParentFont = False
+        end
       end
       object MasterData1: TfrxMasterData
         Height = 26.456710000000000000
-        Top = 555.590910000000000000
+        Top = 574.488560000000000000
         Width = 718.110700000000000000
+        DataSet = frxDatasetData_siswa
         DataSetName = 'frxDBDataset1'
         RowCount = 0
         object Memo35: TfrxMemoView
@@ -3319,6 +3330,7 @@ object Form13: TForm13
           Width = 94.488250000000000000
           Height = 26.456710000000000000
           ShowHint = False
+          DataSet = frxDatasetData_siswa
           DataSetName = 'frxDBDataset1'
           Font.Charset = DEFAULT_CHARSET
           Font.Color = clBlack
@@ -3352,6 +3364,7 @@ object Form13: TForm13
           Width = 245.669450000000000000
           Height = 26.456710000000000000
           ShowHint = False
+          DataSet = frxDatasetData_siswa
           DataSetName = 'frxDBDataset1'
           Font.Charset = DEFAULT_CHARSET
           Font.Color = clBlack
@@ -3366,7 +3379,7 @@ object Form13: TForm13
       end
       object GroupFooter1: TfrxGroupFooter
         Height = 423.307360000000000000
-        Top = 604.724800000000000000
+        Top = 623.622450000000000000
         Width = 718.110700000000000000
         object Memo32: TfrxMemoView
           Left = 15.118120000000000000
@@ -3513,6 +3526,7 @@ object Form13: TForm13
           Width = 94.488250000000000000
           Height = 26.456710000000000000
           ShowHint = False
+          DataSet = frxDatasetData_siswa
           DataSetName = 'frxDBDataset1'
           Font.Charset = DEFAULT_CHARSET
           Font.Color = clBlack
@@ -3656,5 +3670,14 @@ object Form13: TForm13
     Params = <>
     Left = 968
     Top = 94
+  end
+  object ZQuerySiswa: TZQuery
+    Connection = ZConnectioncon1
+    Active = True
+    SQL.Strings = (
+      'SELECT * FROM tb_siswa')
+    Params = <>
+    Left = 1344
+    Top = 72
   end
 end

@@ -1,8 +1,8 @@
 object Form11: TForm11
-  Left = 141
-  Top = 150
-  Width = 1356
-  Height = 706
+  Left = 148
+  Top = 129
+  Width = 1333
+  Height = 718
   Caption = 'Input Data Poin'
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET

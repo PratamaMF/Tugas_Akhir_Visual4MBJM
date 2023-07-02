@@ -32,10 +32,13 @@ type
     ZQueryHub: TZQuery;
     ZQuery2: TZQuery;
     ZQuery3: TZQuery;
+    ZQuerySiswa: TZQuery;
+    DBGrid1: TDBGrid;
+    EdtID: TEdit;
     procedure btn2Click(Sender: TObject);
-    procedure btn6Click(Sender: TObject);
     procedure btn7Click(Sender: TObject);
     procedure btn8Click(Sender: TObject);
+    procedure DBGrid1CellClick(Column: TColumn);
   private
     { Private declarations }
   public
@@ -56,11 +59,6 @@ begin
   frxReportData_siswa.ShowReport();
 end;
 
-procedure TForm13.btn6Click(Sender: TObject);
-begin
-  frxReportPrestasi.ShowReport();
-end;
-
 procedure TForm13.btn7Click(Sender: TObject);
 begin
 frxReportPelanggaran.ShowReport();
@@ -69,6 +67,11 @@ end;
 procedure TForm13.btn8Click(Sender: TObject);
 begin
 frxReportLap_akhir.ShowReport();
+end;
+
+procedure TForm13.DBGrid1CellClick(Column: TColumn);
+begin
+  EdtID.Text:=ZQuerySiswa.Fields[0].AsString;
 end;
 
 end.
