@@ -63,6 +63,7 @@ type
     procedure DBGrid5CellClick(Column: TColumn);
     procedure DBGrid6CellClick(Column: TColumn);
     procedure btnSimpanClick(Sender: TObject);
+    procedure DBGrid3CellClick(Column: TColumn);
   private
     { Private declarations }
   public
@@ -110,6 +111,11 @@ begin
   ZQueryRiwayat.SQL.Add('select * from tb_riwayat_poin');
   ZQueryRiwayat.Open;
   Showmessage('DATA BERHASIL DI SIMPAN');
+end;
+
+procedure TForm4.DBGrid3CellClick(Column: TColumn);
+begin
+  EdtPoinID.Text:=ZQuery2.Fields[0].AsString;
 end;
 
 end.

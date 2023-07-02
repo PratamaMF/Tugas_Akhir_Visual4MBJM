@@ -14,12 +14,9 @@ type
     l_3: TLabel;
     l_1: TLabel;
     btn1: TButton;
-    btn2: TButton;
-    DBGrid1: TDBGrid;
     l_2: TLabel;
     ZConnection1: TZConnection;
-    ZQuery1: TZQuery;
-    ds1: TDataSource;
+    DBGrid1: TDBGrid;
     procedure btn2Click(Sender: TObject);
     procedure btn1Click(Sender: TObject);
   private
@@ -45,7 +42,7 @@ end;
 
 procedure TForm14.btn1Click(Sender: TObject);
 begin
-Form15.showmodal;
+Form4.showmodal;
 end;
 
 end.

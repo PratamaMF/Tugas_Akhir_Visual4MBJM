@@ -82,111 +82,18 @@ object Form14: TForm14
       TabOrder = 1
       OnClick = btn1Click
     end
-    object btn2: TButton
-      Left = 272
-      Top = 80
-      Width = 201
-      Height = 41
-      Caption = 'TAMBAH PELANGGARAN SISWA'
-      Font.Charset = DEFAULT_CHARSET
-      Font.Color = clWindowText
-      Font.Height = -13
-      Font.Name = 'Tahoma'
-      Font.Style = []
-      ParentFont = False
-      TabOrder = 2
-      OnClick = btn2Click
-    end
     object DBGrid1: TDBGrid
       Left = 56
-      Top = 184
-      Width = 1137
-      Height = 321
-      DataSource = ds1
-      Font.Charset = DEFAULT_CHARSET
-      Font.Color = clWindowText
-      Font.Height = -13
-      Font.Name = 'Tahoma'
-      Font.Style = []
-      ParentFont = False
-      TabOrder = 3
+      Top = 192
+      Width = 985
+      Height = 329
+      DataSource = Form4.dsRiwayat
+      TabOrder = 2
       TitleFont.Charset = DEFAULT_CHARSET
       TitleFont.Color = clWindowText
-      TitleFont.Height = -13
+      TitleFont.Height = -11
       TitleFont.Name = 'Tahoma'
       TitleFont.Style = []
-      Columns = <
-        item
-          Expanded = False
-          FieldName = 'riwayat_id'
-          Visible = True
-        end
-        item
-          Expanded = False
-          FieldName = 'nis'
-          Visible = True
-        end
-        item
-          Expanded = False
-          FieldName = 'nisn'
-          Visible = True
-        end
-        item
-          Expanded = False
-          FieldName = 'nama_siswa'
-          Visible = True
-        end
-        item
-          Expanded = False
-          FieldName = 'tingkat_kelas'
-          Visible = True
-        end
-        item
-          Expanded = False
-          FieldName = 'jurusan'
-          Visible = True
-        end
-        item
-          Expanded = False
-          FieldName = 'jenis_kelamin'
-          Visible = True
-        end
-        item
-          Expanded = False
-          FieldName = 'tanggal_input'
-          Visible = True
-        end
-        item
-          Expanded = False
-          FieldName = 'nama_wakel'
-          Visible = True
-        end
-        item
-          Expanded = False
-          FieldName = 'nama_ortu'
-          Visible = True
-        end
-        item
-          Expanded = False
-          FieldName = 'no_hp'
-          Visible = True
-        end
-        item
-          Expanded = False
-          FieldName = 'jenis'
-          Width = 230
-          Visible = True
-        end
-        item
-          Expanded = False
-          FieldName = 'bobot'
-          Visible = True
-        end
-        item
-          Expanded = False
-          FieldName = 'status'
-          Visible = True
-        end>
     end
   end
   object ZConnection1: TZConnection
@@ -203,20 +110,6 @@ object Form14: TForm14
       'C:\Users\Asus\Documents\TUGAS SEMESTER 4\Pemrograman Visual 2\Tu' +
       'gas_Akhir\libmysql.dll'
     Left = 760
-    Top = 78
-  end
-  object ZQuery1: TZQuery
-    Connection = ZConnection1
-    Active = True
-    SQL.Strings = (
-      'select * from tb_riwayat_poinn')
-    Params = <>
-    Left = 856
-    Top = 78
-  end
-  object ds1: TDataSource
-    DataSet = ZQuery1
-    Left = 936
     Top = 78
   end
 end

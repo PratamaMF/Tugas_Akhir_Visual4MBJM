@@ -3,7 +3,7 @@ object Form4: TForm4
   Top = 127
   Width = 1468
   Height = 707
-  Caption = 'TRY'
+  Caption = 'INPUT PRESTASI DAN ELANGGARAN SISWA'
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
@@ -266,6 +266,7 @@ object Form4: TForm4
       ItemHeight = 19
       ParentFont = False
       TabOrder = 6
+      Text = '==== PILIH ===='
       Items.Strings = (
         'Aktif'
         'Tidak Aktif')
@@ -328,7 +329,7 @@ object Form4: TForm4
     end
     object pnl2: TPanel
       Left = -8
-      Top = -64
+      Top = -56
       Width = 1321
       Height = 121
       Color = clActiveBorder
@@ -349,9 +350,9 @@ object Form4: TForm4
       object l_1: TLabel
         Left = 48
         Top = 80
-        Width = 233
+        Width = 519
         Height = 27
-        Caption = 'DATA PRESTASI SISWA'
+        Caption = 'INPUT POIN PRESTASI DAN  PELANGGARAN SISWA'
         Font.Charset = ANSI_CHARSET
         Font.Color = clWindowText
         Font.Height = -21
@@ -425,14 +426,22 @@ object Form4: TForm4
     object DBGrid3: TDBGrid
       Left = 608
       Top = 120
-      Width = 593
+      Width = 641
       Height = 225
+      DataSource = ds2
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -13
+      Font.Name = 'Tahoma'
+      Font.Style = []
+      ParentFont = False
       TabOrder = 15
       TitleFont.Charset = DEFAULT_CHARSET
       TitleFont.Color = clWindowText
-      TitleFont.Height = -11
+      TitleFont.Height = -13
       TitleFont.Name = 'Tahoma'
       TitleFont.Style = []
+      OnCellClick = DBGrid3CellClick
     end
     object DBGrid2: TDBGrid
       Left = 352
@@ -549,6 +558,10 @@ object Form4: TForm4
     Top = 18
   end
   object ZQuery2: TZQuery
+    Connection = ZConnection1
+    Active = True
+    SQL.Strings = (
+      'SELECT * FROM tb_poin')
     Params = <>
     Left = 1328
     Top = 128
@@ -590,6 +603,7 @@ object Form4: TForm4
     Top = 400
   end
   object ds2: TDataSource
+    DataSet = ZQuery2
     Left = 1376
     Top = 128
   end
@@ -609,6 +623,7 @@ object Form4: TForm4
     Top = 320
   end
   object dsRiwayat: TDataSource
+    DataSet = ZQueryRiwayat
     Left = 1344
     Top = 456
   end

@@ -24,7 +24,6 @@ type
     l_2: TLabel;
     l_4: TLabel;
     l_5: TLabel;
-    btn1: TButton;
     procedure btnDatasiswaClick(Sender: TObject);
     procedure btnDataOrangTuaClick(Sender: TObject);
     procedure btnDataKelasClick(Sender: TObject);

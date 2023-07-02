@@ -32,8 +32,6 @@ type
     ZQueryHub: TZQuery;
     ZQuery2: TZQuery;
     ZQuery3: TZQuery;
-    ZQuery4: TZQuery;
-    frxDataset1: TfrxDBDataset;
     procedure btn2Click(Sender: TObject);
     procedure btn6Click(Sender: TObject);
     procedure btn7Click(Sender: TObject);
