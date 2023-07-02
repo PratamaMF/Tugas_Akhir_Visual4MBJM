@@ -1,6 +1,6 @@
 object Form1: TForm1
   Left = 97
-  Top = 111
+  Top = 136
   Width = 1354
   Height = 715
   Caption = 'FormUtama'
@@ -2563,6 +2563,15 @@ object Form1: TForm1
         ParentFont = False
         TabOrder = 6
         OnClick = btn7Click
+      end
+      object btn1: TButton
+        Left = 24
+        Top = 440
+        Width = 209
+        Height = 49
+        Caption = 'btn1'
+        TabOrder = 7
+        OnClick = btn1Click
       end
     end
   end

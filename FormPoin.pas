@@ -10,16 +10,12 @@ uses
 type
   TForm10 = class(TForm)
     pnl1: TPanel;
-    l_2: TLabel;
-    l_5: TLabel;
     btn6: TButton;
-    btn7: TButton;
-    DBGrid1: TDBGrid;
-    DBGrid2: TDBGrid;
     pnl2: TPanel;
     l_3: TLabel;
     l_1: TLabel;
     ZConnection1: TZConnection;
+    DBGrid1: TDBGrid;
     procedure btn6Click(Sender: TObject);
     procedure btn7Click(Sender: TObject);
   private

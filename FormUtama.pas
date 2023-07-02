@@ -24,6 +24,7 @@ type
     l_2: TLabel;
     l_4: TLabel;
     l_5: TLabel;
+    btn1: TButton;
     procedure btnDatasiswaClick(Sender: TObject);
     procedure btnDataOrangTuaClick(Sender: TObject);
     procedure btnDataKelasClick(Sender: TObject);
@@ -32,6 +33,7 @@ type
     procedure btn7Click(Sender: TObject);
     procedure btnLaporanClick(Sender: TObject);
     procedure btn6Click(Sender: TObject);
+    procedure btn1Click(Sender: TObject);
   private
     { Private declarations }
   public
@@ -87,6 +89,11 @@ end;
 procedure TForm1.btn6Click(Sender: TObject);
 begin
  Form1.ShowModal;
+end;
+
+procedure TForm1.btn1Click(Sender: TObject);
+begin
+   Form4.ShowModal;
 end;
 
 end.
