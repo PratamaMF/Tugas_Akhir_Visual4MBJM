@@ -16,28 +16,31 @@ type
     btn7: TButton;
     btn8: TButton;
     ZConnectioncon1: TZConnection;
-    ZQuery1: TZQuery;
     ds1: TDataSource;
     frxReportData_siswa: TfrxReport;
     frxDatasetData_siswa: TfrxDBDataset;
     frxReportPrestasi: TfrxReport;
-    frxDatasetPrestasi: TfrxDBDataset;
+    frxDataset1: TfrxDBDataset;
     frxReportPelanggaran: TfrxReport;
-    frxDatasetPelanggaran: TfrxDBDataset;
-    frxReportLap_akhir: TfrxReport;
-    frxDatasetLap_akhir: TfrxDBDataset;
+    frxDataset4: TfrxDBDataset;
     pnl2: TPanel;
     l_3: TLabel;
     l_1: TLabel;
     ZQueryHub: TZQuery;
-    ZQuery2: TZQuery;
-    ZQuery3: TZQuery;
     ZQuerySiswa: TZQuery;
     DBGrid1: TDBGrid;
-    EdtID: TEdit;
+    grp1: TGroupBox;
+    ZQuery1: TZQuery;
+    ZQuery2: TZQuery;
+    ZQuery3: TZQuery;
+    grp2: TGroupBox;
+    grp3: TGroupBox;
+    grp4: TGroupBox;
+    frxDataset2: TfrxDBDataset;
+    frxDataset3: TfrxDBDataset;
+    ZQuery4: TZQuery;
     procedure btn2Click(Sender: TObject);
     procedure btn7Click(Sender: TObject);
-    procedure btn8Click(Sender: TObject);
     procedure DBGrid1CellClick(Column: TColumn);
     procedure btn6Click(Sender: TObject);
   private
@@ -48,6 +51,8 @@ type
 
 var
   Form13: TForm13;
+  id: string;
+  nm: string;
 
 implementation
 
@@ -65,14 +70,34 @@ begin
 frxReportPelanggaran.ShowReport();
 end;
 
-procedure TForm13.btn8Click(Sender: TObject);
-begin
-frxReportLap_akhir.ShowReport();
-end;
-
 procedure TForm13.DBGrid1CellClick(Column: TColumn);
 begin
-  EdtID.Text:=ZQuerySiswa.Fields[0].AsString;
+  id:=ZQuerySiswa.Fields[0].AsString;
+  nm:=ZQuerySiswa.Fields[3].AsString;
+
+ // Laporan Prestasi
+  ZQuery1.Active:=True;
+  ZQuery1.SQL.Clear;
+  ZQuery1.SQL.Add('SELECT tb_siswa.siswa_id, tb_siswa.nis, tb_siswa.nisn, tb_siswa.nama_siswa, tb_siswa.jenis_kelamin, tb_siswa.tingkat_kelas, tb_siswa.jurusan, tb_siswa.wali_kelas, tb_ortu.nama, tb_ortu.telp, tb_hubungan.siswa_id, tb_hubungan.status_hub FROM tb_hubungan');
+  ZQuery1.SQL.Add('INNER JOIN tb_siswa ON tb_hubungan.siswa_id = tb_siswa.siswa_id INNER JOIN tb_ortu ON tb_hubungan.ortu_id = tb_ortu.ortu_id WHERE tb_hubungan.siswa_id="'+id+'"');
+  ZQuery1.Open;
+
+  ZQuery2.Active:=True;
+  ZQuery2.SQL.Clear;
+  ZQuery2.SQL.Add('SELECT * FROM tb_riwayat_poinn WHERE nama_siswa="'+nm+'" AND jenis="Prestasi"');
+  ZQuery2.Open;
+
+ // Laporan Pelanggaran
+  ZQuery3.Active:=True;
+  ZQuery3.SQL.Clear;
+  ZQuery3.SQL.Add('SELECT tb_siswa.siswa_id, tb_siswa.nis, tb_siswa.nisn, tb_siswa.nama_siswa, tb_siswa.jenis_kelamin, tb_siswa.tingkat_kelas, tb_siswa.jurusan, tb_siswa.wali_kelas, tb_ortu.nama, tb_ortu.telp, tb_hubungan.siswa_id, tb_hubungan.status_hub FROM tb_hubungan');
+  ZQuery3.SQL.Add('INNER JOIN tb_siswa ON tb_hubungan.siswa_id = tb_siswa.siswa_id INNER JOIN tb_ortu ON tb_hubungan.ortu_id = tb_ortu.ortu_id WHERE tb_hubungan.siswa_id="'+id+'"');
+  ZQuery3.Open;
+
+  ZQuery4.Active:=True;
+  ZQuery4.SQL.Clear;
+  ZQuery4.SQL.Add('SELECT * FROM tb_riwayat_poinn WHERE nama_siswa="'+nm+'" AND jenis="Pelanggaran"');
+  ZQuery4.Open;
 end;
 
 procedure TForm13.btn6Click(Sender: TObject);

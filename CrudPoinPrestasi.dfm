@@ -1,6 +1,6 @@
 object Form11: TForm11
-  Left = 148
-  Top = 129
+  Left = 171
+  Top = 128
   Width = 1333
   Height = 718
   Caption = 'Input Data Poin'
@@ -197,6 +197,7 @@ object Form11: TForm11
       Font.Name = 'Tahoma'
       Font.Style = []
       ItemHeight = 19
+      ItemIndex = 1
       ParentFont = False
       TabOrder = 8
       Text = '==== PILIH ===='
@@ -231,7 +232,6 @@ object Form11: TForm11
   end
   object ZQuery1: TZQuery
     Connection = Form10.ZConnection1
-    Active = True
     SQL.Strings = (
       'select * from tb_poin')
     Params = <>

@@ -24,46 +24,34 @@ type
     l_9: TLabel;
     l_15: TLabel;
     l_18: TLabel;
-    l_19: TLabel;
     btnSimpan: TButton;
     btnEdit: TButton;
     btnHapus: TButton;
-    EdtSiswaID: TEdit;
-    EdtPoinID: TEdit;
-    EdtWaliID: TEdit;
+    EdtNamaSiswa: TEdit;
+    EdtKelas: TEdit;
+    EdtWakel: TEdit;
     CbbStatus: TComboBox;
     btn1: TButton;
     dtpTanggal: TDateTimePicker;
-    DBGrid1: TDBGrid;
     pnl2: TPanel;
     l_3: TLabel;
     l_1: TLabel;
     DBGrid4: TDBGrid;
     CbbSemester: TComboBox;
-    EdtOrtuID: TEdit;
-    EdtKelasID: TEdit;
+    EdtNama_poin: TEdit;
+    EdtJenis: TEdit;
     ZQuery2: TZQuery;
-    ZQuery3: TZQuery;
-    ZQuery4: TZQuery;
-    ZQuery5: TZQuery;
     ZQueryRiwayat: TZQuery;
     ds2: TDataSource;
-    ds3: TDataSource;
-    ds4: TDataSource;
-    ds5: TDataSource;
     dsRiwayat: TDataSource;
     DBGrid3: TDBGrid;
-    DBGrid2: TDBGrid;
-    DBGrid5: TDBGrid;
-    DBGrid6: TDBGrid;
     l_4: TLabel;
-    l_7: TLabel;
+    EdtBobot: TEdit;
+    DBGrid1: TDBGrid;
     procedure DBGrid1CellClick(Column: TColumn);
-    procedure DBGrid2CellClick(Column: TColumn);
-    procedure DBGrid5CellClick(Column: TColumn);
-    procedure DBGrid6CellClick(Column: TColumn);
     procedure btnSimpanClick(Sender: TObject);
     procedure DBGrid3CellClick(Column: TColumn);
+    procedure DBGrid4CellClick(Column: TColumn);
   private
     { Private declarations }
   public
@@ -72,6 +60,7 @@ type
 
 var
   Form4: TForm4;
+  id: string;
 
 implementation
 
@@ -83,39 +72,39 @@ uses CrudOrangTua, FormPoinSiswa, FormSiswa, FormKelas, FormWaliKelas,
 
 procedure TForm4.DBGrid1CellClick(Column: TColumn);
 begin
-  EdtSiswaID.Text:=ZQuery1.Fields[0].AsString;
-end;
-
-procedure TForm4.DBGrid2CellClick(Column: TColumn);
-begin
-  EdtOrtuID.Text:=ZQuery4.Fields[0].AsString;
-end;
-
-procedure TForm4.DBGrid5CellClick(Column: TColumn);
-begin
-  EdtKelasID.Text:=ZQuery5.Fields[0].AsString;
-end;
-
-procedure TForm4.DBGrid6CellClick(Column: TColumn);
-begin
-  EdtWaliID.Text:=ZQuery3.Fields[0].AsString;
+  EdtNamaSiswa.Text:=ZQuery2.Fields[3].AsString;
+  EdtKelas.Text:=ZQuery2.Fields[8].AsString;
+  EdtWakel.Text:=ZQuery2.Fields[10].AsString;
 end;
 
 procedure TForm4.btnSimpanClick(Sender: TObject);
 begin
   ZQueryRiwayat.SQL.Clear;
-  ZQueryRiwayat.SQL.Add('insert into tb_riwayat_poin values(null,"'+EdtSiswaID.Text+'","'+EdtPoinID.Text+'","'+EdtWaliID.Text+'","'+EdtOrtuID.Text+'","'+EdtKelasID.Text+'","'+formatdatetime('yyyy-mm-dd',dtpTanggal.Date)+'","'+CbbSemester.Text+'","'+CbbStatus.Text+'")');
+  ZQueryRiwayat.SQL.Add('insert into tb_riwayat_poinn values(null,"'+EdtNamaSiswa.Text+'","'+EdtKelas.Text+'","'+formatdatetime('yyyy-mm-dd',dtpTanggal.Date)+'","'+EdtWakel.Text+'","'+EdtNama_poin.Text+'","'+EdtJenis.Text+'","'+EdtBobot.Text+'","'+CbbSemester.Text+'","'+CbbStatus.Text+'")');
   ZQueryRiwayat.ExecSQL ;
 
   ZQueryRiwayat.SQL.Clear;
-  ZQueryRiwayat.SQL.Add('select * from tb_riwayat_poin');
+  ZQueryRiwayat.SQL.Add('select * from tb_riwayat_poinn');
   ZQueryRiwayat.Open;
   Showmessage('DATA BERHASIL DI SIMPAN');
 end;
 
 procedure TForm4.DBGrid3CellClick(Column: TColumn);
 begin
-  EdtPoinID.Text:=ZQuery2.Fields[0].AsString;
+  EdtNama_poin.Text:=ZQuery1.Fields[1].AsString;
+  EdtBobot.Text:=ZQuery1.Fields[2].AsString;
+  EdtJenis.Text:=ZQuery1.Fields[3].AsString;
+end;
+
+procedure TForm4.DBGrid4CellClick(Column: TColumn);
+begin
+  id:=ZQueryRiwayat.Fields[0].AsString;
+  EdtNamaSiswa.Text:=ZQueryRiwayat.Fields[1].AsString;
+  EdtKelas.Text:=ZQueryRiwayat.Fields[2].AsString;
+  EdtWakel.Text:=ZQueryRiwayat.Fields[4].AsString;
+  EdtNama_poin.Text:=ZQueryRiwayat.Fields[5].AsString;
+  EdtBobot.Text:=ZQueryRiwayat.Fields[7].AsString;
+  EdtJenis.Text:=ZQueryRiwayat.Fields[6].AsString;
 end;
 
 end.

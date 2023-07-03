@@ -1,8 +1,8 @@
 object Form4: TForm4
-  Left = 95
-  Top = 127
-  Width = 1468
-  Height = 707
+  Left = 77
+  Top = 96
+  Width = 1469
+  Height = 729
   Caption = 'INPUT PRESTASI DAN ELANGGARAN SISWA'
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
@@ -17,15 +17,15 @@ object Form4: TForm4
     Left = 1
     Top = -6
     Width = 1313
-    Height = 673
+    Height = 695
     Color = clWhite
     TabOrder = 0
     object l_2: TLabel
       Left = 40
-      Top = 88
-      Width = 71
+      Top = 96
+      Width = 99
       Height = 19
-      Caption = 'SISWA ID'
+      Caption = 'NAMA SISWA'
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clWindowText
       Font.Height = -16
@@ -35,10 +35,10 @@ object Form4: TForm4
     end
     object l_5: TLabel
       Left = 40
-      Top = 120
-      Width = 60
+      Top = 136
+      Width = 46
       Height = 19
-      Caption = 'POIN ID'
+      Caption = 'KELAS'
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clWindowText
       Font.Height = -16
@@ -48,10 +48,10 @@ object Form4: TForm4
     end
     object l_6: TLabel
       Left = 40
-      Top = 152
-      Width = 112
+      Top = 176
+      Width = 90
       Height = 19
-      Caption = 'WALI KELAS ID'
+      Caption = 'WALI KELAS'
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clWindowText
       Font.Height = -16
@@ -61,10 +61,10 @@ object Form4: TForm4
     end
     object l_11: TLabel
       Left = 40
-      Top = 184
-      Width = 65
+      Top = 216
+      Width = 88
       Height = 19
-      Caption = 'ORTU ID'
+      Caption = 'NAMA POIN'
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clWindowText
       Font.Height = -16
@@ -74,10 +74,10 @@ object Form4: TForm4
     end
     object l_12: TLabel
       Left = 40
-      Top = 216
-      Width = 68
+      Top = 256
+      Width = 42
       Height = 19
-      Caption = 'KELAS ID'
+      Caption = 'JENIS'
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clWindowText
       Font.Height = -16
@@ -87,7 +87,7 @@ object Form4: TForm4
     end
     object l_13: TLabel
       Left = 40
-      Top = 280
+      Top = 376
       Width = 77
       Height = 19
       Caption = 'SEMESTER'
@@ -100,7 +100,7 @@ object Form4: TForm4
     end
     object l_17: TLabel
       Left = 40
-      Top = 312
+      Top = 416
       Width = 60
       Height = 19
       Caption = 'STATUS'
@@ -113,7 +113,7 @@ object Form4: TForm4
     end
     object l_9: TLabel
       Left = 40
-      Top = 248
+      Top = 336
       Width = 125
       Height = 19
       Caption = 'TANGGAL INPUT'
@@ -138,8 +138,8 @@ object Form4: TForm4
       ParentFont = False
     end
     object l_18: TLabel
-      Left = 40
-      Top = 408
+      Left = 608
+      Top = 352
       Width = 92
       Height = 18
       Caption = 'Pilih Siswa :'
@@ -150,48 +150,22 @@ object Form4: TForm4
       Font.Style = [fsBold]
       ParentFont = False
     end
-    object l_19: TLabel
-      Left = 352
-      Top = 408
-      Width = 120
-      Height = 18
-      Caption = 'Pilih Data Ortu :'
-      Font.Charset = DEFAULT_CHARSET
-      Font.Color = clWindowText
-      Font.Height = -15
-      Font.Name = 'Tahoma'
-      Font.Style = [fsBold]
-      ParentFont = False
-    end
     object l_4: TLabel
-      Left = 688
-      Top = 408
-      Width = 127
-      Height = 18
-      Caption = 'Pilih Data Kelas :'
+      Left = 40
+      Top = 296
+      Width = 52
+      Height = 19
+      Caption = 'BOBOT'
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clWindowText
-      Font.Height = -15
+      Font.Height = -16
       Font.Name = 'Tahoma'
-      Font.Style = [fsBold]
-      ParentFont = False
-    end
-    object l_7: TLabel
-      Left = 968
-      Top = 408
-      Width = 165
-      Height = 18
-      Caption = 'Pilih Data Wali Kelas :'
-      Font.Charset = DEFAULT_CHARSET
-      Font.Color = clWindowText
-      Font.Height = -15
-      Font.Name = 'Tahoma'
-      Font.Style = [fsBold]
+      Font.Style = []
       ParentFont = False
     end
     object btnSimpan: TButton
       Left = 40
-      Top = 352
+      Top = 456
       Width = 129
       Height = 41
       Caption = 'SIMPAN'
@@ -200,7 +174,7 @@ object Form4: TForm4
     end
     object btnEdit: TButton
       Left = 176
-      Top = 352
+      Top = 456
       Width = 129
       Height = 41
       Caption = 'EDIT'
@@ -208,15 +182,15 @@ object Form4: TForm4
     end
     object btnHapus: TButton
       Left = 312
-      Top = 352
+      Top = 456
       Width = 129
       Height = 41
       Caption = 'HAPUS'
       TabOrder = 2
     end
-    object EdtSiswaID: TEdit
+    object EdtNamaSiswa: TEdit
       Left = 216
-      Top = 88
+      Top = 96
       Width = 361
       Height = 27
       Font.Charset = DEFAULT_CHARSET
@@ -227,9 +201,9 @@ object Form4: TForm4
       ParentFont = False
       TabOrder = 3
     end
-    object EdtPoinID: TEdit
+    object EdtKelas: TEdit
       Left = 216
-      Top = 120
+      Top = 136
       Width = 361
       Height = 27
       Font.Charset = DEFAULT_CHARSET
@@ -240,9 +214,9 @@ object Form4: TForm4
       ParentFont = False
       TabOrder = 4
     end
-    object EdtWaliID: TEdit
+    object EdtWakel: TEdit
       Left = 216
-      Top = 152
+      Top = 176
       Width = 361
       Height = 27
       Font.Charset = DEFAULT_CHARSET
@@ -255,7 +229,7 @@ object Form4: TForm4
     end
     object CbbStatus: TComboBox
       Left = 216
-      Top = 312
+      Top = 416
       Width = 233
       Height = 27
       Font.Charset = DEFAULT_CHARSET
@@ -273,7 +247,7 @@ object Form4: TForm4
     end
     object btn1: TButton
       Left = 448
-      Top = 352
+      Top = 456
       Width = 129
       Height = 41
       Caption = 'CLEAR FORM'
@@ -281,7 +255,7 @@ object Form4: TForm4
     end
     object dtpTanggal: TDateTimePicker
       Left = 216
-      Top = 248
+      Top = 336
       Width = 233
       Height = 27
       Date = 45092.065244027780000000
@@ -294,46 +268,13 @@ object Form4: TForm4
       ParentFont = False
       TabOrder = 8
     end
-    object DBGrid1: TDBGrid
-      Left = 40
-      Top = 432
-      Width = 297
-      Height = 120
-      DataSource = ds1
-      Font.Charset = DEFAULT_CHARSET
-      Font.Color = clWindowText
-      Font.Height = -13
-      Font.Name = 'Tahoma'
-      Font.Style = []
-      ParentFont = False
-      TabOrder = 9
-      TitleFont.Charset = DEFAULT_CHARSET
-      TitleFont.Color = clWindowText
-      TitleFont.Height = -13
-      TitleFont.Name = 'Tahoma'
-      TitleFont.Style = []
-      OnCellClick = DBGrid1CellClick
-      Columns = <
-        item
-          Expanded = False
-          FieldName = 'nis'
-          Width = 85
-          Visible = True
-        end
-        item
-          Expanded = False
-          FieldName = 'nama_siswa'
-          Width = 170
-          Visible = True
-        end>
-    end
     object pnl2: TPanel
       Left = -8
       Top = -56
       Width = 1321
       Height = 121
       Color = clActiveBorder
-      TabOrder = 10
+      TabOrder = 9
       object l_3: TLabel
         Left = 1032
         Top = 80
@@ -362,10 +303,10 @@ object Form4: TForm4
       end
     end
     object DBGrid4: TDBGrid
-      Left = 328
-      Top = 576
-      Width = 705
-      Height = 73
+      Left = 40
+      Top = 520
+      Width = 1217
+      Height = 145
       DataSource = dsRiwayat
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clWindowText
@@ -373,16 +314,17 @@ object Form4: TForm4
       Font.Name = 'Tahoma'
       Font.Style = []
       ParentFont = False
-      TabOrder = 11
+      TabOrder = 10
       TitleFont.Charset = DEFAULT_CHARSET
       TitleFont.Color = clWindowText
       TitleFont.Height = -13
       TitleFont.Name = 'Tahoma'
       TitleFont.Style = []
+      OnCellClick = DBGrid4CellClick
     end
     object CbbSemester: TComboBox
       Left = 216
-      Top = 280
+      Top = 376
       Width = 233
       Height = 27
       Font.Charset = DEFAULT_CHARSET
@@ -392,26 +334,13 @@ object Form4: TForm4
       Font.Style = []
       ItemHeight = 19
       ParentFont = False
-      TabOrder = 12
+      TabOrder = 11
       Text = '==== PILIH ===='
       Items.Strings = (
         'GANJIL'
         'GENAP')
     end
-    object EdtOrtuID: TEdit
-      Left = 216
-      Top = 184
-      Width = 361
-      Height = 27
-      Font.Charset = DEFAULT_CHARSET
-      Font.Color = clWindowText
-      Font.Height = -16
-      Font.Name = 'Tahoma'
-      Font.Style = []
-      ParentFont = False
-      TabOrder = 13
-    end
-    object EdtKelasID: TEdit
+    object EdtNama_poin: TEdit
       Left = 216
       Top = 216
       Width = 361
@@ -422,21 +351,34 @@ object Form4: TForm4
       Font.Name = 'Tahoma'
       Font.Style = []
       ParentFont = False
-      TabOrder = 14
+      TabOrder = 12
+    end
+    object EdtJenis: TEdit
+      Left = 216
+      Top = 256
+      Width = 361
+      Height = 27
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -16
+      Font.Name = 'Tahoma'
+      Font.Style = []
+      ParentFont = False
+      TabOrder = 13
     end
     object DBGrid3: TDBGrid
       Left = 608
       Top = 120
       Width = 641
-      Height = 225
-      DataSource = ds2
+      Height = 217
+      DataSource = ds1
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clWindowText
       Font.Height = -13
       Font.Name = 'Tahoma'
       Font.Style = []
       ParentFont = False
-      TabOrder = 15
+      TabOrder = 14
       TitleFont.Charset = DEFAULT_CHARSET
       TitleFont.Color = clWindowText
       TitleFont.Height = -13
@@ -444,12 +386,25 @@ object Form4: TForm4
       TitleFont.Style = []
       OnCellClick = DBGrid3CellClick
     end
-    object DBGrid2: TDBGrid
-      Left = 352
-      Top = 432
-      Width = 320
+    object EdtBobot: TEdit
+      Left = 216
+      Top = 296
+      Width = 361
+      Height = 27
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -16
+      Font.Name = 'Tahoma'
+      Font.Style = []
+      ParentFont = False
+      TabOrder = 15
+    end
+    object DBGrid1: TDBGrid
+      Left = 608
+      Top = 376
+      Width = 641
       Height = 120
-      DataSource = ds4
+      DataSource = ds2
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clWindowText
       Font.Height = -13
@@ -462,77 +417,14 @@ object Form4: TForm4
       TitleFont.Height = -13
       TitleFont.Name = 'Tahoma'
       TitleFont.Style = []
-      OnCellClick = DBGrid2CellClick
-    end
-    object DBGrid5: TDBGrid
-      Left = 688
-      Top = 432
-      Width = 265
-      Height = 120
-      DataSource = ds5
-      Font.Charset = DEFAULT_CHARSET
-      Font.Color = clWindowText
-      Font.Height = -13
-      Font.Name = 'Tahoma'
-      Font.Style = []
-      ParentFont = False
-      TabOrder = 17
-      TitleFont.Charset = DEFAULT_CHARSET
-      TitleFont.Color = clWindowText
-      TitleFont.Height = -13
-      TitleFont.Name = 'Tahoma'
-      TitleFont.Style = []
-      OnCellClick = DBGrid5CellClick
-      Columns = <
-        item
-          Expanded = False
-          FieldName = 'kelas_id'
-          Visible = True
-        end
-        item
-          Expanded = False
-          FieldName = 'nama_kelas'
-          Visible = True
-        end
-        item
-          Expanded = False
-          FieldName = 'jenis'
-          Width = 45
-          Visible = True
-        end
-        item
-          Expanded = False
-          FieldName = 'jurusan'
-          Width = 52
-          Visible = True
-        end>
-    end
-    object DBGrid6: TDBGrid
-      Left = 968
-      Top = 432
-      Width = 265
-      Height = 120
-      DataSource = ds3
-      Font.Charset = DEFAULT_CHARSET
-      Font.Color = clWindowText
-      Font.Height = -13
-      Font.Name = 'Tahoma'
-      Font.Style = []
-      ParentFont = False
-      TabOrder = 18
-      TitleFont.Charset = DEFAULT_CHARSET
-      TitleFont.Color = clWindowText
-      TitleFont.Height = -13
-      TitleFont.Name = 'Tahoma'
-      TitleFont.Style = []
-      OnCellClick = DBGrid6CellClick
+      OnCellClick = DBGrid1CellClick
     end
   end
   object ZQuery1: TZQuery
     Connection = ZConnection1
     Active = True
     SQL.Strings = (
-      'SELECT * FROM tb_siswa')
+      'SELECT * FROM tb_poin')
     Params = <>
     Left = 1329
     Top = 69
@@ -562,70 +454,28 @@ object Form4: TForm4
     Connection = ZConnection1
     Active = True
     SQL.Strings = (
-      'SELECT * FROM tb_poin')
+      'SELECT * FROM tb_siswa')
     Params = <>
     Left = 1328
     Top = 128
-  end
-  object ZQuery3: TZQuery
-    Connection = ZConnection1
-    Active = True
-    SQL.Strings = (
-      'SELECT * FROM tb_walikelas')
-    Params = <>
-    Left = 1328
-    Top = 192
-  end
-  object ZQuery4: TZQuery
-    Connection = ZConnection1
-    Active = True
-    SQL.Strings = (
-      'SELECT * FROM tb_ortu')
-    Params = <>
-    Left = 1328
-    Top = 256
-  end
-  object ZQuery5: TZQuery
-    Connection = ZConnection1
-    Active = True
-    SQL.Strings = (
-      'SELECT * FROM tb_kelas')
-    Params = <>
-    Left = 1328
-    Top = 320
   end
   object ZQueryRiwayat: TZQuery
     Connection = ZConnection1
     Active = True
     SQL.Strings = (
-      'SELECT * FROM tb_riwayat_poin')
+      'SELECT * FROM tb_riwayat_poinn')
     Params = <>
-    Left = 1344
-    Top = 400
+    Left = 1352
+    Top = 208
   end
   object ds2: TDataSource
     DataSet = ZQuery2
     Left = 1376
     Top = 128
   end
-  object ds3: TDataSource
-    DataSet = ZQuery3
-    Left = 1376
-    Top = 192
-  end
-  object ds4: TDataSource
-    DataSet = ZQuery4
-    Left = 1376
-    Top = 256
-  end
-  object ds5: TDataSource
-    DataSet = ZQuery5
-    Left = 1376
-    Top = 320
-  end
   object dsRiwayat: TDataSource
     DataSet = ZQueryRiwayat
-    Left = 1344
-    Top = 456
+    Left = 1352
+    Top = 264
   end
 end
