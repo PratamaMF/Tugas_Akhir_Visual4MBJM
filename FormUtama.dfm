@@ -1,6 +1,6 @@
 object Form1: TForm1
-  Left = 96
-  Top = 136
+  Left = 109
+  Top = 304
   Width = 1353
   Height = 742
   Caption = 'FormUtama'

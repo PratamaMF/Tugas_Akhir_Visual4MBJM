@@ -1,6 +1,6 @@
 object Form8: TForm8
-  Left = 178
-  Top = 116
+  Left = 132
+  Top = 327
   Width = 1349
   Height = 686
   VertScrollBar.Position = 1
@@ -48,8 +48,8 @@ object Form8: TForm8
       ParentFont = False
     end
     object l_2: TLabel
-      Left = 72
-      Top = 400
+      Left = 248
+      Top = 416
       Width = 143
       Height = 19
       Caption = 'Tabel Data User :'
@@ -194,8 +194,8 @@ object Form8: TForm8
       TabOrder = 6
     end
     object DBGrid1: TDBGrid
-      Left = 72
-      Top = 424
+      Left = 248
+      Top = 440
       Width = 777
       Height = 169
       DataSource = ds1
