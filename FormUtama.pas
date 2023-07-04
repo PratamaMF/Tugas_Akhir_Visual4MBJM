@@ -24,6 +24,7 @@ type
     l_2: TLabel;
     l_4: TLabel;
     l_5: TLabel;
+    btn1: TButton;
     procedure btnDatasiswaClick(Sender: TObject);
     procedure btnDataOrangTuaClick(Sender: TObject);
     procedure btnDataKelasClick(Sender: TObject);
@@ -92,7 +93,7 @@ end;
 
 procedure TForm1.btn1Click(Sender: TObject);
 begin
-   Form4.ShowModal;
+   Form8.ShowModal;
 end;
 
 end.

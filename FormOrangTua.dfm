@@ -1,6 +1,6 @@
 object Form4: TForm4
-  Left = 77
-  Top = 96
+  Left = 74
+  Top = 64
   Width = 1469
   Height = 729
   Caption = 'INPUT PRESTASI DAN ELANGGARAN SISWA'

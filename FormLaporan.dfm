@@ -1,6 +1,6 @@
 object Form13: TForm13
-  Left = 104
-  Top = 123
+  Left = 88
+  Top = 200
   Width = 1432
   Height = 683
   Caption = 'Laporan'

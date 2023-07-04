@@ -21,7 +21,7 @@ object Form10: TForm10
     Color = clWhite
     TabOrder = 0
     object btn6: TButton
-      Left = 48
+      Left = 56
       Top = 96
       Width = 209
       Height = 49

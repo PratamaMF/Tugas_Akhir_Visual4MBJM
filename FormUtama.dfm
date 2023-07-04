@@ -1,8 +1,8 @@
 object Form1: TForm1
-  Left = 97
+  Left = 96
   Top = 136
-  Width = 1354
-  Height = 715
+  Width = 1353
+  Height = 742
   Caption = 'FormUtama'
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
@@ -2563,6 +2563,21 @@ object Form1: TForm1
         ParentFont = False
         TabOrder = 6
         OnClick = btn7Click
+      end
+      object btn1: TButton
+        Left = 24
+        Top = 440
+        Width = 209
+        Height = 49
+        Caption = 'DATA USER'
+        Font.Charset = ANSI_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -16
+        Font.Name = 'Vastago Grotesk Medium'
+        Font.Style = [fsBold]
+        ParentFont = False
+        TabOrder = 7
+        OnClick = btn1Click
       end
     end
   end

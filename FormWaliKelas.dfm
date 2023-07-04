@@ -1,8 +1,9 @@
 object Form8: TForm8
-  Left = 147
-  Top = 128
+  Left = 178
+  Top = 116
   Width = 1349
-  Height = 703
+  Height = 686
+  VertScrollBar.Position = 1
   Caption = 'Input Data User'
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
@@ -15,17 +16,17 @@ object Form8: TForm8
   TextHeight = 13
   object pnl1: TPanel
     Left = -2
-    Top = -1
+    Top = -2
     Width = 1313
     Height = 673
     Color = clWhite
     TabOrder = 0
     object l_7: TLabel
-      Left = 48
+      Left = 72
       Top = 160
-      Width = 96
+      Width = 45
       Height = 19
-      Caption = 'NAMA KELAS'
+      Caption = 'NAMA'
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clWindowText
       Font.Height = -16
@@ -34,7 +35,7 @@ object Form8: TForm8
       ParentFont = False
     end
     object l_12: TLabel
-      Left = 48
+      Left = 72
       Top = 280
       Width = 60
       Height = 19
@@ -47,8 +48,8 @@ object Form8: TForm8
       ParentFont = False
     end
     object l_2: TLabel
-      Left = 616
-      Top = 160
+      Left = 72
+      Top = 400
       Width = 143
       Height = 19
       Caption = 'Tabel Data User :'
@@ -60,7 +61,7 @@ object Form8: TForm8
       ParentFont = False
     end
     object l_4: TLabel
-      Left = 48
+      Left = 72
       Top = 200
       Width = 82
       Height = 19
@@ -73,7 +74,7 @@ object Form8: TForm8
       ParentFont = False
     end
     object l_5: TLabel
-      Left = 48
+      Left = 72
       Top = 240
       Width = 85
       Height = 19
@@ -85,32 +86,61 @@ object Form8: TForm8
       Font.Style = []
       ParentFont = False
     end
+    object l_6: TLabel
+      Left = 608
+      Top = 152
+      Width = 99
+      Height = 19
+      Caption = 'Pilih Siswa :'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -16
+      Font.Name = 'Tahoma'
+      Font.Style = [fsBold]
+      ParentFont = False
+    end
+    object l_8: TLabel
+      Left = 984
+      Top = 152
+      Width = 137
+      Height = 19
+      Caption = 'Pilih Wali Kelas :'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -16
+      Font.Name = 'Tahoma'
+      Font.Style = [fsBold]
+      ParentFont = False
+    end
     object btnSimpan: TButton
-      Left = 48
+      Left = 72
       Top = 320
       Width = 121
       Height = 41
       Caption = 'SIMPAN'
       TabOrder = 0
+      OnClick = btnSimpanClick
     end
     object btnEdit: TButton
-      Left = 176
+      Left = 200
       Top = 320
       Width = 121
       Height = 41
       Caption = 'EDIT'
       TabOrder = 1
+      OnClick = btnEditClick
     end
     object btnHapus: TButton
-      Left = 304
+      Left = 328
       Top = 320
       Width = 121
       Height = 41
       Caption = 'HAPUS'
       TabOrder = 2
+      OnClick = btnHapusClick
     end
     object CbbStatus: TComboBox
-      Left = 224
+      Left = 248
       Top = 280
       Width = 329
       Height = 27
@@ -129,16 +159,17 @@ object Form8: TForm8
         'Siswa')
     end
     object btn1: TButton
-      Left = 432
+      Left = 456
       Top = 320
       Width = 121
       Height = 41
       Caption = 'CLEAR FORM'
       TabOrder = 4
+      OnClick = btn1Click
     end
-    object CbbNama_Siswa: TComboBox
-      Left = 224
-      Top = 160
+    object EdtUsername: TEdit
+      Left = 248
+      Top = 200
       Width = 329
       Height = 27
       Font.Charset = DEFAULT_CHARSET
@@ -146,18 +177,12 @@ object Form8: TForm8
       Font.Height = -16
       Font.Name = 'Tahoma'
       Font.Style = []
-      ItemHeight = 19
       ParentFont = False
       TabOrder = 5
-      Text = '==== PILIH ===='
-      Items.Strings = (
-        'X'
-        'XI'
-        'XII')
     end
-    object EdtUsername: TEdit
-      Left = 224
-      Top = 200
+    object EdtPassword: TEdit
+      Left = 248
+      Top = 240
       Width = 329
       Height = 27
       Font.Charset = DEFAULT_CHARSET
@@ -168,23 +193,10 @@ object Form8: TForm8
       ParentFont = False
       TabOrder = 6
     end
-    object EdtPassword: TEdit
-      Left = 224
-      Top = 240
-      Width = 329
-      Height = 27
-      Font.Charset = DEFAULT_CHARSET
-      Font.Color = clWindowText
-      Font.Height = -16
-      Font.Name = 'Tahoma'
-      Font.Style = []
-      ParentFont = False
-      TabOrder = 7
-    end
     object DBGrid1: TDBGrid
-      Left = 616
-      Top = 192
-      Width = 513
+      Left = 72
+      Top = 424
+      Width = 777
       Height = 169
       DataSource = ds1
       Font.Charset = DEFAULT_CHARSET
@@ -193,17 +205,120 @@ object Form8: TForm8
       Font.Name = 'Tahoma'
       Font.Style = []
       ParentFont = False
-      TabOrder = 8
+      TabOrder = 7
       TitleFont.Charset = DEFAULT_CHARSET
       TitleFont.Color = clWindowText
       TitleFont.Height = -13
       TitleFont.Name = 'Tahoma'
       TitleFont.Style = []
+      OnCellClick = DBGrid1CellClick
+      Columns = <
+        item
+          Expanded = False
+          FieldName = 'id'
+          Visible = True
+        end
+        item
+          Expanded = False
+          FieldName = 'nama'
+          Visible = True
+        end
+        item
+          Expanded = False
+          FieldName = 'username'
+          Visible = True
+        end
+        item
+          Expanded = False
+          FieldName = 'password'
+          Visible = True
+        end
+        item
+          Expanded = False
+          FieldName = 'status'
+          Width = 90
+          Visible = True
+        end>
+    end
+    object EdtNamaSiswa: TEdit
+      Left = 248
+      Top = 160
+      Width = 329
+      Height = 27
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -16
+      Font.Name = 'Tahoma'
+      Font.Style = []
+      ParentFont = False
+      TabOrder = 8
+    end
+    object DBGrid2: TDBGrid
+      Left = 608
+      Top = 176
+      Width = 353
+      Height = 185
+      DataSource = ds2
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -13
+      Font.Name = 'Tahoma'
+      Font.Style = []
+      ParentFont = False
+      TabOrder = 9
+      TitleFont.Charset = DEFAULT_CHARSET
+      TitleFont.Color = clWindowText
+      TitleFont.Height = -13
+      TitleFont.Name = 'Tahoma'
+      TitleFont.Style = []
+      OnCellClick = DBGrid2CellClick
+      Columns = <
+        item
+          Expanded = False
+          FieldName = 'nama_siswa'
+          Width = 143
+          Visible = True
+        end
+        item
+          Expanded = False
+          FieldName = 'nik'
+          Visible = True
+        end
+        item
+          Expanded = False
+          FieldName = 'jurusan'
+          Visible = True
+        end>
+    end
+    object DBGrid3: TDBGrid
+      Left = 984
+      Top = 176
+      Width = 313
+      Height = 177
+      DataSource = ds3
+      TabOrder = 10
+      TitleFont.Charset = DEFAULT_CHARSET
+      TitleFont.Color = clWindowText
+      TitleFont.Height = -11
+      TitleFont.Name = 'Tahoma'
+      TitleFont.Style = []
+      OnCellClick = DBGrid3CellClick
+      Columns = <
+        item
+          Expanded = False
+          FieldName = 'nip'
+          Visible = True
+        end
+        item
+          Expanded = False
+          FieldName = 'nama_wakel'
+          Visible = True
+        end>
     end
   end
   object pnl2: TPanel
     Left = -8
-    Top = -64
+    Top = -65
     Width = 1321
     Height = 121
     Color = clActiveBorder
@@ -264,5 +379,33 @@ object Form8: TForm8
     DataSet = ZQuery1
     Left = 1176
     Top = 64
+  end
+  object ZQuery2: TZQuery
+    Connection = ZConnection1
+    Active = True
+    SQL.Strings = (
+      'SELECT * FROM tb_siswa')
+    Params = <>
+    Left = 958
+    Top = 63
+  end
+  object ds2: TDataSource
+    DataSet = ZQuery2
+    Left = 912
+    Top = 62
+  end
+  object ZQuery3: TZQuery
+    Connection = ZConnection1
+    Active = True
+    SQL.Strings = (
+      'SELECT * FROM tb_walikelas')
+    Params = <>
+    Left = 814
+    Top = 62
+  end
+  object ds3: TDataSource
+    DataSet = ZQuery3
+    Left = 766
+    Top = 62
   end
 end
