@@ -1,8 +1,10 @@
 object Form1: TForm1
-  Left = 109
-  Top = 304
-  Width = 1353
-  Height = 742
+  Left = -8
+  Top = -8
+  Width = 1552
+  Height = 880
+  VertScrollBar.Position = 10
+  Align = alClient
   Caption = 'FormUtama'
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
@@ -15,14 +17,14 @@ object Form1: TForm1
   TextHeight = 13
   object pnl1: TPanel
     Left = 0
-    Top = 0
-    Width = 1305
-    Height = 673
+    Top = -10
+    Width = 1537
+    Height = 834
     Color = clWhite
     TabOrder = 0
     object img1: TImage
-      Left = 624
-      Top = 160
+      Left = 760
+      Top = 200
       Width = 212
       Height = 212
       AutoSize = True
@@ -2373,21 +2375,21 @@ object Form1: TForm1
         3C670000000049454E44AE426082}
     end
     object l_2: TLabel
-      Left = 584
-      Top = 104
-      Width = 301
-      Height = 19
+      Left = 648
+      Top = 112
+      Width = 435
+      Height = 29
       Caption = 'TUGAS AKHIR PEMROGRAMAN VISUAL 2'
       Font.Charset = ANSI_CHARSET
       Font.Color = clWindowText
-      Font.Height = -16
+      Font.Height = -24
       Font.Name = 'Tahoma'
       Font.Style = []
       ParentFont = False
     end
     object l_4: TLabel
-      Left = 592
-      Top = 416
+      Left = 728
+      Top = 456
       Width = 274
       Height = 57
       Alignment = taCenter
@@ -2402,8 +2404,8 @@ object Form1: TForm1
       ParentFont = False
     end
     object l_5: TLabel
-      Left = 584
-      Top = 560
+      Left = 720
+      Top = 600
       Width = 302
       Height = 76
       Alignment = taCenter
@@ -2419,13 +2421,13 @@ object Form1: TForm1
     end
     object pnl2: TPanel
       Left = 248
-      Top = -64
-      Width = 1057
+      Top = -56
+      Width = 1273
       Height = 121
       Color = clActiveBorder
       TabOrder = 1
       object l_3: TLabel
-        Left = 752
+        Left = 968
         Top = 80
         Width = 264
         Height = 27
@@ -2439,10 +2441,10 @@ object Form1: TForm1
       end
     end
     object grp1: TGroupBox
-      Left = -8
-      Top = 0
+      Left = 0
+      Top = 8
       Width = 257
-      Height = 665
+      Height = 833
       Color = clActiveBorder
       ParentColor = False
       TabOrder = 0
@@ -2491,7 +2493,7 @@ object Form1: TForm1
       end
       object btnLaporan: TButton
         Left = 24
-        Top = 600
+        Top = 744
         Width = 209
         Height = 49
         Caption = 'LAPORAN'
@@ -2564,7 +2566,7 @@ object Form1: TForm1
         TabOrder = 6
         OnClick = btn7Click
       end
-      object btn1: TButton
+      object btnData_user: TButton
         Left = 24
         Top = 440
         Width = 209
@@ -2577,7 +2579,7 @@ object Form1: TForm1
         Font.Style = [fsBold]
         ParentFont = False
         TabOrder = 7
-        OnClick = btn1Click
+        OnClick = btnData_userClick
       end
     end
   end

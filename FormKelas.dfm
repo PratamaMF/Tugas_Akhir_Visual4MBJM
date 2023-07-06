@@ -1,8 +1,9 @@
 object Form6: TForm6
-  Left = 145
+  Left = 144
   Top = 128
-  Width = 1350
+  Width = 1398
   Height = 705
+  Align = alClient
   Caption = 'Input Hubungan'
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
@@ -16,13 +17,13 @@ object Form6: TForm6
   object pnl1: TPanel
     Left = -2
     Top = -3
-    Width = 1323
-    Height = 673
+    Width = 1539
+    Height = 828
     Color = clWhite
     TabOrder = 0
     object l_2: TLabel
-      Left = 56
-      Top = 128
+      Left = 96
+      Top = 192
       Width = 71
       Height = 19
       Caption = 'ID SISWA'
@@ -34,8 +35,8 @@ object Form6: TForm6
       ParentFont = False
     end
     object l_6: TLabel
-      Left = 56
-      Top = 168
+      Left = 96
+      Top = 232
       Width = 114
       Height = 19
       Caption = 'ID ORANG TUA'
@@ -47,8 +48,8 @@ object Form6: TForm6
       ParentFont = False
     end
     object l_7: TLabel
-      Left = 56
-      Top = 208
+      Left = 96
+      Top = 272
       Width = 151
       Height = 19
       Caption = 'STATUS HUBUNGAN'
@@ -60,8 +61,8 @@ object Form6: TForm6
       ParentFont = False
     end
     object l_8: TLabel
-      Left = 56
-      Top = 248
+      Left = 96
+      Top = 312
       Width = 102
       Height = 19
       Caption = 'KETERANGAN'
@@ -73,10 +74,10 @@ object Form6: TForm6
       ParentFont = False
     end
     object pnl3: TPanel
-      Left = 808
-      Top = 168
-      Width = 345
-      Height = 369
+      Left = 848
+      Top = 176
+      Width = 569
+      Height = 409
       Color = clActiveBorder
       TabOrder = 8
       object l_9: TLabel
@@ -94,7 +95,7 @@ object Form6: TForm6
       end
       object l_10: TLabel
         Left = 24
-        Top = 200
+        Top = 216
         Width = 148
         Height = 19
         Caption = 'PILIH ORANG TUA :'
@@ -107,9 +108,9 @@ object Form6: TForm6
       end
       object DBGrid3: TDBGrid
         Left = 24
-        Top = 232
-        Width = 297
-        Height = 120
+        Top = 240
+        Width = 513
+        Height = 145
         DataSource = ds2
         TabOrder = 0
         TitleFont.Charset = DEFAULT_CHARSET
@@ -132,8 +133,8 @@ object Form6: TForm6
       end
     end
     object btnSimpan: TButton
-      Left = 480
-      Top = 112
+      Left = 640
+      Top = 192
       Width = 129
       Height = 41
       Caption = 'SIMPAN'
@@ -141,8 +142,8 @@ object Form6: TForm6
       OnClick = btnSimpanClick
     end
     object btnEdit: TButton
-      Left = 480
-      Top = 160
+      Left = 640
+      Top = 240
       Width = 129
       Height = 41
       Caption = 'EDIT'
@@ -150,8 +151,8 @@ object Form6: TForm6
       OnClick = btnEditClick
     end
     object btnHapus: TButton
-      Left = 480
-      Top = 208
+      Left = 640
+      Top = 288
       Width = 129
       Height = 41
       Caption = 'HAPUS'
@@ -159,8 +160,8 @@ object Form6: TForm6
       OnClick = btnHapusClick
     end
     object btn1: TButton
-      Left = 480
-      Top = 256
+      Left = 640
+      Top = 336
       Width = 129
       Height = 41
       Caption = 'CLEAR FORM'
@@ -168,9 +169,9 @@ object Form6: TForm6
       OnClick = btn1Click
     end
     object CbbStatus_hubungan: TComboBox
-      Left = 232
-      Top = 208
-      Width = 217
+      Left = 272
+      Top = 272
+      Width = 337
       Height = 27
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clWindowText
@@ -186,9 +187,9 @@ object Form6: TForm6
         'IBU')
     end
     object CbbKeterangan: TComboBox
-      Left = 232
-      Top = 248
-      Width = 217
+      Left = 272
+      Top = 312
+      Width = 337
       Height = 27
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clWindowText
@@ -205,8 +206,8 @@ object Form6: TForm6
         'TIRI')
     end
     object DBGrid1: TDBGrid
-      Left = 56
-      Top = 328
+      Left = 96
+      Top = 392
       Width = 665
       Height = 193
       DataSource = ds3
@@ -253,10 +254,10 @@ object Form6: TForm6
         end>
     end
     object DBGrid2: TDBGrid
-      Left = 832
-      Top = 216
-      Width = 297
-      Height = 120
+      Left = 872
+      Top = 224
+      Width = 513
+      Height = 145
       DataSource = ds1
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clWindowText
@@ -285,9 +286,9 @@ object Form6: TForm6
         end>
     end
     object EdtId_siswa: TEdit
-      Left = 232
-      Top = 128
-      Width = 217
+      Left = 272
+      Top = 192
+      Width = 337
       Height = 27
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clWindowText
@@ -298,9 +299,9 @@ object Form6: TForm6
       TabOrder = 9
     end
     object EdtId_ortu: TEdit
-      Left = 232
-      Top = 168
-      Width = 217
+      Left = 272
+      Top = 232
+      Width = 337
       Height = 27
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clWindowText
@@ -311,14 +312,14 @@ object Form6: TForm6
       TabOrder = 10
     end
     object pnl2: TPanel
-      Left = 0
-      Top = -56
-      Width = 1321
+      Left = -8
+      Top = -64
+      Width = 1545
       Height = 121
       Color = clActiveBorder
       TabOrder = 11
       object l_3: TLabel
-        Left = 1032
+        Left = 1216
         Top = 80
         Width = 264
         Height = 27
@@ -351,13 +352,13 @@ object Form6: TForm6
     SQL.Strings = (
       'SELECT * FROM tb_siswa ')
     Params = <>
-    Left = 1153
-    Top = 213
+    Left = 345
+    Top = 13
   end
   object ds1: TDataSource
     DataSet = ZQuery1
-    Left = 1152
-    Top = 264
+    Left = 384
+    Top = 16
   end
   object ZQuery2: TZQuery
     Connection = Form5.ZConnection1
@@ -365,13 +366,13 @@ object Form6: TForm6
     SQL.Strings = (
       'select * from  tb_ortu')
     Params = <>
-    Left = 1166
-    Top = 405
+    Left = 446
+    Top = 5
   end
   object ds2: TDataSource
     DataSet = ZQuery2
-    Left = 1166
-    Top = 453
+    Left = 486
+    Top = 5
   end
   object ZQuery3: TZQuery
     Connection = Form5.ZConnection1
@@ -379,12 +380,12 @@ object Form6: TForm6
     SQL.Strings = (
       'select * from tb_hubungan')
     Params = <>
-    Left = 574
-    Top = 45
+    Left = 550
+    Top = 13
   end
   object ds3: TDataSource
     DataSet = ZQuery3
-    Left = 622
-    Top = 45
+    Left = 590
+    Top = 13
   end
 end

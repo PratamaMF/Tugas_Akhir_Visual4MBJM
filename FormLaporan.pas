@@ -28,7 +28,6 @@ type
     l_1: TLabel;
     ZQueryHub: TZQuery;
     ZQuerySiswa: TZQuery;
-    DBGrid1: TDBGrid;
     grp1: TGroupBox;
     ZQuery1: TZQuery;
     ZQuery2: TZQuery;
@@ -46,10 +45,12 @@ type
     frxDataset6: TfrxDBDataset;
     frxDataset7: TfrxDBDataset;
     frxReportRangkuman: TfrxReport;
+    DBGrid1: TDBGrid;
     procedure btn2Click(Sender: TObject);
     procedure btn7Click(Sender: TObject);
     procedure DBGrid1CellClick(Column: TColumn);
     procedure btn6Click(Sender: TObject);
+    procedure btn8Click(Sender: TObject);
   private
     { Private declarations }
   public
@@ -105,11 +106,33 @@ begin
   ZQuery4.SQL.Clear;
   ZQuery4.SQL.Add('SELECT * FROM tb_riwayat_poinn WHERE nama_siswa="'+nm+'" AND jenis="Pelanggaran"');
   ZQuery4.Open;
+
+  // Laporan Rangkuman
+  ZQuery5.Active:=True;
+  ZQuery5.SQL.Clear;
+  ZQuery5.SQL.Add('SELECT tb_siswa.siswa_id, tb_siswa.nis, tb_siswa.nisn, tb_siswa.nama_siswa, tb_siswa.jenis_kelamin, tb_siswa.tingkat_kelas, tb_siswa.jurusan, tb_siswa.wali_kelas, tb_ortu.nama, tb_ortu.telp, tb_hubungan.siswa_id, tb_hubungan.status_hub FROM tb_hubungan');
+  ZQuery5.SQL.Add('INNER JOIN tb_siswa ON tb_hubungan.siswa_id = tb_siswa.siswa_id INNER JOIN tb_ortu ON tb_hubungan.ortu_id = tb_ortu.ortu_id WHERE tb_hubungan.siswa_id="'+id+'"');
+  ZQuery5.Open;
+
+  ZQuery6.Active:=True;
+  ZQuery6.SQL.Clear;
+  ZQuery6.SQL.Add('SELECT * FROM tb_riwayat_poinn WHERE nama_siswa="'+nm+'" AND jenis="Prestasi"');
+  ZQuery6.Open;
+
+  ZQuery7.Active:=True;
+  ZQuery7.SQL.Clear;
+  ZQuery7.SQL.Add('SELECT * FROM tb_riwayat_poinn WHERE nama_siswa="'+nm+'" AND jenis="Pelanggaran"');
+  ZQuery7.Open;
 end;
 
 procedure TForm13.btn6Click(Sender: TObject);
 begin
 frxReportPrestasi.ShowReport();
+end;
+
+procedure TForm13.btn8Click(Sender: TObject);
+begin
+  frxReportRangkuman.ShowReport();
 end;
 
 end.

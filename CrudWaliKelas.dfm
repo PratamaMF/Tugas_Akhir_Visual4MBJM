@@ -3,6 +3,7 @@ object Form9: TForm9
   Top = 163
   Width = 1349
   Height = 708
+  Align = alClient
   Caption = 'Input Data Wali Kelas'
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
@@ -15,14 +16,14 @@ object Form9: TForm9
   TextHeight = 13
   object pnl1: TPanel
     Left = -2
-    Top = -4
-    Width = 1313
-    Height = 673
+    Top = 4
+    Width = 1539
+    Height = 845
     Color = clWhite
     TabOrder = 0
     object l_2: TLabel
-      Left = 48
-      Top = 104
+      Left = 408
+      Top = 184
       Width = 26
       Height = 19
       Caption = 'NIP'
@@ -34,8 +35,8 @@ object Form9: TForm9
       ParentFont = False
     end
     object l_6: TLabel
-      Left = 48
-      Top = 136
+      Left = 408
+      Top = 216
       Width = 45
       Height = 19
       Caption = 'NAMA'
@@ -47,8 +48,8 @@ object Form9: TForm9
       ParentFont = False
     end
     object l_7: TLabel
-      Left = 48
-      Top = 296
+      Left = 408
+      Top = 376
       Width = 94
       Height = 19
       Caption = 'PENDIDIKAN'
@@ -60,8 +61,8 @@ object Form9: TForm9
       ParentFont = False
     end
     object l_8: TLabel
-      Left = 48
-      Top = 264
+      Left = 408
+      Top = 344
       Width = 136
       Height = 19
       Caption = 'MATA PELAJARAN'
@@ -73,8 +74,8 @@ object Form9: TForm9
       ParentFont = False
     end
     object l_9: TLabel
-      Left = 48
-      Top = 232
+      Left = 408
+      Top = 312
       Width = 96
       Height = 19
       Caption = 'NO TELEPON'
@@ -86,8 +87,8 @@ object Form9: TForm9
       ParentFont = False
     end
     object l_10: TLabel
-      Left = 48
-      Top = 200
+      Left = 408
+      Top = 280
       Width = 63
       Height = 19
       Caption = 'ALAMAT'
@@ -99,8 +100,8 @@ object Form9: TForm9
       ParentFont = False
     end
     object l_12: TLabel
-      Left = 48
-      Top = 168
+      Left = 408
+      Top = 248
       Width = 113
       Height = 19
       Caption = 'JENIS KELAMIN'
@@ -112,8 +113,8 @@ object Form9: TForm9
       ParentFont = False
     end
     object l_17: TLabel
-      Left = 48
-      Top = 328
+      Left = 408
+      Top = 408
       Width = 60
       Height = 19
       Caption = 'STATUS'
@@ -125,8 +126,8 @@ object Form9: TForm9
       ParentFont = False
     end
     object l_4: TLabel
-      Left = 616
-      Top = 184
+      Left = 352
+      Top = 536
       Width = 136
       Height = 19
       Caption = 'Tabel Wali Kelas'
@@ -138,8 +139,8 @@ object Form9: TForm9
       ParentFont = False
     end
     object btnSimpan: TButton
-      Left = 48
-      Top = 376
+      Left = 408
+      Top = 456
       Width = 129
       Height = 41
       Caption = 'SIMPAN'
@@ -147,8 +148,8 @@ object Form9: TForm9
       OnClick = btnSimpanClick
     end
     object btnEdit: TButton
-      Left = 184
-      Top = 376
+      Left = 544
+      Top = 456
       Width = 129
       Height = 41
       Caption = 'EDIT'
@@ -156,8 +157,8 @@ object Form9: TForm9
       OnClick = btnEditClick
     end
     object btnHapus: TButton
-      Left = 320
-      Top = 376
+      Left = 680
+      Top = 456
       Width = 129
       Height = 41
       Caption = 'HAPUS'
@@ -165,8 +166,8 @@ object Form9: TForm9
       OnClick = btnHapusClick
     end
     object EdtNip: TEdit
-      Left = 224
-      Top = 104
+      Left = 584
+      Top = 184
       Width = 361
       Height = 27
       Font.Charset = DEFAULT_CHARSET
@@ -178,8 +179,8 @@ object Form9: TForm9
       TabOrder = 3
     end
     object EdtNama: TEdit
-      Left = 224
-      Top = 136
+      Left = 584
+      Top = 216
       Width = 361
       Height = 27
       Font.Charset = DEFAULT_CHARSET
@@ -191,8 +192,8 @@ object Form9: TForm9
       TabOrder = 4
     end
     object EdtMPelajaran: TEdit
-      Left = 224
-      Top = 264
+      Left = 584
+      Top = 344
       Width = 361
       Height = 27
       Font.Charset = DEFAULT_CHARSET
@@ -204,8 +205,8 @@ object Form9: TForm9
       TabOrder = 5
     end
     object CbbJKelamin: TComboBox
-      Left = 224
-      Top = 168
+      Left = 584
+      Top = 248
       Width = 209
       Height = 27
       Font.Charset = DEFAULT_CHARSET
@@ -222,8 +223,8 @@ object Form9: TForm9
         'Perempuan')
     end
     object CbbStatus: TComboBox
-      Left = 224
-      Top = 328
+      Left = 584
+      Top = 408
       Width = 209
       Height = 27
       Font.Charset = DEFAULT_CHARSET
@@ -240,8 +241,8 @@ object Form9: TForm9
         'Wali')
     end
     object btn1: TButton
-      Left = 456
-      Top = 376
+      Left = 816
+      Top = 456
       Width = 129
       Height = 41
       Caption = 'CLEAR FORM'
@@ -249,8 +250,8 @@ object Form9: TForm9
       OnClick = btn1Click
     end
     object EdtNo_telp: TEdit
-      Left = 224
-      Top = 232
+      Left = 584
+      Top = 312
       Width = 361
       Height = 27
       Font.Charset = DEFAULT_CHARSET
@@ -262,8 +263,8 @@ object Form9: TForm9
       TabOrder = 9
     end
     object EdtAlamat: TEdit
-      Left = 224
-      Top = 200
+      Left = 584
+      Top = 280
       Width = 361
       Height = 27
       Font.Charset = DEFAULT_CHARSET
@@ -275,8 +276,8 @@ object Form9: TForm9
       TabOrder = 10
     end
     object CbbPendidikan: TComboBox
-      Left = 224
-      Top = 296
+      Left = 584
+      Top = 376
       Width = 209
       Height = 27
       Font.Charset = DEFAULT_CHARSET
@@ -295,15 +296,21 @@ object Form9: TForm9
         'Sarjana')
     end
     object DBGrid1: TDBGrid
-      Left = 616
-      Top = 216
+      Left = 352
+      Top = 568
       Width = 665
       Height = 201
       DataSource = ds1
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -13
+      Font.Name = 'Tahoma'
+      Font.Style = []
+      ParentFont = False
       TabOrder = 12
       TitleFont.Charset = DEFAULT_CHARSET
       TitleFont.Color = clWindowText
-      TitleFont.Height = -11
+      TitleFont.Height = -13
       TitleFont.Name = 'Tahoma'
       TitleFont.Style = []
       OnCellClick = DBGrid1CellClick
@@ -312,12 +319,12 @@ object Form9: TForm9
   object pnl2: TPanel
     Left = -8
     Top = -64
-    Width = 1321
+    Width = 1529
     Height = 121
     Color = clActiveBorder
     TabOrder = 1
     object l_3: TLabel
-      Left = 1032
+      Left = 1216
       Top = 80
       Width = 264
       Height = 27
@@ -330,7 +337,7 @@ object Form9: TForm9
       ParentFont = False
     end
     object l_1: TLabel
-      Left = 48
+      Left = 72
       Top = 80
       Width = 184
       Height = 27

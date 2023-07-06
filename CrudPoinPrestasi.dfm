@@ -3,6 +3,7 @@ object Form11: TForm11
   Top = 128
   Width = 1333
   Height = 718
+  Align = alClient
   Caption = 'Input Data Poin'
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
@@ -14,15 +15,15 @@ object Form11: TForm11
   PixelsPerInch = 96
   TextHeight = 13
   object pnl1: TPanel
-    Left = -8
+    Left = 0
     Top = -8
-    Width = 1305
-    Height = 673
+    Width = 1545
+    Height = 849
     Color = clWhite
     TabOrder = 0
     object l_2: TLabel
-      Left = 288
-      Top = 144
+      Left = 496
+      Top = 192
       Width = 88
       Height = 19
       Caption = 'NAMA POIN'
@@ -34,8 +35,8 @@ object Form11: TForm11
       ParentFont = False
     end
     object l_6: TLabel
-      Left = 288
-      Top = 176
+      Left = 496
+      Top = 224
       Width = 52
       Height = 19
       Caption = 'BOBOT'
@@ -47,8 +48,8 @@ object Form11: TForm11
       ParentFont = False
     end
     object l_4: TLabel
-      Left = 288
-      Top = 208
+      Left = 496
+      Top = 256
       Width = 42
       Height = 19
       Caption = 'JENIS'
@@ -60,8 +61,8 @@ object Form11: TForm11
       ParentFont = False
     end
     object l_5: TLabel
-      Left = 288
-      Top = 240
+      Left = 496
+      Top = 288
       Width = 60
       Height = 19
       Caption = 'STATUS'
@@ -73,8 +74,8 @@ object Form11: TForm11
       ParentFont = False
     end
     object btnSimpan: TButton
-      Left = 288
-      Top = 280
+      Left = 496
+      Top = 328
       Width = 129
       Height = 41
       Caption = 'SIMPAN'
@@ -82,8 +83,8 @@ object Form11: TForm11
       OnClick = btnSimpanClick
     end
     object btnEdit: TButton
-      Left = 424
-      Top = 280
+      Left = 632
+      Top = 328
       Width = 129
       Height = 41
       Caption = 'EDIT'
@@ -91,8 +92,8 @@ object Form11: TForm11
       OnClick = btnEditClick
     end
     object btnHapus: TButton
-      Left = 560
-      Top = 280
+      Left = 768
+      Top = 328
       Width = 129
       Height = 41
       Caption = 'HAPUS'
@@ -100,8 +101,8 @@ object Form11: TForm11
       OnClick = btnHapusClick
     end
     object EdtNama: TEdit
-      Left = 464
-      Top = 144
+      Left = 672
+      Top = 192
       Width = 361
       Height = 27
       Font.Charset = DEFAULT_CHARSET
@@ -113,8 +114,8 @@ object Form11: TForm11
       TabOrder = 3
     end
     object EdtBobot: TEdit
-      Left = 464
-      Top = 176
+      Left = 672
+      Top = 224
       Width = 361
       Height = 27
       Font.Charset = DEFAULT_CHARSET
@@ -126,8 +127,8 @@ object Form11: TForm11
       TabOrder = 4
     end
     object btn6: TButton
-      Left = 696
-      Top = 280
+      Left = 904
+      Top = 328
       Width = 129
       Height = 41
       Caption = 'CLEAR FORM'
@@ -136,13 +137,13 @@ object Form11: TForm11
     end
     object pnl2: TPanel
       Left = -16
-      Top = -64
-      Width = 1321
+      Top = -56
+      Width = 1561
       Height = 121
       Color = clActiveBorder
       TabOrder = 6
       object l_3: TLabel
-        Left = 1032
+        Left = 1240
         Top = 80
         Width = 264
         Height = 27
@@ -155,11 +156,11 @@ object Form11: TForm11
         ParentFont = False
       end
       object l_1: TLabel
-        Left = 48
+        Left = 80
         Top = 80
-        Width = 217
+        Width = 111
         Height = 27
-        Caption = 'DATA POIN PRESTASI'
+        Caption = 'DATA POIN'
         Font.Charset = ANSI_CHARSET
         Font.Color = clWindowText
         Font.Height = -21
@@ -169,8 +170,8 @@ object Form11: TForm11
       end
     end
     object CbbJenis: TComboBox
-      Left = 464
-      Top = 208
+      Left = 672
+      Top = 256
       Width = 361
       Height = 27
       Font.Charset = DEFAULT_CHARSET
@@ -187,8 +188,8 @@ object Form11: TForm11
         'Pelanggaran')
     end
     object CbbStatus: TComboBox
-      Left = 464
-      Top = 240
+      Left = 672
+      Top = 288
       Width = 361
       Height = 27
       Font.Charset = DEFAULT_CHARSET
@@ -200,14 +201,14 @@ object Form11: TForm11
       ItemIndex = 1
       ParentFont = False
       TabOrder = 8
-      Text = '==== PILIH ===='
+      Text = 'Tidak Aktif'
       Items.Strings = (
         'Aktif'
         'Tidak Aktif')
     end
     object DBGrid1: TDBGrid
-      Left = 168
-      Top = 384
+      Left = 360
+      Top = 432
       Width = 817
       Height = 233
       DataSource = ds1
@@ -232,6 +233,7 @@ object Form11: TForm11
   end
   object ZQuery1: TZQuery
     Connection = Form10.ZConnection1
+    Active = True
     SQL.Strings = (
       'select * from tb_poin')
     Params = <>

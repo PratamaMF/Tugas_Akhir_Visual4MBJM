@@ -84,6 +84,15 @@ begin
               Form1.btnDataWaliKelas.Enabled:=False;
               Form1.btnDataPoin.Enabled:=False;
               Form1.btnDataPoinSiswa.Enabled:=False;
+              Form1.btnData_user.Enabled:=False;
+              EdtUser.Text:='';
+              EdtPass.Text:='';
+            end
+        else
+        if dm1.ZQuery1.FieldByName('status').AsString='Guru' then
+          begin
+              Form1.Show;
+              Form1.btnData_user.Enabled:=False;
               EdtUser.Text:='';
               EdtPass.Text:='';
             end

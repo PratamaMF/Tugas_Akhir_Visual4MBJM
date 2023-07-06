@@ -3,6 +3,7 @@ object Form14: TForm14
   Top = 212
   Width = 1353
   Height = 694
+  Align = alClient
   Caption = 'DATA POIN SISWA'
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
@@ -16,13 +17,13 @@ object Form14: TForm14
   object pnl1: TPanel
     Left = 0
     Top = -2
-    Width = 1313
-    Height = 673
+    Width = 1537
+    Height = 843
     Color = clWhite
     TabOrder = 0
     object l_2: TLabel
-      Left = 56
-      Top = 152
+      Left = 240
+      Top = 232
       Width = 139
       Height = 19
       Caption = 'Tabel Poin Siswa'
@@ -41,7 +42,7 @@ object Form14: TForm14
       Color = clActiveBorder
       TabOrder = 0
       object l_3: TLabel
-        Left = 1032
+        Left = 1216
         Top = 80
         Width = 264
         Height = 27
@@ -54,7 +55,7 @@ object Form14: TForm14
         ParentFont = False
       end
       object l_1: TLabel
-        Left = 32
+        Left = 88
         Top = 80
         Width = 184
         Height = 27
@@ -68,11 +69,11 @@ object Form14: TForm14
       end
     end
     object btn1: TButton
-      Left = 56
-      Top = 80
+      Left = 240
+      Top = 136
       Width = 201
       Height = 41
-      Caption = 'TAMBAH PRESTASI SISWA'
+      Caption = 'TAMBAH POIN SISWA'
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clWindowText
       Font.Height = -13
@@ -83,8 +84,8 @@ object Form14: TForm14
       OnClick = btn1Click
     end
     object DBGrid1: TDBGrid
-      Left = 56
-      Top = 192
+      Left = 240
+      Top = 272
       Width = 985
       Height = 329
       DataSource = Form4.dsRiwayat

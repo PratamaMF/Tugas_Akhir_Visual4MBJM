@@ -1,8 +1,9 @@
 object Form4: TForm4
-  Left = 74
-  Top = 64
-  Width = 1469
-  Height = 729
+  Left = -8
+  Top = -8
+  Width = 1552
+  Height = 880
+  Align = alClient
   Caption = 'INPUT PRESTASI DAN ELANGGARAN SISWA'
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
@@ -16,8 +17,8 @@ object Form4: TForm4
   object pnl1: TPanel
     Left = 1
     Top = -6
-    Width = 1313
-    Height = 695
+    Width = 1536
+    Height = 847
     Color = clWhite
     TabOrder = 0
     object l_2: TLabel
@@ -271,12 +272,12 @@ object Form4: TForm4
     object pnl2: TPanel
       Left = -8
       Top = -56
-      Width = 1321
+      Width = 1529
       Height = 121
       Color = clActiveBorder
       TabOrder = 9
       object l_3: TLabel
-        Left = 1032
+        Left = 1216
         Top = 80
         Width = 264
         Height = 27
@@ -305,8 +306,8 @@ object Form4: TForm4
     object DBGrid4: TDBGrid
       Left = 40
       Top = 520
-      Width = 1217
-      Height = 145
+      Width = 1369
+      Height = 273
       DataSource = dsRiwayat
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clWindowText
@@ -369,7 +370,7 @@ object Form4: TForm4
     object DBGrid3: TDBGrid
       Left = 608
       Top = 120
-      Width = 641
+      Width = 801
       Height = 217
       DataSource = ds1
       Font.Charset = DEFAULT_CHARSET
@@ -402,7 +403,7 @@ object Form4: TForm4
     object DBGrid1: TDBGrid
       Left = 608
       Top = 376
-      Width = 641
+      Width = 801
       Height = 120
       DataSource = ds2
       Font.Charset = DEFAULT_CHARSET
@@ -426,13 +427,13 @@ object Form4: TForm4
     SQL.Strings = (
       'SELECT * FROM tb_poin')
     Params = <>
-    Left = 1329
-    Top = 69
+    Left = 961
+    Top = 61
   end
   object ds1: TDataSource
     DataSet = ZQuery1
-    Left = 1369
-    Top = 69
+    Left = 1001
+    Top = 61
   end
   object ZConnection1: TZConnection
     ControlsCodePage = cGET_ACP
@@ -456,8 +457,8 @@ object Form4: TForm4
     SQL.Strings = (
       'SELECT * FROM tb_siswa')
     Params = <>
-    Left = 1328
-    Top = 128
+    Left = 1064
+    Top = 64
   end
   object ZQueryRiwayat: TZQuery
     Connection = ZConnection1
@@ -465,17 +466,17 @@ object Form4: TForm4
     SQL.Strings = (
       'SELECT * FROM tb_riwayat_poinn')
     Params = <>
-    Left = 1352
-    Top = 208
+    Left = 712
+    Top = 16
   end
   object ds2: TDataSource
     DataSet = ZQuery2
-    Left = 1376
-    Top = 128
+    Left = 1104
+    Top = 64
   end
   object dsRiwayat: TDataSource
     DataSet = ZQueryRiwayat
-    Left = 1352
-    Top = 264
+    Left = 784
+    Top = 16
   end
 end

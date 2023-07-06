@@ -3,6 +3,7 @@ object Form10: TForm10
   Top = 138
   Width = 1355
   Height = 713
+  Align = alClient
   Caption = 'Data Poin'
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
@@ -16,8 +17,8 @@ object Form10: TForm10
   object pnl1: TPanel
     Left = 0
     Top = 0
-    Width = 1305
-    Height = 673
+    Width = 1537
+    Height = 841
     Color = clWhite
     TabOrder = 0
     object btn6: TButton
@@ -43,7 +44,7 @@ object Form10: TForm10
       Color = clActiveBorder
       TabOrder = 1
       object l_3: TLabel
-        Left = 1016
+        Left = 1240
         Top = 80
         Width = 264
         Height = 27

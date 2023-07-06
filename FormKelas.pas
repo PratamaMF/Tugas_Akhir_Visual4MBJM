@@ -63,36 +63,36 @@ uses CrudOrangTua, FormSiswa, FormOrangTua, FormWaliKelas, FormPoin,
 
 procedure TForm6.btnSimpanClick(Sender: TObject);
 begin
-  ZQuery2.SQL.Clear;
-  ZQuery2.SQL.Add('insert into tb_hubungan values(null,"'+EdtId_siswa.Text+'","'+EdtId_ortu.Text+'","'+CbbStatus_hubungan.Text+'","'+CbbKeterangan.Text+'")');
-  ZQuery2.ExecSQL ;
+  ZQuery3.SQL.Clear;
+  ZQuery3.SQL.Add('insert into tb_hubungan values(null,"'+EdtId_siswa.Text+'","'+EdtId_ortu.Text+'","'+CbbStatus_hubungan.Text+'","'+CbbKeterangan.Text+'")');
+  ZQuery3.ExecSQL ;
 
-  ZQuery2.SQL.Clear;
-  ZQuery2.SQL.Add('select * from tb_hubungan');
-  ZQuery2.Open;
+  ZQuery3.SQL.Clear;
+  ZQuery3.SQL.Add('select * from tb_hubungan');
+  ZQuery3.Open;
   Showmessage('DATA BERHASIL DI SIMPAN');
 end;
 
 procedure TForm6.btnEditClick(Sender: TObject);
 begin
-  ZQuery2.SQL.Clear;
-  ZQuery2.SQL.Add('update tb_hubungan set siswa_id="'+EdtId_siswa.Text+'",ortu_id="'+EdtId_ortu.Text+'",status_hub="'+CbbStatus_hubungan.Text+'",keterangan="'+CbbKeterangan.Text+'" where id="'+id+'"');
-  ZQuery2.ExecSQL;
+  ZQuery3.SQL.Clear;
+  ZQuery3.SQL.Add('update tb_hubungan set siswa_id="'+EdtId_siswa.Text+'",ortu_id="'+EdtId_ortu.Text+'",status_hub="'+CbbStatus_hubungan.Text+'",keterangan="'+CbbKeterangan.Text+'" where id="'+id+'"');
+  ZQuery3.ExecSQL;
 
-  ZQuery2.SQL.Clear;
-  ZQuery2.SQL.Add('select * from tb_hubungan');
-  ZQuery2.Open;
+  ZQuery3.SQL.Clear;
+  ZQuery3.SQL.Add('select * from tb_hubungan');
+  ZQuery3.Open;
   Showmessage('DATA BERHASIL DI EDIT');
 end;
 
 procedure TForm6.btnHapusClick(Sender: TObject);
 begin
-  ZQuery2.SQL.Clear;
-  ZQuery2.SQL.Add('delete from tb_hubungan where id="'+id+'"');
-  ZQuery2.ExecSQL;
-  ZQuery2.SQL.Clear;
-  ZQuery2.SQL.Add('select * from tb_hubungan');
-  ZQuery2.Open;
+  ZQuery3.SQL.Clear;
+  ZQuery3.SQL.Add('delete from tb_hubungan where id="'+id+'"');
+  ZQuery3.ExecSQL;
+  ZQuery3.SQL.Clear;
+  ZQuery3.SQL.Add('select * from tb_hubungan');
+  ZQuery3.Open;
   ShowMessage('DATA BERHASIL DIHAPUS!');
 end;
 
@@ -104,11 +104,11 @@ end;
 
 procedure TForm6.DBGrid1CellClick(Column: TColumn);
 begin
-  id:=ZQuery2.Fields[0].AsString;
+  id:=ZQuery3.Fields[0].AsString;
   EdtId_siswa.Text:=ZQuery3.Fields[1].AsString;
   EdtId_ortu.Text:=ZQuery3.Fields[2].AsString;
-  CbbStatus_hubungan.Text:=ZQuery2.Fields[3].AsString;
-  CbbKeterangan.Text:=ZQuery2.Fields[4].AsString;
+  CbbStatus_hubungan.Text:=ZQuery3.Fields[3].AsString;
+  CbbKeterangan.Text:=ZQuery3.Fields[4].AsString;
 end;
 
 procedure TForm6.DBGrid2CellClick(Column: TColumn);

@@ -3,6 +3,7 @@ object Form7: TForm7
   Top = 124
   Width = 1346
   Height = 710
+  Align = alClient
   Caption = 'Input Data Kelas'
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
@@ -14,15 +15,15 @@ object Form7: TForm7
   PixelsPerInch = 96
   TextHeight = 13
   object pnl1: TPanel
-    Left = -2
+    Left = -10
     Top = -3
-    Width = 1313
-    Height = 673
+    Width = 1539
+    Height = 844
     Color = clWhite
     TabOrder = 0
     object l_7: TLabel
-      Left = 48
-      Top = 160
+      Left = 232
+      Top = 280
       Width = 96
       Height = 19
       Caption = 'NAMA KELAS'
@@ -34,8 +35,8 @@ object Form7: TForm7
       ParentFont = False
     end
     object l_12: TLabel
-      Left = 48
-      Top = 200
+      Left = 232
+      Top = 320
       Width = 42
       Height = 19
       Caption = 'JENIS'
@@ -47,8 +48,8 @@ object Form7: TForm7
       ParentFont = False
     end
     object l_17: TLabel
-      Left = 48
-      Top = 240
+      Left = 232
+      Top = 360
       Width = 70
       Height = 19
       Caption = 'JURUSAN'
@@ -60,8 +61,8 @@ object Form7: TForm7
       ParentFont = False
     end
     object l_2: TLabel
-      Left = 608
-      Top = 160
+      Left = 808
+      Top = 272
       Width = 95
       Height = 19
       Caption = 'Tabel Kelas'
@@ -73,8 +74,8 @@ object Form7: TForm7
       ParentFont = False
     end
     object btnSimpan: TButton
-      Left = 48
-      Top = 304
+      Left = 232
+      Top = 424
       Width = 121
       Height = 41
       Caption = 'SIMPAN'
@@ -82,8 +83,8 @@ object Form7: TForm7
       OnClick = btnSimpanClick
     end
     object btnEdit: TButton
-      Left = 176
-      Top = 304
+      Left = 360
+      Top = 424
       Width = 121
       Height = 41
       Caption = 'EDIT'
@@ -91,8 +92,8 @@ object Form7: TForm7
       OnClick = btnEditClick
     end
     object btnHapus: TButton
-      Left = 304
-      Top = 304
+      Left = 488
+      Top = 424
       Width = 121
       Height = 41
       Caption = 'HAPUS'
@@ -100,8 +101,8 @@ object Form7: TForm7
       OnClick = btnHapusClick
     end
     object CbbJenis: TComboBox
-      Left = 224
-      Top = 200
+      Left = 408
+      Top = 320
       Width = 329
       Height = 27
       Font.Charset = DEFAULT_CHARSET
@@ -118,8 +119,8 @@ object Form7: TForm7
         'B')
     end
     object CbbJurusan: TComboBox
-      Left = 224
-      Top = 240
+      Left = 408
+      Top = 360
       Width = 329
       Height = 27
       Font.Charset = DEFAULT_CHARSET
@@ -136,8 +137,8 @@ object Form7: TForm7
         'IPS')
     end
     object btn1: TButton
-      Left = 432
-      Top = 304
+      Left = 616
+      Top = 424
       Width = 121
       Height = 41
       Caption = 'CLEAR FORM'
@@ -145,8 +146,8 @@ object Form7: TForm7
       OnClick = btn1Click
     end
     object CbbNama_kelas: TComboBox
-      Left = 224
-      Top = 160
+      Left = 408
+      Top = 280
       Width = 329
       Height = 27
       Font.Charset = DEFAULT_CHARSET
@@ -164,15 +165,21 @@ object Form7: TForm7
         'XII')
     end
     object DBGrid1: TDBGrid
-      Left = 608
-      Top = 192
+      Left = 808
+      Top = 304
       Width = 361
       Height = 177
       DataSource = ds1
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -13
+      Font.Name = 'Tahoma'
+      Font.Style = []
+      ParentFont = False
       TabOrder = 7
       TitleFont.Charset = DEFAULT_CHARSET
       TitleFont.Color = clWindowText
-      TitleFont.Height = -11
+      TitleFont.Height = -13
       TitleFont.Name = 'Tahoma'
       TitleFont.Style = []
       OnCellClick = DBGrid1CellClick
@@ -205,12 +212,12 @@ object Form7: TForm7
   object pnl2: TPanel
     Left = -8
     Top = -64
-    Width = 1321
+    Width = 1529
     Height = 121
     Color = clActiveBorder
     TabOrder = 1
     object l_3: TLabel
-      Left = 1032
+      Left = 1232
       Top = 80
       Width = 264
       Height = 27

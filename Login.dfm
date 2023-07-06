@@ -1,8 +1,8 @@
 object Form17: TForm17
   Left = 259
   Top = 191
-  Width = 891
-  Height = 448
+  Width = 1233
+  Height = 599
   Caption = 'Login'
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
@@ -14,8 +14,8 @@ object Form17: TForm17
   PixelsPerInch = 96
   TextHeight = 13
   object pnl1: TPanel
-    Left = 0
-    Top = 0
+    Left = 392
+    Top = 192
     Width = 865
     Height = 409
     TabOrder = 0

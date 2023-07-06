@@ -1,9 +1,9 @@
 object Form8: TForm8
-  Left = 132
-  Top = 327
+  Left = 123
+  Top = 74
   Width = 1349
   Height = 686
-  VertScrollBar.Position = 1
+  Align = alClient
   Caption = 'Input Data User'
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
@@ -15,15 +15,15 @@ object Form8: TForm8
   PixelsPerInch = 96
   TextHeight = 13
   object pnl1: TPanel
-    Left = -2
-    Top = -2
-    Width = 1313
-    Height = 673
+    Left = -10
+    Top = -1
+    Width = 1539
+    Height = 842
     Color = clWhite
     TabOrder = 0
     object l_7: TLabel
-      Left = 72
-      Top = 160
+      Left = 96
+      Top = 224
       Width = 45
       Height = 19
       Caption = 'NAMA'
@@ -35,8 +35,8 @@ object Form8: TForm8
       ParentFont = False
     end
     object l_12: TLabel
-      Left = 72
-      Top = 280
+      Left = 96
+      Top = 344
       Width = 60
       Height = 19
       Caption = 'STATUS'
@@ -48,8 +48,8 @@ object Form8: TForm8
       ParentFont = False
     end
     object l_2: TLabel
-      Left = 248
-      Top = 416
+      Left = 360
+      Top = 480
       Width = 143
       Height = 19
       Caption = 'Tabel Data User :'
@@ -61,8 +61,8 @@ object Form8: TForm8
       ParentFont = False
     end
     object l_4: TLabel
-      Left = 72
-      Top = 200
+      Left = 96
+      Top = 264
       Width = 82
       Height = 19
       Caption = 'USERNAME'
@@ -74,8 +74,8 @@ object Form8: TForm8
       ParentFont = False
     end
     object l_5: TLabel
-      Left = 72
-      Top = 240
+      Left = 96
+      Top = 304
       Width = 85
       Height = 19
       Caption = 'PASSWORD'
@@ -87,8 +87,8 @@ object Form8: TForm8
       ParentFont = False
     end
     object l_6: TLabel
-      Left = 608
-      Top = 152
+      Left = 704
+      Top = 216
       Width = 99
       Height = 19
       Caption = 'Pilih Siswa :'
@@ -100,8 +100,8 @@ object Form8: TForm8
       ParentFont = False
     end
     object l_8: TLabel
-      Left = 984
-      Top = 152
+      Left = 1104
+      Top = 216
       Width = 137
       Height = 19
       Caption = 'Pilih Wali Kelas :'
@@ -113,8 +113,8 @@ object Form8: TForm8
       ParentFont = False
     end
     object btnSimpan: TButton
-      Left = 72
-      Top = 320
+      Left = 96
+      Top = 384
       Width = 121
       Height = 41
       Caption = 'SIMPAN'
@@ -122,8 +122,8 @@ object Form8: TForm8
       OnClick = btnSimpanClick
     end
     object btnEdit: TButton
-      Left = 200
-      Top = 320
+      Left = 224
+      Top = 384
       Width = 121
       Height = 41
       Caption = 'EDIT'
@@ -131,8 +131,8 @@ object Form8: TForm8
       OnClick = btnEditClick
     end
     object btnHapus: TButton
-      Left = 328
-      Top = 320
+      Left = 352
+      Top = 384
       Width = 121
       Height = 41
       Caption = 'HAPUS'
@@ -140,8 +140,8 @@ object Form8: TForm8
       OnClick = btnHapusClick
     end
     object CbbStatus: TComboBox
-      Left = 248
-      Top = 280
+      Left = 272
+      Top = 344
       Width = 329
       Height = 27
       Font.Charset = DEFAULT_CHARSET
@@ -159,8 +159,8 @@ object Form8: TForm8
         'Siswa')
     end
     object btn1: TButton
-      Left = 456
-      Top = 320
+      Left = 480
+      Top = 384
       Width = 121
       Height = 41
       Caption = 'CLEAR FORM'
@@ -168,8 +168,8 @@ object Form8: TForm8
       OnClick = btn1Click
     end
     object EdtUsername: TEdit
-      Left = 248
-      Top = 200
+      Left = 272
+      Top = 264
       Width = 329
       Height = 27
       Font.Charset = DEFAULT_CHARSET
@@ -181,8 +181,8 @@ object Form8: TForm8
       TabOrder = 5
     end
     object EdtPassword: TEdit
-      Left = 248
-      Top = 240
+      Left = 272
+      Top = 304
       Width = 329
       Height = 27
       Font.Charset = DEFAULT_CHARSET
@@ -194,8 +194,8 @@ object Form8: TForm8
       TabOrder = 6
     end
     object DBGrid1: TDBGrid
-      Left = 248
-      Top = 440
+      Left = 360
+      Top = 504
       Width = 777
       Height = 169
       DataSource = ds1
@@ -241,8 +241,8 @@ object Form8: TForm8
         end>
     end
     object EdtNamaSiswa: TEdit
-      Left = 248
-      Top = 160
+      Left = 272
+      Top = 224
       Width = 329
       Height = 27
       Font.Charset = DEFAULT_CHARSET
@@ -254,9 +254,9 @@ object Form8: TForm8
       TabOrder = 8
     end
     object DBGrid2: TDBGrid
-      Left = 608
-      Top = 176
-      Width = 353
+      Left = 704
+      Top = 240
+      Width = 377
       Height = 185
       DataSource = ds2
       Font.Charset = DEFAULT_CHARSET
@@ -287,19 +287,26 @@ object Form8: TForm8
         item
           Expanded = False
           FieldName = 'jurusan'
+          Width = 55
           Visible = True
         end>
     end
     object DBGrid3: TDBGrid
-      Left = 984
-      Top = 176
+      Left = 1104
+      Top = 240
       Width = 313
       Height = 177
       DataSource = ds3
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -13
+      Font.Name = 'Tahoma'
+      Font.Style = []
+      ParentFont = False
       TabOrder = 10
       TitleFont.Charset = DEFAULT_CHARSET
       TitleFont.Color = clWindowText
-      TitleFont.Height = -11
+      TitleFont.Height = -13
       TitleFont.Name = 'Tahoma'
       TitleFont.Style = []
       OnCellClick = DBGrid3CellClick
@@ -318,13 +325,13 @@ object Form8: TForm8
   end
   object pnl2: TPanel
     Left = -8
-    Top = -65
-    Width = 1321
+    Top = -64
+    Width = 1529
     Height = 121
     Color = clActiveBorder
     TabOrder = 1
     object l_3: TLabel
-      Left = 1032
+      Left = 1232
       Top = 80
       Width = 264
       Height = 27
@@ -337,7 +344,7 @@ object Form8: TForm8
       ParentFont = False
     end
     object l_1: TLabel
-      Left = 48
+      Left = 88
       Top = 80
       Width = 115
       Height = 27

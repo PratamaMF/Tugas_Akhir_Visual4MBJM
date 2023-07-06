@@ -1,8 +1,9 @@
 object Form3: TForm3
-  Left = 151
-  Top = 114
-  Width = 1359
+  Left = 176
+  Top = 118
+  Width = 1360
   Height = 709
+  Align = alClient
   Caption = 'Input Data Siswa'
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
@@ -16,13 +17,13 @@ object Form3: TForm3
   object pnl1: TPanel
     Left = -7
     Top = -11
-    Width = 1313
-    Height = 673
+    Width = 1544
+    Height = 852
     Color = clWhite
     TabOrder = 0
     object l_2: TLabel
-      Left = 48
-      Top = 104
+      Left = 80
+      Top = 128
       Width = 26
       Height = 19
       Caption = 'NIS'
@@ -34,8 +35,8 @@ object Form3: TForm3
       ParentFont = False
     end
     object l_5: TLabel
-      Left = 48
-      Top = 136
+      Left = 80
+      Top = 160
       Width = 37
       Height = 19
       Caption = 'NISN'
@@ -47,8 +48,8 @@ object Form3: TForm3
       ParentFont = False
     end
     object l_6: TLabel
-      Left = 48
-      Top = 168
+      Left = 80
+      Top = 192
       Width = 99
       Height = 19
       Caption = 'NAMA SISWA'
@@ -60,8 +61,8 @@ object Form3: TForm3
       ParentFont = False
     end
     object l_7: TLabel
-      Left = 48
-      Top = 200
+      Left = 80
+      Top = 224
       Width = 26
       Height = 19
       Caption = 'NIK'
@@ -73,8 +74,8 @@ object Form3: TForm3
       ParentFont = False
     end
     object l_8: TLabel
-      Left = 48
-      Top = 232
+      Left = 80
+      Top = 256
       Width = 112
       Height = 19
       Caption = 'TEMPAT LAHIR'
@@ -86,8 +87,8 @@ object Form3: TForm3
       ParentFont = False
     end
     object l_9: TLabel
-      Left = 48
-      Top = 264
+      Left = 80
+      Top = 288
       Width = 124
       Height = 19
       Caption = 'TANGGAL LAHIR'
@@ -99,8 +100,8 @@ object Form3: TForm3
       ParentFont = False
     end
     object l_10: TLabel
-      Left = 48
-      Top = 296
+      Left = 80
+      Top = 320
       Width = 113
       Height = 19
       Caption = 'JENIS KELAMIN'
@@ -112,8 +113,8 @@ object Form3: TForm3
       ParentFont = False
     end
     object l_11: TLabel
-      Left = 48
-      Top = 328
+      Left = 80
+      Top = 352
       Width = 119
       Height = 19
       Caption = 'TINGKAT KELAS'
@@ -125,8 +126,8 @@ object Form3: TForm3
       ParentFont = False
     end
     object l_12: TLabel
-      Left = 48
-      Top = 360
+      Left = 80
+      Top = 384
       Width = 70
       Height = 38
       Caption = 'JURUSAN'#13#10
@@ -138,8 +139,8 @@ object Form3: TForm3
       ParentFont = False
     end
     object l_13: TLabel
-      Left = 48
-      Top = 392
+      Left = 80
+      Top = 416
       Width = 90
       Height = 19
       Caption = 'WALI KELAS'
@@ -151,8 +152,8 @@ object Form3: TForm3
       ParentFont = False
     end
     object l_14: TLabel
-      Left = 48
-      Top = 424
+      Left = 80
+      Top = 448
       Width = 63
       Height = 19
       Caption = 'ALAMAT'
@@ -164,8 +165,8 @@ object Form3: TForm3
       ParentFont = False
     end
     object l_15: TLabel
-      Left = 48
-      Top = 456
+      Left = 80
+      Top = 480
       Width = 96
       Height = 19
       Caption = 'NO TELEPON'
@@ -177,8 +178,8 @@ object Form3: TForm3
       ParentFont = False
     end
     object l_16: TLabel
-      Left = 48
-      Top = 488
+      Left = 80
+      Top = 512
       Width = 48
       Height = 19
       Caption = 'NO HP'
@@ -190,8 +191,8 @@ object Form3: TForm3
       ParentFont = False
     end
     object l_17: TLabel
-      Left = 48
-      Top = 520
+      Left = 80
+      Top = 544
       Width = 60
       Height = 19
       Caption = 'STATUS'
@@ -203,8 +204,8 @@ object Form3: TForm3
       ParentFont = False
     end
     object l_4: TLabel
-      Left = 616
-      Top = 176
+      Left = 656
+      Top = 128
       Width = 98
       Height = 19
       Caption = 'Tabel Siswa'
@@ -216,8 +217,8 @@ object Form3: TForm3
       ParentFont = False
     end
     object btnSimpan: TButton
-      Left = 48
-      Top = 576
+      Left = 80
+      Top = 600
       Width = 129
       Height = 41
       Caption = 'SIMPAN'
@@ -225,8 +226,8 @@ object Form3: TForm3
       OnClick = btnSimpanClick
     end
     object btnEdit: TButton
-      Left = 184
-      Top = 576
+      Left = 216
+      Top = 600
       Width = 129
       Height = 41
       Caption = 'EDIT'
@@ -234,8 +235,8 @@ object Form3: TForm3
       OnClick = btnEditClick
     end
     object btnHapus: TButton
-      Left = 320
-      Top = 576
+      Left = 352
+      Top = 600
       Width = 129
       Height = 41
       Caption = 'HAPUS'
@@ -243,8 +244,8 @@ object Form3: TForm3
       OnClick = btnHapusClick
     end
     object EdtNis: TEdit
-      Left = 224
-      Top = 104
+      Left = 256
+      Top = 128
       Width = 361
       Height = 27
       Font.Charset = DEFAULT_CHARSET
@@ -256,8 +257,8 @@ object Form3: TForm3
       TabOrder = 3
     end
     object EdtNisn: TEdit
-      Left = 224
-      Top = 136
+      Left = 256
+      Top = 160
       Width = 361
       Height = 27
       Font.Charset = DEFAULT_CHARSET
@@ -269,8 +270,8 @@ object Form3: TForm3
       TabOrder = 4
     end
     object EdtNama_siswa: TEdit
-      Left = 224
-      Top = 168
+      Left = 256
+      Top = 192
       Width = 361
       Height = 27
       Font.Charset = DEFAULT_CHARSET
@@ -282,8 +283,8 @@ object Form3: TForm3
       TabOrder = 5
     end
     object EdtNik: TEdit
-      Left = 224
-      Top = 200
+      Left = 256
+      Top = 224
       Width = 361
       Height = 27
       Font.Charset = DEFAULT_CHARSET
@@ -295,8 +296,8 @@ object Form3: TForm3
       TabOrder = 6
     end
     object EdtTempat_lahir: TEdit
-      Left = 224
-      Top = 232
+      Left = 256
+      Top = 256
       Width = 361
       Height = 27
       Font.Charset = DEFAULT_CHARSET
@@ -308,8 +309,8 @@ object Form3: TForm3
       TabOrder = 7
     end
     object dtpTanggal: TDateTimePicker
-      Left = 224
-      Top = 264
+      Left = 256
+      Top = 288
       Width = 186
       Height = 27
       Date = 45092.065244027780000000
@@ -323,8 +324,8 @@ object Form3: TForm3
       TabOrder = 8
     end
     object CbbJKelamin: TComboBox
-      Left = 224
-      Top = 296
+      Left = 256
+      Top = 320
       Width = 185
       Height = 27
       Font.Charset = DEFAULT_CHARSET
@@ -340,8 +341,8 @@ object Form3: TForm3
         'Perempuan')
     end
     object CbbTingkat_kelas: TComboBox
-      Left = 224
-      Top = 328
+      Left = 256
+      Top = 352
       Width = 185
       Height = 27
       Font.Charset = DEFAULT_CHARSET
@@ -358,8 +359,8 @@ object Form3: TForm3
         'XII')
     end
     object CbbJurusan: TComboBox
-      Left = 224
-      Top = 360
+      Left = 256
+      Top = 384
       Width = 185
       Height = 27
       Font.Charset = DEFAULT_CHARSET
@@ -375,8 +376,8 @@ object Form3: TForm3
         'IPS')
     end
     object EdtWali_kelas: TEdit
-      Left = 224
-      Top = 392
+      Left = 256
+      Top = 416
       Width = 361
       Height = 27
       Font.Charset = DEFAULT_CHARSET
@@ -388,8 +389,8 @@ object Form3: TForm3
       TabOrder = 12
     end
     object EdtAlamat: TEdit
-      Left = 224
-      Top = 424
+      Left = 256
+      Top = 448
       Width = 361
       Height = 27
       Font.Charset = DEFAULT_CHARSET
@@ -401,8 +402,8 @@ object Form3: TForm3
       TabOrder = 13
     end
     object EdtNo_telp: TEdit
-      Left = 224
-      Top = 456
+      Left = 256
+      Top = 480
       Width = 361
       Height = 27
       Font.Charset = DEFAULT_CHARSET
@@ -414,8 +415,8 @@ object Form3: TForm3
       TabOrder = 14
     end
     object EdtNo_hp: TEdit
-      Left = 224
-      Top = 488
+      Left = 256
+      Top = 512
       Width = 361
       Height = 27
       Font.Charset = DEFAULT_CHARSET
@@ -427,8 +428,8 @@ object Form3: TForm3
       TabOrder = 15
     end
     object CbbStatus: TComboBox
-      Left = 224
-      Top = 520
+      Left = 256
+      Top = 544
       Width = 185
       Height = 27
       Font.Charset = DEFAULT_CHARSET
@@ -444,22 +445,28 @@ object Form3: TForm3
         'Tidak Aktif')
     end
     object DBGrid1: TDBGrid
-      Left = 616
-      Top = 208
-      Width = 657
+      Left = 656
+      Top = 152
+      Width = 825
       Height = 241
       DataSource = ds1
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -13
+      Font.Name = 'Tahoma'
+      Font.Style = []
+      ParentFont = False
       TabOrder = 17
       TitleFont.Charset = DEFAULT_CHARSET
       TitleFont.Color = clWindowText
-      TitleFont.Height = -11
+      TitleFont.Height = -13
       TitleFont.Name = 'Tahoma'
       TitleFont.Style = []
       OnCellClick = DBGrid1CellClick
     end
     object btn1: TButton
-      Left = 456
-      Top = 576
+      Left = 488
+      Top = 600
       Width = 129
       Height = 41
       Caption = 'CLEAR FORM'
@@ -467,14 +474,14 @@ object Form3: TForm3
       OnClick = btn1Click
     end
     object pnl2: TPanel
-      Left = -8
+      Left = -16
       Top = -56
-      Width = 1321
+      Width = 1537
       Height = 121
       Color = clActiveBorder
       TabOrder = 19
       object l_3: TLabel
-        Left = 1032
+        Left = 1240
         Top = 80
         Width = 264
         Height = 27
@@ -487,7 +494,7 @@ object Form3: TForm3
         ParentFont = False
       end
       object l_1: TLabel
-        Left = 48
+        Left = 96
         Top = 80
         Width = 127
         Height = 27
